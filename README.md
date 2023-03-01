@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @MJT97
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👋 Hi, I’m MJ
+- 👀 I’m interested in Emlectronics and Embedded Systems
+- 🌱 I’m currently learning Multi-layer PCBs and CAN technology
+- 💞️ I’m looking to collaborate on IOT and PIC projects
+- 📫 How to reach me madzivajephta@gmail.com
 
 <!---
 MJT97/MJT97 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
