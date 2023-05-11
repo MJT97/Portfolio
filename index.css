@@ -1,0 +1,211 @@
+/*---Defining Constants---*/
+:root
+{
+    --dark-blue: rgb(11, 11, 27);
+    --light-blue: rgb(18, 26, 172);
+    --font-1: Arial, Helvetica, sans-serif;
+
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---General Settings---*/
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+hr
+{
+    padding: 0px;
+    margin: 5px;
+}
+
+/*---header settings---*/
+#announcer /*---Announcer block settings---*/
+{ 
+    margin: 0px;
+    padding: 3px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#logo /*---Logo Configs---*/
+{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px; 
+    float: left; 
+    cursor: default; 
+}
+
+#tail
+{
+    color: rgb(18, 26, 172);
+}
+
+#panel
+{
+    border: none;
+    height: 40px;
+    margin: 0px;
+    padding-top: 30px;
+    border-radius: 0px;
+    background-color: rgb(11, 11, 27);
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+#panel ul
+{
+    
+    list-style: none;
+    display: flex;
+}
+
+#panel li
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#panel a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#tabs
+{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+
+#tabs li
+{
+    font-size: medium;
+    font-weight: bold;
+}
+
+#tabs a
+{
+    color: white;
+    transition: color 300ms ease; 
+}
+#tabs a:hover
+{
+    color: var(--light-blue);
+}
+
+#sub/*---Sub tabs Settings---*/
+{
+    margin: 0px;
+    padding: 3px;
+    border: none;
+}
+
+#img img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#searchbar 
+{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+#search
+{
+    font-family: var(--font-1);
+    font-size: small;
+    font-weight: bold;
+}
+#sectabs
+{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+#sectabs a
+{
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-family: var(--font-1);
+    font-size: small;
+    font-weight: bold;
+    transition: color 300ms ease; 
+}
+
+#sectabs a:hover
+{
+    color: var(--light-blue);
+}
+/*---End of Header Settings---*/
+
+/*---Footer settings---*/
+#footer /*---Footer general settings*/
+{   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    position: fixed;
+    font-size: small;
+    background-color: black;
+}
+
+#footer li /*---Footer list Settings---*/
+{
+    list-style: none;
+}
+
+#footer a /*-Footer link settings-*/
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navb
+{
+    float: left;
+    display: flex;
+}
+.socb
+{
+    display: flex;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+
+#copyright
+{
+    text-align:center;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 30px;
+    font-family: var(--font-1);
+}
+
+/*---End of Footer Settings---*/
