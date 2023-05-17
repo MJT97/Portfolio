@@ -4,7 +4,7 @@
     --dark-blue: rgb(11, 11, 27);
     --light-blue: rgb(18, 26, 172);
     --font-1: Arial, Helvetica, sans-serif;
-
+    --bio-img: url("bio background.png");
 }
 
 *
@@ -18,10 +18,8 @@ body
 {
     padding: 0px;
     margin: 0px;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
-
-
 hr
 {
     padding: 0px;
@@ -117,13 +115,6 @@ hr
     border: none;
 }
 
-#img img
-{
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
-
 #searchbar 
 {
     float: left;
@@ -145,18 +136,158 @@ hr
 #sectabs a
 {
     text-decoration: none;
-    color: var(--dark-blue);
+    color: white;
     font-family: var(--font-1);
     font-size: small;
     font-weight: bold;
     transition: color 300ms ease; 
 }
-
 #sectabs a:hover
 {
     color: var(--light-blue);
 }
 /*---End of Header Settings---*/
+
+/*---Intro Settings---*/
+#intro
+{
+    margin: 5px;
+    padding: 0px;
+    border-style: none;
+    border-radius: 20px;
+    align-items: center;
+    background-image:var(--bio-img);
+    background-size: contain;
+}
+#img img
+{
+    padding: 5px;
+    width: 30%;
+    float: left;
+    border-radius: 50%;
+    background-color: rgba(4, 4, 81, 0.647);
+}
+#text
+{
+    padding: 5px;
+    color: white;  
+    width: 65%;
+    height: 100%;
+    float: right;  
+    background-color: rgba(11, 11, 27, 0.829);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*---End of Intro Settings---*/
+
+/*---Skills Settings---*/
+#code
+{
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    align-items: center;
+    background-size: contain;
+    background-color: var(--dark-blue);
+}
+#codeimg img
+{
+   width: 30%;
+   float: left; 
+   border-radius: 20px;
+}
+#pcb
+{
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    align-items: center;
+    background-size: contain;
+    background-color: var(--dark-blue);
+}
+#pcbimg img
+{
+    width: 40%;
+    float: left; 
+    border-radius: 20px;
+}
+#cad
+{
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    align-items: center;
+    background-size: contain;
+    background-color: var(--dark-blue);
+}
+#cadimg img
+{
+    width: 40%;
+    float: left; 
+    border-radius: 20px;
+}
+#title
+{
+    font-size: medium;
+    font-weight: bold;
+    color: var(--light-blue);
+}
+#codetxt
+{
+    margin: 10px;
+    float: right;
+    font-size: 10%;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: smaller;
+}
+#head
+{
+    font-weight: bold;
+}
+
+#pcbtxt
+{
+    margin: 10px;
+    float: right;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: smaller;
+}
+#cadtxt
+{
+    margin: 10px;
+    float: right;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: smaller;
+}
+
+
+/*---Skills Settings---*/
+#projects
+{
+    margin: 5px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    align-items: center;
+    background-size: contain;
+}
+
+#bar
+{
+    border:none;
+}
 
 /*---Footer settings---*/
 #footer /*---Footer general settings*/
@@ -169,14 +300,12 @@ hr
     border: none;
     position: fixed;
     font-size: small;
-    background-color: black;
+    background-color: var(--dark-blue);
 }
-
 #footer li /*---Footer list Settings---*/
 {
     list-style: none;
 }
-
 #footer a /*-Footer link settings-*/
 {
     text-decoration: none;
@@ -184,20 +313,25 @@ hr
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
 .navb
 {
     float: left;
     display: flex;
+    padding-left: 10px;
 }
 .socb
 {
     display: flex;
     float: right;
     padding: 0px;
+    padding-right: 10px;
     margin: 0px;
 }
-
+.socb img
+{
+    width: 30px;
+    padding-left: 30px;
+}
 #copyright
 {
     text-align:center;
