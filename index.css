@@ -6,7 +6,6 @@
     --mid-blue: rgb(18, 26, 172);
     --font-1: Arial, Helvetica, sans-serif;
     --bio-img: url("bio background.png");
-
 }
 
 *
@@ -21,6 +20,7 @@ body
     padding: 0px;
     margin: 0px;
     background-color: rgb(0, 0, 0);
+    font-size: large;
 }
 hr
 {
