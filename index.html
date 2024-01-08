@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="website icon" type="png" href="IMG_20181209_141936 (2).jpg">
         <meta charset="utf-8">
         <meta name="MJT" content="Portfolio">
         <title>Homepage</title>
@@ -9,162 +10,127 @@
     </head>
 
   <body>
-    <fieldset id="panel">
-      <h1 id="logo">Madziva<span id="tail">Jephta</span></h1>
-     
-      <ul id="tabs">
-            <li><a href="MADZIVA_J_CV.pdf"><img src="images/cv.png" alt="C.V"></a></li>
-            <li><a href="PORTFOLIO.pdf"><img src="images/portfolio.png" alt="PORTFOLIO"></a></li>   
-      </ul>
-    </fieldset>
-    <fieldset id="sub">
-      <p id="sectabs">
-        <a href="#bar"><img src="images/bottom.png" alt="Bottom"></a>
-      </p>	
-    </fieldset>
-    <br>
-    <fieldset id="intro">
-      <div id="img">
-        <img src="IMG_20181209_141936 (2).jpg">
+    <header id="intro">
+      <div class="bar">JEPHTA</div>
+      <div class="tabs">
+        <li><a href="#intro">BIO</a></li>
+        <li><a href="#contacts">CONTACTS</a></li>
       </div>
-      
-      <div id="text">
-        <p id="heading">MECHATRONICS ENGINEER</p>
-        <br>
-        <p id="knowledge">
-          I am a Mechatronics graduate with a primary 
-          focus in electronics & embedded systems 
-          designing. I have multi-disciplinary skills 
-          that make me proficient across multiple stages 
-          of manufacturing an embedded system from 
-          schematic designing, embedded C programming, 
-          single & multi-layer PCB designing and 
-          computer-aided designing & manufacturing. 
-        </p>
-        <br>
-        <p id="experience">
-          I have worked on multiple PCBs throughout my 
-          4 years of experience and have gained quite 
-          a lot of expertise in PCB routing, simulation, 
-          rendering and manufacturing. 
-        </p>
-        <br>
-        <p id="extraskills">  
-          I am always eager to learn, test my limits and
-          tackle new challenges to get things done. 
-          I can work well under pressure with 
-          commendable teamwork, critical thinking and 
-          problem solving skills.
-        </p>
-      </div>
-    </fieldset>
+    </header>
     
-    <fieldset id="code">
-      <div id="codeimg">
-        <img src="images/C Firmware.JPG">
-      </div>
-      <div id="codetxt">
-        <p id="title">
-          FIRMWARE DEVELOPMENT
-        </p>
-        <p>
-          <ul id="details">
-            <span id="head">LANGUAGE: EMBEDDED C</span>
-            <hr>            
-            <span id="head">SOFTWARE | IDE:</span>
-            <br>MPLABX: PIC10-PIC12-PIC16-PIC18<br>Arduino IDE: MINI-UNO-MEGA<br>Fritzing<br>Proteus<br>TinkerCAD<br>
-            <hr>
-            <span id="head">PROTOCOLS | TECHNOLOGY:</span>
-            <br>ADC: Analog circuits <br>I2C: Interface | Communication <br>SPI: Interface | Communication <br>UART: Interface | Communication
-            
-          
-          </ul>
-        </p>
-      </div>
-    </fieldset>
+    <main class="banner">
+      <figure class="pic">
+        <img src= "Madziva_Jephta_Photo.png" alt="picture">
+      </figure>
+      <article class="bio">
+        <p class="greet">Hi, I'm</p>
+        <p class="name">JEPHTA MADZIVA</p>
+        <p class="job">Mechatronics Engineer</p>
+        <p class="sum">I have inter-disciplinary knowledge and skillset that makes me quite effecient in IOT, Home Automation, Industrial Automation, Mechatronic systems development etc. </p>
+        <div class="docs">
+          <li class="cv"><a href="MADZIVA_J_CV.pdf" target="_blank">DOWNLOAD CV</a></li>
+        </div>
+      </article>
+    </main>
     
-    <fieldset id="pcb">
-      <div id="pcbimg">
-        <img src="images/pcb.png">
-      </div>
-      <div id="pcbtxt">
-        <p id="title">PCB DESIGN</p>
-        <p>
-          <span id="head">SKILLS: SCHEMATIC DESIGN, PCB DESIGN, ROUTING, RENDERING & FABRICATION </span>
-            <hr>            
-            <span id="head">SOFTWARE | IDE:</span>
-            <br>
-            KiCAD<br>
-            Proteus<br>
-            Fritzing<br>
-            Autodesk Fusion 360<br>
-            TinkerCAD<br>
-            <hr>
-            <span id="head">TYPES:</span>
-            <br>
-            Power Circuits<br>
-            Digital Circuits<br>
-            Analog Circuits<br>
-            I2C Circuits<br>
-            SPI Circuits<br>
-            UART Circuits<br>
-        </p>        
-      </div>
-    </fieldset>
+    <section id="services">
+      <h1 class="head">What I do</h1>
+      <nav class="services">
+        <div class="service">
+          <figure class="mech"><img src="images/mechatronics.png" alt=""></figure>
+          <p class="mech">
+            <span class="header">Mechatronic Project Design</span>
+            <li>Full Projects</li>
+            <li>IOT Projects</li>
+            <li>BT|LORA Projects</li>
+            <li>Home Automation</li>
+            <li>Power|Energy Projects</li>
+          </p>
+        </div>
 
-    <fieldset id="cad">
-      <div id="cadimg">
-        <img src="images/cad.png">
-      </div>
-      <div id="cadtxt">
-        <p id="title">COMPUTER AIDED DESIGN</p>
-        <p>
-          <span id="head">SKILLS: CAD | CAM</span>
-          <hr>            
-          <span id="head">SOFTWARE | IDE:</span>
-          <br>
-          FreeCAD<br>
-          TinkerCAD<br> 
-          MasterCAM<br>           
-          SolidWorks<br>
-          Autodesk Fusion 360<br>
-          <hr>
-          <span id="head">TYPES:</span> 
-          <br>
-          CNC Lathe<br>
-          3D Printing<br>
-          CNC Milling<br>
-          3D designing<br>
-          Laser Cutting<br>
-        </p>
-      </div>
-    </fieldset>
-
-    <fieldset id="bar">
-      <br>
-      <br>
-      <br>
-    </fieldset>
-    </fieldset>
-    <fieldset id="footer">
-        <nav id="socialsb">
-          <ul  class="navb">
-            <li><a href="#logo"><img src="images/uparrow.png" alt="Top |" ></a></li>
-          </ul>
-        </nav>
-        <nav id="socialsb">
-          <ul class="socb">
-            <li><a id="lin" href="https://www.linkedin.com/in/jephta-madziva-873656144"><img src="images/linkedin.png" alt="linkedin"></a></li>
-            <li><a id="fiv" href="https://www.fiverr.com/madzivaj"><img src="images/fiverr.png" alt="fiverr |"></a></li>
-            <li><a id="up" href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c"><img src="images/upwork.png" alt="upwork | "></li>
-            <li><a id="wa" href="https://wa.me/message/UJYLYBIVTWBWL1"><img src="images/whatsapp.png"></a></li>
-            <li><a id="gma" href="madzivajephta@gmail.com"><img src="images/gmail.png" alt="gmail"></a></li>
-            <li><a id="fb" href="https://facebook.com/Empirial.org/"><img src="images/facebook.png" alt="facebook |"></a></li> 	                        
-          </ul>
-        </nav>
-        <nav id="copyright">
-          <small>MadzivaJephta ©2023</small> 
-        </nav>   
-    </fieldset>  
+        <div class="service">
+          <figure class="elec"><img src="images/electronics.png" alt=""></figure>
+          <p class="elec">
+            <span class="header">Electronic Engineering</span>
+            <li>PCB Design</li>
+            <li>Firmware Development</li>
+            <li>Reverse Engineering</li>
+            <li>Circuit Design & Simulation</li>
+          </p>
+        </div>
+      </nav>
+    </section>
+    <section class="skills">
+      <h1 class="head">What I'm good at</h1>
+      <nav class="cards">
+        <div class="skill">
+          <figure class="PCB">
+            <li><img src="images/kicad.png" alt="kicad"></li>
+            <li><img src="images/proteus.png" alt="proteus"></li>
+            <li><img src="images/altium.png" alt="altium"></li>
+          </figure>
+          <span>PCB DESIGN</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <figure class="CIRCUIT">
+            <li><img src="images/kicad.png" alt="kicad"></li>
+            <li><img src="images/proteus.png" alt="proteus"></li>
+          </figure>
+          <span>CIRCUIT DESIGN & SIM</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <figure class="CODE">
+            <li><img src="images/arduino.png" alt="arduino"></li>
+            <li><img src="images/mplabx.png" alt="mplabx"></li>
+          </figure>
+          <span>FIRMWARE DEVELOPMENT</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <figure class="CAD">
+            <li><img src="images/FreeCAD.png" alt="freecad"></li>
+            <li><img src="images/solidworks.png" alt="solidworks"></li>
+            <li><img src="images/fusion360.png" alt="fusion360"></li>
+          </figure>
+          <span>CAD | CAM</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <figure class="WEB">
+            <li><img src="images/Visual Studio Code.png" alt="vs"></li>
+            <li><img src="images/html-5.png" alt="html"></li>
+            <li><img src="images/css3.png" alt="css3"></li>
+          </figure>
+          <span>WEB DEV</span>
+          <p></p>
+        </div>
+        <div class="skill">
+          <figure class="GRAPHIC">
+            <li><img src="images/GIMP.png" alt="gimp"></li>
+            <li><img src="images/inkscape.png" alt="inkscape"></li>
+          </figure>
+          <span>GRAPHIC DESIGN</span>
+          <p></p>
+        </div>
+      </nav>
+    </section>
+    <section id="contacts">
+      <h1 class="head">Contacts</h1>
+      <p>Get In Touch</p>
+      <nav class="card">
+        <div class="soc">
+          <li class="WhatsApp"><a href="https://wa.me/message/UJYLYBIVTWBWL1" target="_blank" ><img src="images/whatsapp.png" alt="WhatsApp"></a></li>
+          <li class="Facebook"><a href="https://www.facebook.com/Empirial.org/" target="_blank" ><img src="images/facebook.png" alt="Facebook"></a></li>
+          <li class="Gmail"><a href="https://www.madzivajephta@gmail.com" target="_blank" ><img src="images/gmail.png" alt=""></a></li>
+        </div>
+        <div class="pro">
+          <li class="LinkedIn"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+          <li class="Fiverr"><a href="http://www.fiverr.com/s2/9970162673" target="_blank" ><img src="images/fiverr.png" alt="Fiverr"></a></li>
+          <li class="Upwork"><a href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c0" target="_blank" ><img src="images/upwork.png" alt=""></a></li>
+        </div>
+      </nav>
+    </section>
   </body>
-</html> 
+</html>
