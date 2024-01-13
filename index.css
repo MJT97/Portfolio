@@ -378,7 +378,6 @@ img
     justify-content: center;
     align-items: center;
     padding: 20px 0px 20px  0px;
-    box-shadow: 0 0 10px var(--light-blue);
 }
 .soc img
 {
@@ -400,7 +399,6 @@ img
     justify-content: center;
     align-items: center;
     padding: 20px 0px 20px  0px;
-    box-shadow: 0 0 10px var(--light-blue);
 }
 .pro img
 {
