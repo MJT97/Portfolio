@@ -33,6 +33,7 @@ body
 #intro
 {
     margin: 5px;
+    height: 10vh;
     color: var(--dark-gold);
     display: flex;
     box-shadow: black 0 0 10px;
@@ -42,15 +43,18 @@ body
 {
     width: 50%;
     color: white;
-    font-size: x-large;
-    font-weight: bolder;
+    font-size: 900;
+    font-weight: 900;
     text-shadow: 0 0 20px white;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bar:hover
 {
-    font-size: x-large;
-    font-weight: bolder;
+    font-size: 900;
+    font-weight: 900;
     margin: 10px;
     transition: 0.25s;
 }
@@ -112,9 +116,14 @@ img
     width: 100%;
 }
 
+.banner
+{
+    height: fit-content;
+    margin: 10px;
+}
 .bio
 {
-    height: 70%;
+    height: 80%;
     width: 50%;
     margin: 10px;
     border-radius: 20px;
@@ -122,7 +131,7 @@ img
     font-family: var(--font-1);
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 20%;
     justify-content: center;
     border: solid var(--mid-blue);
     box-shadow: 0 0 25px var(--mid-blue);
@@ -155,7 +164,7 @@ img
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 10%;
 }
 .cv
 {
@@ -167,30 +176,8 @@ img
     text-shadow: 0 0 10px white;
     border-radius: 10px;
     font-size: 95%;
+    font-weight: bold;
 }
-.linkedin
-{
-    width: 30%;
-    border: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 10px white;
-    border-radius: 10px;
-}
-.whatsapp
-{
-    width: 30%;
-    border: solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 0 0 10px white;
-    border-radius: 10px;
-    font-size: 95%;
-    overflow: hidden;
-}
-
 #services
 {
     height: 100vh;
@@ -211,11 +198,12 @@ img
     align-items: center;
     width: 100%;
     border-radius: 20px;
+    font-size: 5vh;
 }
 .services
 {
     border-radius: 20px;
-    width: clamp(100%, 75%, 50%);
+    width: 95%;
     height: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +212,7 @@ img
 }
 .service
 {
-    width: 500px;
+    width: 100%;
     border-radius: 20px;
     margin: 10px;
     height: 90%;
@@ -244,26 +232,41 @@ img
 }
 .service img
 {
-    width: 50%;
+    height: 100%;
     filter: drop-shadow(0 0 10px white);
 }
 .service span
 {
-    width: 90%;
-    font-size: x-large;
+    border: solid;
+    width: 100%;
+    font-size: 3.5vh;
     font-weight: bold;
     color: var(--light-blue);
     text-shadow: var(--light-blue) 0 0 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
 }
 .service li
 {
     list-style-type: square;
     padding: 5px;
     font-weight: bold;
+    font-size: 2.5vh;
 }
+.service p
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .skills
 {
     height: 100vh;
+    width: 95vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,7 +295,7 @@ img
 }
 .skill
 {
-    width: 500px;
+    width: 100%;
     border-radius: 20px;
     margin: 10px;
     height: 50%;
@@ -300,38 +303,38 @@ img
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 .skill figure
 {
     display: flex;
     align-items: center;
-    height: 50%;
-    padding: 10px;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
-    justify-content: center;
-    gap: 10%;
-    margin-top: 10px;
+    justify-content: space-evenly;
+    height: 60%;
+    padding-top: 10px;
 }
 .skill figure li
 {
     list-style: none;
+    height: 100%;
 }
+
 .skill img
 {
-    width: 100px;
+    height: 100%;
     filter: drop-shadow(0 0 10px white);
 }
 .skill span
 {
     width: 90%;
-    font-size: x-large;
+    font-size: 5vw;
     font-weight: bold;
     color: var(--light-blue);
     text-shadow: var(--light-blue) 0 0 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .skill li
 {
@@ -353,7 +356,7 @@ img
 #contacts p
 {
     font-weight: bold;
-    font-size: larger;
+    font-size: 3vh;
     color: var(--light-blue);
     text-shadow: var(--light-blue) 0 0 10px;
     padding: 10px;
@@ -372,7 +375,8 @@ img
 .soc
 {
     border-radius: 20px;
-    width: 40%;
+    width: 50%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,6 +387,7 @@ img
 {
     width: 100px;
     filter: drop-shadow(0 0 10px var(--light-blue));
+    width: 20vh;
 }
 .soc li
 {
@@ -392,7 +397,8 @@ img
 }
 .pro
 {
-    width: 40%;
+    width: 50%;
+    height: 90%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -402,7 +408,7 @@ img
 }
 .pro img
 {
-    width: 100px;
+    width: 20vh;
     filter: drop-shadow(0 0 10px var(--light-blue));
 }
 .pro li
