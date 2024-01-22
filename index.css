@@ -169,11 +169,11 @@ img
 .cv
 {
     padding: 5px 10px 5px 10px;
-    border: solid;
+    box-shadow: 0 0 10px var(--light-blue);
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 0 0 10px white;
+    background-color: var(--mid-blue);
     border-radius: 10px;
     font-size: 95%;
     font-weight: bold;
@@ -224,7 +224,7 @@ img
 }
 .service figure
 {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 50%;
@@ -237,7 +237,6 @@ img
 }
 .service span
 {
-    border: solid;
     width: 100%;
     font-size: 3.5vh;
     font-weight: bold;
@@ -325,7 +324,7 @@ img
     height: 100%;
     filter: drop-shadow(0 0 10px white);
 }
-.skill span
+span
 {
     width: 90%;
     font-size: 5vw;
@@ -335,6 +334,7 @@ img
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 .skill li
 {
@@ -342,6 +342,92 @@ img
     padding: 5px;
     font-weight: bold;
 }
+
+#projects
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+.head
+{
+    text-shadow: 0 0 5px white;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 5vh;
+}
+.projects
+{
+    border-radius: 20px;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+.project
+{
+    width: 100%;
+    border-radius: 20px;
+    margin: 10px;
+    height: 95%;
+    box-shadow: white 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    align-items: center;
+    border: none;
+}
+.project figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    padding: 10px;
+}
+.project img
+{
+    height: 100%;
+    filter: drop-shadow(0 0 10px white);
+}
+.project span
+{
+    width: 100%;
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-shadow: var(--light-blue) 0 0 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.project li
+{
+    list-style-type: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+.project p
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #contacts
 {
