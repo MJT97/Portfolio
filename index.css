@@ -29,12 +29,16 @@ body
     color: white;
     font-family: var(--font-1);
     scroll-snap-type: y mandatory;
-    scroll-padding: 100vh;
+    scroll-padding: 100px;
 }
-
+body section
+{
+        scroll-snap-align: start;
+}
 
 @media screen and (min-width: 1000px)
 {
+    
     #intro
 {
     height: 90px;
@@ -224,35 +228,37 @@ img
     border-radius: 20px;
     font-size: 5vh;
 }
+
 .services
 {
     border-radius: 20px;
-    width: 100%;
     height: 90%;
-    overflow: scroll;
+    width: 98%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 200px ;
     display: flex;
-    flex-direction: row;
-    padding: 15px;
     gap: 10px;
 }
 .service
 {
-    width: 700px;
-    height: 100%;
+    scroll-snap-align: start;
+    height: 90%;
+    width: fit-content;
     display: flex;
     border-radius: 10px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
     box-shadow: white 0 0 10px;
+    margin: 10px;
 }
 .service figure
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 500px;
     padding: 10px;
 }
 .service img
@@ -263,6 +269,7 @@ img
 .service div
 {
     height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +278,7 @@ img
 .service span
 {
     width: 100%;
-    font-size: 100%;
+    font-size: x-large;
     font-weight: bold;
     color: var(--light-blue);
     text-shadow: var(--light-blue) 0 0 10px;
@@ -287,12 +294,12 @@ img
 }
 .skills
 {
-    height: 100vh;
+    height: 95vh;
     width: 95vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
@@ -300,56 +307,56 @@ img
 .cards
 {
     border-radius: 20px;
-    width: clamp(100%, 75%, 50%);
+    width: 100%;
     height: 90%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: scroll;
-}
-.cards
-{
-    width: 95%;
-    height: 95%;
-    display: flex;
-    justify-content: center;
-
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: start;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    scroll-padding: 300px;
 }
 .skill
 {
-    width: 100%;
+    width: fit-content;
     border-radius: 20px;
     margin: 10px;
-    height: 50%;
+    height: 90%;
     box-shadow: white 0 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 .skill figure
 {
     display: flex;
     align-items: center;
-    width: 100%;
     border-radius: 10px;
     justify-content: space-evenly;
-    height: 60%;
+    width: 100%;
+    height: 90%;
     padding-top: 10px;
 }
 .skill figure li
 {
     list-style: none;
-    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .skill img
 {
-    height: 100%;
+    height: 200px;
+    width: 200px;
     filter: drop-shadow(0 0 10px white);
 }
 span
 {
-    width: 90%;
+    width: 700px;
     font-size: 5vw;
     font-weight: bold;
     color: var(--light-blue);
@@ -368,12 +375,12 @@ span
 
 #projects
 {
-    height: 100vh;
+    height: 95vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
     scroll-snap-align: start;
@@ -393,26 +400,26 @@ span
 {
     border-radius: 20px;
     width: 95%;
-    height: 95%;
+    height: 80%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: scroll;
+    flex-direction: row;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    scroll-padding: 100px;
 }
 .project
 {
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
     margin: 10px;
     height: 95%;
     box-shadow: white 0 0 10px;
     display: flex;
-    border: solid;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: none;
-    flex-wrap: wrap;
     column-gap: 5%;
+    scroll-snap-align: start;
 }
 .project figure
 {
@@ -474,11 +481,13 @@ span
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
     scroll-snap-align: start;
+
 }
 #contacts p
 {
@@ -492,7 +501,7 @@ span
 {
     gap: 20px;
     width: 90%;
-    height: 80%;
+    height: 60%;
     border-radius: 20px;
     box-shadow: 0 0 10px var(--light-blue);
     display: flex;
@@ -505,8 +514,8 @@ span
     width: 50%;
     height: 90%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-evenly;
     align-items: center;
     padding: 20px 0px 20px  0px;
 }
@@ -528,8 +537,8 @@ span
     height: 90%;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-evenly;
     align-items: center;
     padding: 20px 0px 20px  0px;
 }
