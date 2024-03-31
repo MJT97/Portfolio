@@ -566,513 +566,532 @@ span
 @media screen and (max-width: 1000px) 
 {
     #intro
-        {
-            height: 50px;
-            display: flex;
-            margin-top: 10px;
-            color: var(--dark-gold);
-            scroll-snap-align: start;
-            box-shadow: black 0 0 10px;
-        }
+    {
+        height: 50px;
+        display: flex;
+        margin-top: 10px;
+        color: var(--dark-gold);
+        scroll-snap-align: start;
+        box-shadow: black 0 0 10px;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        backdrop-filter: blur(5px);
+    }
 
-        .bar
-        {
-            width: 25%;
-            margin: 10px;
-            display: flex;
-            color: white;
-            font-size: 1500;
-            font-weight: 900;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 20px white;
-        }
-        .bar:hover
-        {
-            margin: 10px;
-            font-size: 900;
-            font-weight: 900;
-            transition: 0.25s;
-        }
+    .bar
+    {
+        width: 25%;
+        margin: 10px;
+        display: flex;
+        color: white;
+        font-size: xxx-large;
+        font-family: var(--font-2-I);
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 0 20px white;
+    }
 
-        .tabs
-        {
-            width: 75%;
-            display: flex;
-            list-style: none;
-            align-items: center;
-            justify-content: center;
-        }
-        .tabs li
-        {
-            width: 30%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 80%;
-            text-shadow: 0 0 10px white;
-        }
-        .tabs a:hover
-        {
-            color: var(--light-blue);
-            font-weight: bold;
-            transition: 0.25s;
-            text-shadow: 0 0 10px var(--light-blue);
-        }
-        a
-        {
-            text-decoration: none;
-            color: white;
-        }
+    .tabs
+    {
+        width: 75%;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .tabs li
+    {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 80%;
+    }
+    .tabs a:hover
+    {
+        color: var(--light-blue);
+        font-weight: bold;
+        transition: 0.25s;
+        text-shadow: 0 0 10px var(--light-blue);
+    }
+    a
+    {
+        text-decoration: none;
+        color: white;
+        font-family: var(--font-2-I);
+        font-size: xx-large;
+    }
 
-        main
-        {
-            height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 20px black;
-            scroll-snap-align: start;
-        }
-        .pic
-        {
-            margin: 10px;
-            width: 500px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 0 30px var(--mid-blue);
-            background-color: var(--mid-blue);
-        }
+    main
+    {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+        scroll-snap-align: start;
+        padding-top: 50px;
+    }
+    .pic
+    {
+        margin: 10px;
+        width: 500px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 30px var(--mid-blue);
+        background-color: var(--mid-blue);
+    }
 
-        .banner
-        {
-            height: fit-content;
-            margin: 10px;
-        }
-        img
-        {
-            width: 100%;
-        }
-        .bio
-        {
-            height: 80%;
-            width: 1000px;
-            margin: 10px;
-            border-radius: 20px;
-            padding: 10px;
-            font-family: var(--font-1);
-            display: flex;
-            flex-direction: column;
-            gap: 20%;
-            justify-content: center;
-            border: solid var(--mid-blue);
-            box-shadow: 0 0 25px var(--mid-blue);
-            overflow: hidden;
-        }
-        .greet
-        {
-            font-size: larger;
-            font-weight: bold;
-            text-shadow: 0 0 20px white;
-            display: flex;
-            justify-content: center;
-        }
-        .name
-        {
-            font-size: xx-large;
-            font-weight: bolder;
-            color: var(--dark-gold);
-            text-shadow: 0 0 20px var(--dark-gold);
-            display: flex;
-            justify-content: center;
-        }
-        .wrap
-        {
-            padding: 0;
-            width: 100%;
-            height: 30px;
-            display: flex;
-            font-family: 'Times New Roman';
-            font-size: x-large;
-            font-weight: bold;
-            margin-bottom: 10px;
-            justify-content: center;
-            color: var(--light-blue);
-            text-shadow: 0 0 20px var(--light-blue);
-        }
-        .sum
-        {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-            font-size: x-large;
-        }
-        .docs
-        {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10%;
-        }
-        .cv
-        {
-            padding: 5px 10px 5px 10px;
-            box-shadow: 0 0 10px var(--light-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--mid-blue);
-            border-radius: 10px;
-            font-size: 95%;
-            font-weight: bold;
-        }
-        #services
-        {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 20px black;
-            scroll-snap-align: start;
-        }
-        .head
-        {
-            text-shadow: 0 0 5px white;
-            height: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            border-radius: 20px;
-            font-size: 5vh;
-        }
-        .services
-        {
-            border-radius: 20px;
-            width: 95%;
-            height: 90%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            overflow: scroll;
-            flex-direction: row;
-        }
-        .service
-        {
-            width: 100%;
-            border-radius: 20px;
-            margin: 10px;
-            height: 90%;
-            box-shadow: white 0 0 10px;
-            display: flex;
-            flex-direction: column;
-            border: solid;
-            align-items: center;
-        }
-        .service figure
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50%;
-            padding: 10px;
-        }
-        .service img
-        {
-            height: 100%;
-            filter: drop-shadow(0 0 10px white);
-        }
-        .service span
-        {
-            width: 100%;
-            font-size: 3.5vh;
-            font-weight: bold;
-            color: var(--light-blue);
-            text-shadow: var(--light-blue) 0 0 10px;
-            display:flex ;
-            justify-content: center;
-            align-items: center;
-        }
-        .service li
-        {
-            list-style-type: square;
-            padding: 5px;
-            font-weight: bold;
-            font-size: 2.5vh;
-        }
-        .service p
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+    .banner
+    {
+        height: fit-content;
+        margin: 10px;
+    }
+    img
+    {
+        width: 100%;
+    }
+    .bio
+    {
+        height: 80%;
+        width: 1000px;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: var(--font-1);
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+        justify-content: center;
+        border: solid var(--mid-blue);
+        box-shadow: 0 0 25px var(--mid-blue);
+        overflow: hidden;
+    }
+    .greet
+    {
+        font-size: larger;
+        font-weight: bold;
+        text-shadow: 0 0 20px white;
+        display: flex;
+        justify-content: center;
+    }
+    .name
+    {
+        font-size: xxx-large;
+        font-weight: bolder;
+        color: var(--gold);
+        text-shadow: 0 0 20px var(--dark-gold);
+        display: flex;
+        justify-content: center;
+        font-family: var(--font-2-I);
+    }
+    .wrap
+    {
+        padding: 0;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        font-family: var(--font-3-C);
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: 10px;
+        justify-content: center;
+        color: var(--light-blue);
+        text-shadow: 0 0 20px var(--light-blue);
+    }
+    .sum
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: xx-large;
+    }
+    .docs
+    {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+    .cv
+    {
+        padding: 5px 10px 5px 10px;
+        box-shadow: 0 0 10px var(--light-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--mid-blue);
+        border-radius: 10px;
+        font-size: 95%;
+        font-weight: bold;
+    }
+    #services
+    {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+        scroll-snap-align: start;
+    }
+    .head
+    {
+        text-shadow: 0 0 5px white;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 20px;
+        font-size: 5vh;
+    }
+    .services
+    {
+        border-radius: 20px;
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: scroll;
+        flex-direction: row;
+    }
+    .service
+    {
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: fit-content;
+        box-shadow: white 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 20px 0;
+    }
+    .service figure
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        padding: 10px;
+    }
+    .service img
+    {
+        height: 100%;
+        filter: drop-shadow(0 0 10px white);
+    }
+    .service span
+    {
+        width: 100%;
+        font-size: 3.5vh;
+        font-weight: bold;
+        color: var(--light-blue);
+        text-shadow: var(--light-blue) 0 0 10px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .mech
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service li
+    {
+        list-style-type: square;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
+    .service p
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-weight: bold;
+    }
 
-        .skills
-        {
-            height: 100vh;
-            width: 95vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 20px black;
-        }
-        .cards
-        {
-            border-radius: 20px;
-            width: clamp(100%, 75%, 50%);
-            height: 90%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            overflow: scroll;
-        }
-        .cards
-        {
-            width: 95%;
-            height: 95%;
-            display: flex;
-            justify-content: center;
+    .skills
+    {
+        height: 100vh;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+    }
+    .cards
+    {
+        border-radius: 20px;
+        width: clamp(100%, 75%, 50%);
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .cards
+    {
+        width: 95%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
 
-        }
-        .skill
-        {
-            width: 100%;
-            border-radius: 20px;
-            margin: 10px;
-            height: 50%;
-            box-shadow: white 0 0 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .skill figure
-        {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            border-radius: 10px;
-            justify-content: space-evenly;
-            height: 60%;
-            padding-top: 10px;
-        }
-        .skill figure li
-        {
-            list-style: none;
-            height: 70%;
-        }
+    }
+    .skill
+    {
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 50%;
+        box-shadow: white 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill figure
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        justify-content: space-evenly;
+        height: 60%;
+        padding-top: 10px;
+    }
+    .skill figure li
+    {
+        list-style: none;
+        height: 70%;
+    }
 
-        .skill img
-        {
-            height: 100%;
-            filter: drop-shadow(0 0 10px white);
-        }
-        span
-        {
-            width: 90%;
-            font-size: 5vw;
-            font-weight: bold;
-            color: var(--light-blue);
-            text-shadow: var(--light-blue) 0 0 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px;
-        }
-        .skill li
-        {
-            list-style-type: square;
-            padding: 5px;
-            font-weight: bold;
-        }
+    .skill img
+    {
+        height: 100%;
+        filter: drop-shadow(0 0 10px white);
+    }
+    span
+    {
+        width: 90%;
+        font-size: 5vw;
+        font-weight: bold;
+        color: var(--light-blue);
+        text-shadow: var(--light-blue) 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .skill li
+    {
+        list-style-type: square;
+        padding: 5px;
+        font-weight: bold;
+    }
 
-        #projects
-        {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 20px black;
-            scroll-snap-align: start;
-        }
-        .head
-        {
-            text-shadow: 0 0 5px white;
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            border-radius: 20px;
-            font-size: 5vh;
-        }
-        .projects
-        {
-            border-radius: 20px;
-            width: 95%;
-            height: 95%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            overflow: scroll;
-        }
-        .project
-        {
-            width: 100%;
-            border-radius: 20px;
-            margin: 10px;
-            height: 95%;
-            box-shadow: white 0 0 10px;
-            display: flex;
-            flex-direction: column;
-            border: solid;
-            align-items: center;
-            border: none;
-        }
-        .project figure
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50%;
-            padding: 10px;
-        }
-        .project img
-        {
-            height: 100%;
-            filter: drop-shadow(0 0 10px white);
-        }
-        
-        .project p
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .project span
-        {
-            width: 100%;
-            font-size: 3.5vh;
-            font-weight: bold;
-            color: var(--light-blue);
-            text-shadow: var(--light-blue) 0 0 10px;
-            display:flex ;
-            justify-content: center;
-            align-items: center;
-        }
-        .project li
-        {
-            list-style-type: none;
-            padding: 5px;
-            font-weight: bold;
-            font-size: 2.5vh;
-        }
-        .more
-        {
-            height: fit-content;
-            width: fit-content;
-            border: solid 1px var(--light-blue);
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 10px 0 10px;
-            margin: 10px;
-            font-size: 25px;
-            box-shadow: 0 0 20px 0 var(--light-blue);
-            text-shadow: none;
-            background-color: var(--light-blue);
-        }
-        #contacts
-        {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin: 10px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 20px black;
-            scroll-snap-align: start;
-        }
-        #contacts p
-        {
-            font-weight: bold;
-            font-size: 3vh;
-            color: var(--light-blue);
-            text-shadow: var(--light-blue) 0 0 10px;
-            padding: 10px;
-        }
-        .card
-        {
-            gap: 20px;
-            width: 90%;
-            height: 80%;
-            border-radius: 20px;
-            box-shadow: 0 0 10px var(--light-blue);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .soc
-        {
-            border-radius: 20px;
-            width: 50%;
-            height: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0px 20px  0px;
-            gap: 10vh;
-        }
-        .soc img
-        {
-            filter: drop-shadow(0 0 10px var(--light-blue));
-            width: 15vh;
-        }
-        .soc li
-        {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-        }
-        .pro
-        {
-            gap: 10vh;
-            width: 50%;
-            height: 90%;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0px 20px  0px;
-        }
-        .pro img
-        {
-            width: 15vh;
-            filter: drop-shadow(0 0 10px var(--light-blue));
-        }
-        .pro li
-        {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-        }
+    #projects
+    {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+        scroll-snap-align: start;
+    }
+    .head
+    {
+        text-shadow: 0 0 5px white;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 20px;
+        font-size: 5vh;
+    }
+    .projects
+    {
+        border-radius: 20px;
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .project
+    {
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: fit-content;
+        box-shadow: white 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        align-items: center;
+        justify-content: center;
+        border: none; 
+
+    }
+    .project figure
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .project img
+    {
+        height: 100%;
+        filter: drop-shadow(0 0 10px white);
+    }
+    
+    .project .p
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project p
+    {
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .project span
+    {
+        width: 100%;
+        font-size: 5vw;
+        font-weight: bold;
+        color: var(--light-blue);
+        text-shadow: var(--light-blue) 0 0 10px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .project li
+    {
+        list-style-type: none;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
+    .more
+    {
+        height: fit-content;
+        width: fit-content;
+        border: solid 1px var(--light-blue);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px 0 10px;
+        margin: 10px;
+        font-size: 25px;
+        box-shadow: 0 0 20px 0 var(--light-blue);
+        text-shadow: none;
+        background-color: var(--light-blue);
+        font-size: 2vh;
+        font-weight: bold;
+    }
+    #contacts
+    {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+        scroll-snap-align: start;
+    }
+    #contacts p
+    {
+        font-weight: bold;
+        font-size: 3vh;
+        color: var(--light-blue);
+        text-shadow: var(--light-blue) 0 0 10px;
+        padding: 10px;
+    }
+    .card
+    {
+        gap: 5px;
+        width: 90%;
+        height: 70%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px var(--light-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .soc
+    {
+        border-radius: 20px;
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 20px  0px;
+        gap: 10vh;
+    }
+    .soc img
+    {
+        filter: drop-shadow(0 0 10px var(--light-blue));
+        width: 15vh;
+    }
+    .soc li
+    {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .pro
+    {
+        gap: 10vh;
+        width: 50%;
+        height: 90%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 20px  0px;
+    }
+    .pro img
+    {
+        width: 15vh;
+        filter: drop-shadow(0 0 10px var(--light-blue));
+    }
+    .pro li
+    {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
 }
