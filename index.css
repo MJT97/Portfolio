@@ -21,6 +21,11 @@ html
     margin: 0px;
     padding: 0px;
 }
+img:hover
+{
+    transition: 0.25s;
+    transform:scale(1.1);
+}
 
 /*---General Settings---*/
 body
@@ -540,6 +545,12 @@ span
     display: flex;
     flex-direction: row;
 }
+.soc li:hover
+    {
+        transform: rotate(15deg);
+        transition: 0.25s;
+    }
+
 .pro
 {
     width: 50%;
@@ -562,6 +573,11 @@ span
     display: flex;
     flex-direction: row;
 }
+.pro li:hover
+    {
+        transform: rotate(15deg);
+        transition: 0.25s;
+    }
 }
 @media screen and (max-width: 1000px) 
 {
@@ -585,7 +601,7 @@ span
         margin: 10px;
         display: flex;
         color: white;
-        font-size: xxx-large;
+        font-size: 5vw;
         font-family: var(--font-2-I);
         font-weight: 900;
         align-items: center;
@@ -609,7 +625,6 @@ span
         justify-content: center;
         color: white;
         font-weight: bold;
-        font-size: 80%;
     }
     .tabs a:hover
     {
@@ -623,7 +638,7 @@ span
         text-decoration: none;
         color: white;
         font-family: var(--font-2-I);
-        font-size: xx-large;
+        font-size: 3.5vw;
     }
 
     main
@@ -676,7 +691,7 @@ span
     }
     .greet
     {
-        font-size: larger;
+        font-size: 3vw;
         font-weight: bold;
         text-shadow: 0 0 20px white;
         display: flex;
@@ -684,7 +699,7 @@ span
     }
     .name
     {
-        font-size: xxx-large;
+        font-size: 10vw;
         font-weight: bolder;
         color: var(--gold);
         text-shadow: 0 0 20px var(--dark-gold);
@@ -699,7 +714,7 @@ span
         height: 30px;
         display: flex;
         font-family: var(--font-3-C);
-        font-size: xx-large;
+        font-size: 6vw;
         font-weight: bold;
         margin-bottom: 10px;
         justify-content: center;
@@ -711,7 +726,7 @@ span
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
-        font-size: xx-large;
+        font-size: 3.5vw;
     }
     .docs
     {
@@ -754,7 +769,7 @@ span
         align-items: center;
         width: 100%;
         border-radius: 20px;
-        font-size: 5vh;
+        font-size: 5vw;
     }
     .services
     {
@@ -796,7 +811,7 @@ span
     .service span
     {
         width: 100%;
-        font-size: 3.5vh;
+        font-size: 5vw;
         font-weight: bold;
         color: var(--light-blue);
         text-shadow: var(--light-blue) 0 0 10px;
@@ -980,7 +995,7 @@ span
     }
     .project p
     {
-        font-size: 25px;
+        font-size: 3vw;
         font-weight: bold;
     }
     .project span
@@ -1072,6 +1087,11 @@ span
         display: flex;
         flex-direction: row;
     }
+    .soc li:hover
+    {
+        transform: rotate(15deg);
+        transition: 0.25s;
+    }
     .pro
     {
         gap: 10vh;
@@ -1094,5 +1114,10 @@ span
         list-style-type: none;
         display: flex;
         flex-direction: row;
+    }
+    .pro li:hover
+    {
+        transform: rotate(15deg);
+        transition: 0.25s;
     }
 }
