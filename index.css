@@ -6,6 +6,7 @@
     --light-blue: rgb(25, 25, 255);
     --font-1: Arial, Helvetica, sans-serif;
     --bio-img: url("bio background.png");
+    --banner-img: url("banner.gif");
     --gold: rgb(190, 180, 30);
     --intro-height: 10vh;
     --font-1-B: 'Bahnschrift';
@@ -15,6 +16,8 @@
 html
 {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 50px;
 }
 *
 {
@@ -26,6 +29,25 @@ img:hover
     transition: 0.25s;
     transform:scale(1.1);
 }
+#footer
+{
+    width: 90%;
+    height: 80px;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer img
+{
+    height: 70px;
+    width: 70px;
+}
+#footer p
+{
+    color: var(--gold);
+    font-weight: 600;
+}
 
 /*---General Settings---*/
 body
@@ -35,8 +57,6 @@ body
     font-size: large;
     color: white;
     font-family: var(--font-1);
-    scroll-snap-type: y mandatory;
-    scroll-padding: 100px;
 }
 body section
 {
@@ -62,8 +82,8 @@ body section
 {
     width: 30%;
     color: var(--gold);
-    font-size: xx-large;
-    font-family: Impact;
+    font-size: xxx-large;
+    font-family: var(--font-2-I);
     font-weight: 900;
     text-shadow: 0 0 10px var(--gold);
     margin: 10px;
@@ -96,8 +116,7 @@ body section
     color: white;
     font-weight: bold;
     font-size: large;
-    font-family: var(--font-2-I);
-    text-shadow: 0 0 10px white;
+    font-family: var(--font-1-B);
 }
 .tabs a:hover
 {
@@ -240,7 +259,7 @@ img
     width: 100%;
     border-radius: 20px;
     font-size: 5vh;
-    font-family: var(--font-2-I);
+    font-family: var(--font-1-B);
 }
 
 .services
@@ -333,7 +352,7 @@ img
 }
 .skill
 {
-    width: fit-content;
+    width: 70vw;
     border-radius: 20px;
     margin: 10px;
     height: 90%;
@@ -349,7 +368,7 @@ img
     align-items: center;
     border-radius: 10px;
     justify-content: space-evenly;
-    width: 100%;
+    width: 50vw;
     height: 90%;
     padding-top: 10px;
 }
@@ -370,21 +389,14 @@ img
 }
 span
 {
-    width: 700px;
-    font-size: 5vw;
+    width: 100%;
+    font-size: 50px;
     font-weight: bold;
     color: var(--light-blue);
-    text-shadow: var(--light-blue) 0 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-}
-.skill li
-{
-    list-style-type: square;
-    padding: 5px;
-    font-weight: bold;
 }
 
 #projects
