@@ -24,11 +24,65 @@ html
     margin: 0px;
     padding: 0px;
 }
+/*---ANIMATIONS---*/
+@keyframes  pulse/*Makes the object change size in a pulsating motion*/
+{
+    0%, 100%{transform: scale(0.95);}
+    50%{transform: scale(1);}
+    /*animation: pulse 2s ease-in-out infinite;*/
+}
+@keyframes bounce
+{
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    /*animation: bounce 2s ease-in-out infinite;*/
+}
+@keyframes revolution
+{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    /*animation: revolution 2s infinite linear;*/
+}
+@keyframes slidein
+{
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0);}
+    /*animation: slidein 2s forwards infinite;*/
+}
+@keyframes zoomfade
+{
+    0%
+    {
+        transform: scaleX(0.1);
+        opacity: 0;
+    }
+    50%
+    {
+        transform: scaleX(0.8);
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: translateX(1);
+        opacity: 1;
+    }
+}
+#intro
+{
+    z-index: 100;
+}
 img:hover
 {
     transition: 0.25s;
     transform:scale(1.1);
 }
+
+.pic
+{
+    padding: 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
 #footer
 {
     width: 90%;
@@ -62,7 +116,22 @@ body section
 {
         scroll-snap-align: start;
 }
-
+.tiktok
+{
+    height: 30px;
+    width: 30px;
+}
+.linkedin
+{
+    height: 30px;
+    width: 30px;
+}
+section
+{
+    animation: zoomfade linear;
+    animation-timeline: view();
+    animation-range: entry cover 40% ;
+}
 @media screen and (min-width: 1000px)
 {
     
