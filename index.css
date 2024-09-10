@@ -123,8 +123,7 @@ body
 img:hover
 {
     transition: 0.25s;
-    transform:scale(1.1);
-    position: relative;
+    transform:scale(1.2);
 }
 .bar
 {
