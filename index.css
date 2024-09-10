@@ -68,6 +68,12 @@ body
     100%{transform: translateX(0);}
     /*animation: slidein 2s forwards infinite;*/
 }
+@keyframes slideup
+{
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0);}
+    /*animation: slidein 2s forwards infinite;*/
+}
 @keyframes slideleft /*Slides In from the far Left*/
 {
     0%{transform: translateX(-100%);}
@@ -103,43 +109,64 @@ body
     80%{transform: translateY(-10%);}
     100%{transform: translateY(0);}
 }
+@keyframes slidedown
+{
+    0%{transform: translateY(-150%);}
+    100%{transform: translateY(0);}
+}
 #intro
 {
     z-index: 200;
-    animation: downbounce 1s forwards ease-in-out;
+/*    animation: downbounce 1s forwards ease-in-out;*/
 }
+
 img:hover
 {
     transition: 0.25s;
-    transform:sc1ale(1.5);
+    transform:scale(1.1);
+    position: relative;
 }
 .bar
 {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    justify-content: space-around;
+    animation: slideleft 1s forwards ease-in-out;
+    /*Animation-delay: time*/
 }
 .bar a
 {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items:center ;
     justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
 }
 .bar a img
 {
-    position: fixed;
     width: fit-content;
+    position: fixed;
     height: 80%;
     padding: 0;
     margin: 0;
     left: 0;
 }
-
+.tabs .serv
+{
+    animation: slideright 1s forwards ease-out;
+}
+.tabs .proj
+{
+    animation: slideright 1.5s forwards ease-out;
+}
+.tabs .cont
+{
+    animation: slideright 2s forwards ease-out;
+}
+*/
 /*#rings
 {
     position: fixed;   
@@ -193,16 +220,29 @@ img:hover
 }
 */
 
-.pic img
-{
-    animation: slideleft 1s ease-in;
-}
 .pic
 {
     padding: 0;
     animation: pulse 2s ease-in-out infinite;
-    background: linear-gradient(90deg, var(--dark-blue), var(--mid-blue), var(--dark-blue));;
+    background: linear-gradient(90deg, var(--dark-blue), var(--mid-blue), var(--dark-blue));
 }
+.pic img
+{
+    animation: slideleft 1s ease-in;
+    border-radius: 50%;
+}
+.pic img:hover
+{
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+.pic:hover
+{
+    overflow: visible;
+    background: linear-gradient(90deg, var(--dark-blue), var(--mid-blue), var(--dark-blue));
+}
+
+
 .bio
 {
     animation: slideright 1s ease-in;
@@ -436,7 +476,7 @@ section
         border-radius: 50%;
         overflow: hidden;
         box-shadow: 0 0 30px var(--mid-blue);
-        background-color: var(--mid-blue);
+        background: linear-gradient(90deg, var(--dark-blue), var(--mid-blue), var(--dark-blue));
     }
 
     .banner
@@ -518,20 +558,7 @@ section
         width: 50px;
         height: 50px;
     }
-    /*.cv
-    {
-        padding: 5px 10px 5px 10px;
-        box-shadow: 0 0 10px var(--light-blue);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        font-size: 95%;
-        font-weight: bold;
-        font-family: var(--font-3-C);
-        background: linear-gradient(to right, black, var(--dark-blue),  black);
-    }
-    */
+    
     #services
     {
         height: 100vh;
@@ -980,7 +1007,7 @@ section
         border-radius: 50%;
         overflow: hidden;
         box-shadow: 0 0 30px var(--mid-blue);
-        background-color: var(--mid-blue);
+        background: linear-gradient(90deg, var(--dark-blue), var(--mid-blue), var(--dark-blue));
     }
     #rings
     {
@@ -1105,19 +1132,8 @@ section
     {
         width: 50px;
         height: 50px;
+        animation: slideup 1s forwards ease-in-out;
     }
-    /*.cv
-    {
-        padding: 5px 10px 5px 10px;
-        box-shadow: 0 0 10px var(--light-blue);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--mid-blue);
-        border-radius: 10px;
-        font-size: 95%;
-        font-weight: bold;
-    }*/
     #services
     {
         height: 100vh;
