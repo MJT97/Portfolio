@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    
+	<head>
       <link rel="website icon" type="png" href="images/Gold_Seal.png">
         <meta charset="utf-8">
         <meta name="MJT" content="Portfolio">
@@ -10,7 +11,12 @@
     </head>
 
   <body>
-    
+    <!--
+      <fieldset id="bg">
+      <img class="symbol" src="Logo/MJT_Logo_First-Draft.png" alt="">
+      <img class="mj" src="Logo/JEPHTA MADZIVA No Glow.png" alt="">
+      </fieldset>
+    -->    
     <header id="intro">
       <div class="bar"><a href="index.html"><img src="Logo/JEPHTA No Glow.png" alt=""></a><!--Icons/Round Seal Logo Engraving.svg--></div>
       <div class="tabs">
@@ -23,13 +29,13 @@
       <figure class="pic">
         <img src= "Madziva_Jephta_Photo.png" alt="picture">
       </figure>
-      <!--
+
           <div id="rings">
           <li class="ring1"></li>
           <li class="ring2"></li>
           <li class="ring3"></li>
         </div>
-      -->
+
       <article class="bio">
         <p class="greet">Hi, I'm</p>
         <p class="name"><img src="Logo/JEPHTA MADZIVA No Glow.png" alt=""></p>
@@ -54,7 +60,7 @@
           <figure>
             <img src="Icons/Mechtronics Neon Icon.png" alt="Mechatronics">
           </figure>
-          <div class="mech">
+          <div class="detail mech">
             <span class="header">Mechatronic Project Design</span>
             <p>Full Projects</p>
             <p>IOT Projects</p>
@@ -77,7 +83,7 @@
           <figure>
             <img src="Icons/CAD_icon.png" alt="3D CAD">
           </figure>
-          <div class="3d">
+          <div class="detail 3d">
             <span class="header">3D CAD|CAM</span>
             <p>Full Projects</p>
             <p>3D Parts & Assemblies</p>
@@ -91,7 +97,7 @@
           <figure>
             <img src="Icons/Graphics_Icon.png" alt="Graphics">
           </figure>
-          <div class="3d">
+          <div class="detail 3d">
             <span class="header">GRAPHIC DESIGN</span>
             <p>Full Projects</p>
             <p>Banners</p>
@@ -105,7 +111,7 @@
           <figure>
             <img src="Icons/Web_icon.png" alt="Front-End Development">
           </figure>
-          <div class="FED">
+          <div class="detail FED">
             <span class="header">FRONT-END DEVELOPMENT</span>
             <p>Full Projects</p>
             <p></p>
@@ -123,50 +129,80 @@
             <li><img src="images/proteus.png" alt="proteus"></li>
             <li><img src="images/altium.png" alt="altium"></li>
           </figure>
-          <span>PCB DESIGN</span>
-          <p></p>
+          <span class="text">PCB DESIGN</span>
+          <span id="category">
+            <p class="cat cat-one"></p>
+            <p class="cat cat-two"></p>
+          </span>
+
         </div>
         <div class="skill">
           <figure class="CIRCUIT">
             <li><img src="images/kicad.png" alt="kicad"></li>
             <li><img src="images/proteus.png" alt="proteus"></li>
           </figure>
-          <span>CIRCUIT DESIGN & SIM</span>
-          <p></p>
+          <span class="text">
+            <p>CIRCUIT DESIGN</p>
+          </span>
+          <span id="category">
+            <p class="cat cat-one"></p>  
+            <p class="cat cat-two"></p>
+          </span>
         </div>
+
         <div class="skill">
           <figure class="CODE">
             <li><img src="images/arduino.png" alt="arduino"></li>
             <li><img src="images/mplabx.png" alt="mplabx"></li>
           </figure>
-          <span>FIRMWARE DEVELOPMENT</span>
-          <p></p>
+          <span class="text">
+            <p>FIRMWARE DEV</p>
+          </span>
+          <span id="category">
+            <p class="cat cat-one"></p>
+            <p class="cat cat-two"></p> 
+          </span>
         </div>
+
         <div class="skill">
           <figure class="CAD">
             <li><img src="images/FreeCAD.png" alt="freecad"></li>
             <li><img src="images/solidworks.png" alt="solidworks"></li>
             <li><img src="images/fusion360.png" alt="fusion360"></li>
           </figure>
-          <span>CAD | CAM</span>
-          <p></p>
+          <span class="text">3D CAD</p></span>
+          <span id="category">
+            <p class="cat cat-one"></p>
+            <p class="cat cat-two"></p>
+          </span>
         </div>
+
         <div class="skill">
           <figure class="WEB">
             <li><img src="images/Visual Studio Code.png" alt="vs"></li>
             <li><img src="images/html-5.png" alt="html"></li>
             <li><img src="images/css3.png" alt="css3"></li>
           </figure>
-          <span>WEB DEV</span>
-          <p></p>
+
+          <span class="text">WEB DEV</span>
+          
+          <span id="category">
+            <p class="cat cat-one"></p>
+            <p class="cat cat-two"></p>  
+          </span>
         </div>
         <div class="skill">
           <figure class="GRAPHIC">
             <li><img src="images/GIMP.png" alt="gimp"></li>
             <li><img src="images/inkscape.png" alt="inkscape"></li>
           </figure>
-          <span>GRAPHIC DESIGN</span>
-          <p></p>
+          
+          <span class="text">GRAPHIC DESIGN</span>
+          
+          <span id="category">
+            <p class="cat cat-one"></p>
+            <p class="cat cat-two"></p>  
+          </span>
         </div>
       </nav>
     </section>
@@ -192,6 +228,7 @@
           <figure><img src="images/Labyrinth_Key.svg" alt="HomeAuto"></figure>
           <div class="p">
             <span class="header">ACCOUNTANCY WEBSITE[CFS]</span>
+            <p>CRESTLINE FINANCIAL SERVICES</p>
             <p>ACCOUNTANCY WEBSITE</p>
             <p>LOGOs</p>
             <p>FLYERS & BANNERS</p>
@@ -348,5 +385,54 @@
       <p class="id">JEPHTA MADZIVA</p>
     </footer>
 
+      <ul class="left part">
+        <li class="l-first"></li>
+        <li class="l-second"></li>
+        <li class="l-third"></li>
+        <li class="l-forth"></li>
+        <li class="l-fifth"></li>
+        <li class="l-sixth"></li>
+        <li class="l-seventh"></li>
+        <li class="l-eighth"></li>
+        <li class="l-nineth"></li>
+        <li class="l-tenth"></li>
+      </ul>
+
+      <ul class="right part">
+        <li class="r-first"></li>
+        <li class="r-second"></li>
+        <li class="r-third"></li>
+        <li class="r-forth"></li>
+        <li class="r-fifth"></li>
+        <li class="r-sixth"></li>
+        <li class="r-seventh"></li>
+        <li class="r-eighth"></li>
+        <li class="r-nineth"></li>
+        <li class="r-tenth"></li>
+      </ul>
+      <ul class="top part">
+        <li class="t-first"></li>
+        <li class="t-second"></li>
+        <li class="t-third"></li>
+        <li class="t-forth"></li>
+        <li class="t-fifth"></li>
+        <li class="t-sixth"></li>
+        <li class="t-seventh"></li>
+        <li class="t-eighth"></li>
+        <li class="t-nineth"></li>
+        <li class="t-tenth"></li>
+      </ul>
+      <ul class="bottom part">
+        <li class="b-first"></li>
+        <li class="b-second"></li>
+        <li class="b-third"></li>
+        <li class="b-forth"></li>
+        <li class="b-fifth"></li>
+        <li class="b-sixth"></li>
+        <li class="b-seventh"></li>
+        <li class="b-eighth"></li>
+        <li class="b-nineth"></li>
+        <li class="b-tenth"></li>
+      </ul>
   </body>
 </html>
