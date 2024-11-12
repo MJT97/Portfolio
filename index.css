@@ -1822,8 +1822,7 @@ section
     }
     .top
     {
-        z-index: 250;
-        height: fit-content;
+        display: none;
     }
     .t-second
     {
