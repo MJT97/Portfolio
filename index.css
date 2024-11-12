@@ -1820,6 +1820,11 @@ section
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+    .top
+    {
+        z-index: 250;
+        height: fit-content;
+    }
     .t-second
     {
         top: 0;
@@ -1846,7 +1851,7 @@ section
         left: 2.5%;
         width: 95%;
         height: 50px;
-        z-index: 10;
+        z-index: 200;
         display: flex;
         position: fixed;
         flex-direction: row;
@@ -1924,7 +1929,6 @@ section
         font-size: 3.5vw;
         text-decoration: none;
     }
-
 
     main
     {
