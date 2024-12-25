@@ -1,3 +1,24 @@
+function search()
+{
+    let filter = document.getElementById('find').ariaValueMax.toUpperCase();
+    let item = document.querySelectorAll('.product');
+    let l = document.getElementsByTagName('div');
+    for(var i=0; i<=l.length;i++)
+    {
+        let a=item[i].getElementsByTagName('div')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+
+        if(value.toUpperCase().indexOf(filter) > -1)
+        {
+            item[i].style.display="";
+        }
+        else
+        {
+            item[i].style.display="none";
+        }
+    }
+}
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -53,4 +74,4 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};
+}; 
