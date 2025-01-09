@@ -11,18 +11,14 @@
     </head>
 
   <body>
-    <!--
-      <fieldset id="bg">
-      <img class="symbol" src="Logo/MJT_Logo_First-Draft.png" alt="">
-      <img class="mj" src="Logo/JEPHTA MADZIVA No Glow.png" alt="">
-      </fieldset>
-    -->    
+        
     <header id="intro">
       <div class="bar">
         <!--Icons/Round Seal Logo Engraving.svg-->
         <span class="img"><img src="Logo/JEPHTA No Glow.png" alt=""></span>
         <span class="sign"><img src="Logo/MJT_Logo_First-Draft.png" alt=""></span>
-        <span class="bar-one"></span><span class="bar-two"></span>
+        <span class="bar-one"></span>
+        <span class="bar-two"></span>
       </div>
       <div class="tabs">
         <li class="serv"><a href="#services">SERVICES</a></li>        
@@ -43,10 +39,13 @@
       <img class="signature" src="Logo/Signature_grad1.png" alt="">
     </div>
 
+    
+
     <main class="banner"> 
       <figure class="pic">
         <img src= "Madziva_Jephta_Photo.png" alt="picture">
       </figure>
+      <div class="ring"></div>
 
       <div id="rings">
         <li class="ring1"><img src="Graphics/Load Ring 1.png" alt=""></li>
@@ -83,13 +82,11 @@
 
       <div class="touch">
       </div>
-      
-      <div class="docs">
+      <div class="socials">
         <li class="cv"><a href="MADZIVA_J_CV.pdf" target="_blank"><img src="Icons/CV_icon.png" alt="CV"></a><p id="note">Download CV</p></li>
         <li class="linkedin"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img src="Icons/LinkedIn.png" alt="LinkedIn"></a><p id="note">View on LinkedIn</p></li>
         <li class="wa"><a href="https://wa.me/message/UJYLYBIVTWBWL1" target="_blank"><img src="Icons/WhatsApp_Gold.png" alt="WhatsApp"></a><p id="note">Chat on WhatsApp</p></li>
       </div>
-
       <div class="docs-bg">
         <span class="p1"></span>
         <span class="p2"></span>
@@ -111,7 +108,6 @@
           <span class="blur blue"></span>
           <span class="blur gold"></span>
           <span class="blur white"></span>
-          
       </div>
       <div  id="pcb" popover>
         <span class="pop">
@@ -132,7 +128,7 @@
             <span class="pop_one"></span>
             <span class="pop_two"></span>
           </div>
-          <div class="down"><a href="#projects">PROJECTS</a></div>
+          <a class="more" href="#projects">PROJECTS<img class="icon" src="Icons/link_icon.svg" alt=""></a>
         </span>
       </div>
       <div  id="plg" popover>
@@ -154,7 +150,7 @@
             <span class="pop_one"></span>
             <span class="pop_two"></span>
           </div>
-          <div class="down"><a href="#projects">PROJECTS</a></div>
+          <a class="more" href="#projects">PROJECTS<img class="icon" src="Icons/link_icon.svg" alt=""></a>
         </span>
       </div>  
       <div  id="pcd" popover>
@@ -176,7 +172,7 @@
             <span class="pop_one"></span>
             <span class="pop_two"></span>
           </div>
-          <div class="down"><a href="#projects">PROJECTS</a></div>
+          <a class="more" href="#projects">PROJECTS<img class="icon" src="Icons/link_icon.svg" alt=""></a>
         </span>
       </div> 
       <div  id="pcf" popover>
@@ -196,7 +192,7 @@
             <span class="pop_one"></span>
             <span class="pop_two"></span>
           </div>
-          <div class="down"><a href="#projects">PROJECTS</a></div>
+          <a class="more" href="#projects">PROJECTS<img class="icon" src="Icons/link_icon.svg" alt=""></a>
         </span>
       </div> 
       <div  id="pws" popover>
@@ -218,7 +214,7 @@
             <span class="pop_one"></span>
             <span class="pop_two"></span>
           </div>
-          <div class="down"><a href="#projects">PROJECTS</a></div>
+          <a class="more" href="#projects">PROJECTS<img class="icon" src="Icons/link_icon.svg" alt=""></a>
         </span>
       </div> 
     </main>
@@ -226,37 +222,77 @@
     <div class="gap"></div>
     
     <section id="services">
-      <h1 class="head">What I do</h1>
-      <nav class="services">
-        <div class="service">
+      <span>WHAT I DO</span>
+      <div class="ring"></div>
+      <div class="icons">
+        <div class="row rone">
+          <button id="name" popovertarget="mech">
+            <img src="Icons/Mechtronics Neon Icon.svg" alt="Mechatronics">
+            <div class="det">MECHATRONICS</div>
+            <div class="send">more ></div>
+          </button>
+          <button id="name" popovertarget="elec">
+            <img src="Icons/Electronics_Icon.svg" alt="Electronics">
+            <div class="det">ELECTRONICS</div>
+            <div class="send">more ></div>
+          </button>
+          <button id="name" popovertarget="cad">
+            <img src="Icons/CAD_icon.svg" alt="3D CAD">
+            <div class="det">3D CAD</div>
+            <div class="send">more ></div>
+          </button>
+        </div>
+        <div class="row rtwo">
+          <button id="name" popovertarget="web">
+            <img src="Icons/Web_icon.svg" alt="Web Development">
+            <div class="det">WEB DEV</div>
+            <div class="send">more ></div>
+          </button>
+          </button>
+          <button id="name" popovertarget="graphic">
+            <img src="Icons/Graphics_Icon.svg" alt="Brand Designing">
+            <div class="det">BRANDING</div>
+            <div class="send">more ></div>
+          </button>
+        </div>
+      
+        <div id="mech" class="pops" popover>
           <figure>
             <img src="Icons/Mechtronics Neon Icon.png" alt="Mechatronics">
           </figure>
+          <div class="header">MECHATRONICS</div>
           <div class="detail mech">
-            <span class="header">Mechatronic Project Design</span>
             <p>Full Projects</p>
             <p>IOT Projects</p>
             <p>BT|LORA Projects</p>
             <p>Home Automation</p>
             <p>Power|Energy Projects</p>
           </div>
+          <div class="links">
+            <li class="link">INQUIRE</li>
+            <li class="link">HIRE ME</li>
+          </div>
         </div>
-        <div class="service">
+        <div id="elec"  popover>
           <figure><img src="Icons/Electronics_Icon.png" alt="Electronics"></figure>
-          <div class="graphic">
-            <span class="header">Electronic Engineering</span>
+          <div class="header">Electronic Engineering</div>
+          <div class="detail graphic">
             <p>PCB Design</p>
             <p>Firmware Development</p>
             <p>Reverse Engineering</p>
             <p>Circuit Design & Simulation</p>
           </div>
+          <div class="links">
+            <li class="link">INQUIRE</li>
+            <li class="link">HIRE ME</li>
+          </div>
         </div>
-        <div class="service">
+        <div id="cad" popover>
           <figure>
             <img src="Icons/CAD_icon.png" alt="3D CAD">
           </figure>
+          <div class="header">3D CAD|CAM</div>
           <div class="detail 3d">
-            <span class="header">3D CAD|CAM</span>
             <p>Full Projects</p>
             <p>3D Parts & Assemblies</p>
             <p>Production Drawings</p>
@@ -264,13 +300,17 @@
             <p>Simulation & Animations</p>
             <p>STEP, STL & Mesh Conversion</p>
           </div>
+          <div class="links">
+            <li class="link">INQUIRE</li>
+            <li class="link">HIRE ME</li>
+          </div>
         </div>
-        <div class="service">
+        <div id="graphic" popover>
           <figure>
             <img src="Icons/Graphics_Icon.png" alt="Graphics">
           </figure>
+          <div class="header">GRAPHIC DESIGN</div>
           <div class="detail 3d">
-            <span class="header">GRAPHIC DESIGN</span>
             <p>Full Projects</p>
             <p>Banners</p>
             <p>Logos</p>
@@ -278,19 +318,30 @@
             <p>Signage</p>
             <p>Wedding, Gift Cards etc</p>
           </div>
+          <div class="links">
+            <li class="link">INQUIRE</li>
+            <li class="link">HIRE ME</li>
+          </div>
         </div>
-        <div class="service">
+        <div id="web" popover>
           <figure>
             <img src="Icons/Web_icon.png" alt="Front-End Development">
           </figure>
+          <div class="header">FRONT-END DEVELOPMENT</div>
           <div class="detail FED">
-            <span class="header">FRONT-END DEVELOPMENT</span>
-            <p>Full Projects</p>
-            <p></p>
+            <p>Landing Page</p>
+            <p>SEO</p>
+            <P>Domain & Hosting</P>
+            <p>Portfolio Website</p>
           </div>
-        </div>
-      </nav>
+          <div class="links">
+            <li class="link">INQUIRE</li>
+            <li class="link">HIRE ME</li>
+          </div>
+        </div> 
+      </div>
     </section>
+   
     
     <section class="skills">
       <h1 class="head">What I'm good at</h1>
@@ -546,7 +597,7 @@
         </div>
         <div class="pro">
           <li class="Fiverr"><a href="http://www.fiverr.com/s2/9970162673" target="_blank" ><img src="Icons/Fiverr_icon.png" alt="Fiverr"></a></li>
-          <li class="Behance"><a href="https://www.behance.net/japhethmadziva" target="_blank" ><img src="Icons/" alt=""></a></li>
+          <li class="Behance"><a href="https://www.behance.net/japhethmadziva" target="_blank" ><img src="Icons/Behance_icon.svg" alt=""></a></li>
           <li class="Upwork"><a href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c0" target="_blank" ><img src="Icons/Upwork_icon.png" alt=""></a></li>
         </div>
       </nav>
