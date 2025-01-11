@@ -147,6 +147,157 @@ body
         transform: translateY(-150dvh);
     }
 }
+/*@keyframes WEBLoad 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}*/
+@keyframes kicad 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
+    90% {background: conic-gradient(blue 270deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes proteus 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes altium 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+}
+@keyframes arduino 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes mplab
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes fcad 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes solidworks
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes f360
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes vsc
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+}
+@keyframes html
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
+    90% {background: conic-gradient(blue 270deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes css 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}
+    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes inkscape 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
+    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
+}
+@keyframes gimp 
+{
+    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
+    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
+    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
+    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
+    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
+    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
+}
 #borders
 {
     position: fixed;
@@ -804,14 +955,15 @@ section
     font-family: var(--font-1-B);
 
 }
-.links :nth-child(1)
+.links :nth-child(2)
 {
+    padding: 0 10px;
     background-color: blue;   
     box-shadow: 0 0 5px 1px blu e; 
 }
-.links :nth-child(2)
+.links :nth-child(1)
 {
-    box-shadow: 0 0 5px 1px white;
+    box-shadow: 0 0 10px 1px white;
     background-color: white;
     border: solid white;
     color: blue;
@@ -848,7 +1000,109 @@ section
     background: var(--linear-gold-gradient);
 }
 
+.skill figure li
+{
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid blue;
+    box-shadow: 0 0 10px 5px blue;
+}
+.skill .kicad
+{
+    background: conic-gradient(rgb(18, 18, 255) 270deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: kicad 5s forwards ease-in-out;
+}
+.skill .proteus
+{
+    background: conic-gradient(rgb(18, 18, 255) 240deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: proteus 5s forwards ease-in-out;
+}
+.skill .altium
+{
+    background: conic-gradient(rgb(18, 18, 255) 120deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: altium 5s forwards ease-in-out;
+}
+.skill .arduino
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: arduino 5s forwards ease-in-out;
+}
+.skill .mplab
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: mplab 5s forwards ease-in-out;
+}
+.skill .fcad
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: fcad 5s forwards ease-in-out;
+}
+.skill .solidworks
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: solidworks 5s forwards ease-in-out;
+}
+.skill .f360
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: f360 5s forwards ease-in-out;
+}
 
+
+.skill .vsc
+{
+    background: conic-gradient(rgb(18, 18, 255) 180deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: vsc 5s forwards ease-in-out;
+}
+.skill .html
+{
+    background: conic-gradient(rgb(18, 18, 255) 270deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: html 5s forwards ease-in-out;
+}
+.skill .css
+{
+    background: conic-gradient(rgb(18, 18, 255) 240deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: css 5s forwards ease-in-out;
+}
+.skill .gimp
+{
+    background: conic-gradient(rgb(18, 18, 255) 150deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: gimp 5s forwards ease-in-out;
+}
+.skill .inkscape
+{
+    background: conic-gradient(rgb(18, 18, 255) 210deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: inkscape 5s forwards ease-in-out;
+}
+.skill .kicad
+{
+    background: conic-gradient(rgb(18, 18, 255) 270deg, rgba(255, 255, 255, 0.1)  0deg);
+    animation: kicad 5s forwards ease-in-out;
+}
+.skill figure li::before
+{
+    content: "";
+    height: 80%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+}
+.skill figure li img
+{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+.skill figure li .ki
+{
+    height: 50%;
+    width: 50%;
+}
 
 @media screen and (min-width: 1000px)
 {   
@@ -1758,12 +2012,6 @@ section
         justify-content: space-evenly;
     }
 
-    .skill img
-    {
-        width: 100%;
-        aspect-ratio: 1/1;
-        filter: drop-shadow(0 0 10px white);
-    }
     span
     {
         width: 100%;
@@ -2491,11 +2739,6 @@ section
         aspect-ratio: 1/1;
     }
 
-    .skill img
-    {
-        height: 100%;
-        filter: drop-shadow(0 0 10px white);
-    }
     .text
     {
         width: 100%;
@@ -2594,13 +2837,13 @@ section
     .project span
     {
         width: 100%;
-        display:flex ;
+        display:flex;
         font-size: 5vw;
-        font-weight: bold;
+        font-weight: bolder;
         align-items: center;
         justify-content: center;
-        color: var(--light-blue);
-        text-shadow: var(--light-blue) 0 0 10px;
+        color: var(--dark-blue);
+        background-color: white;
     }
     .project li
     {
