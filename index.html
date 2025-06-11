@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     
-  <head>
+	<head>
     <link rel="website icon" type="png" href="images/Gold_Seal.png">
     <meta charset="utf-8">
     <meta name="MJT" content="width=device-width, initial-scale=1.0, Our Services: Mechatronics | Branding | Web development." media="screen">
     <title>JEPHTA MADZIVA - Portfolio Website</title>
-	  <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZXPTYHX9G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-FZXPTYHX9G');
-	</script>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen">
     <script type="text/javascript" src="index.js"></script>
   </head>
@@ -39,7 +30,6 @@
       </div>-->
 
     </header>
-
     <div class="intro-bg">
       <div class="in-one"></div>
       <div class="in-two"></div>
@@ -156,7 +146,10 @@
       <div id="rings">
         <li class="ring1"><img src="Graphics/Load Ring 1.png" alt=""></li>
         <li class="ring2"><img src="Graphics/Load Ring 1.png" alt=""></li>
-        <li class="ring3"><img src="Graphics/Load Ring 1.png" alt=""></li>
+        <li class="ring3">
+          <div class="counter">
+          <div class="count">00</div>
+        </div></li>
       </div>
 
       <article class="bio">
@@ -209,83 +202,127 @@
     
     <section id="services">
       <span>WHAT I DO</span>
-      <div class="ring"></div>
+      <div class="serv-bg">
+        <li class="serv-tile st1"></li>
+        <li class="serv-tile st2"></li>
+        <li class="serv-tile st3"></li>
+      </div>
       <div class="icons">
-        <div class="row rone">
-          <button id="name" popovertarget="mech">
-            <img src="Icons/Mechtronics Neon Icon.svg" alt="Mechatronics">
-            <div class="det">MECHATRONICS</div>
-            <div class="send">more ></div>
-          </button>
-          <button id="name" popovertarget="elec">
-            <img src="Icons/Electronics_Icon.svg" alt="Electronics">
-            <div class="det">ELECTRONICS</div>
-            <div class="send">more ></div>
-          </button>
-          <button id="name" popovertarget="cad">
-            <img src="Icons/CAD_icon.svg" alt="3D CAD">
-            <div class="det">3D CAD</div>
-            <div class="send">more ></div>
-          </button>
-        </div>
-        <div class="row rtwo">
-          <button id="name" popovertarget="web">
+        <button id="name" popovertarget="mech">
+          <img src="Icons/Mechtronics Neon Icon.svg" alt="Mechatronics">
+          <div class="det">MECHATRONICS</div>
+          <div class="send">more ></div>
+        </button>
+        <button id="name" popovertarget="web">
             <img src="Icons/Web_icon.svg" alt="Web Development">
             <div class="det">WEB DEV</div>
             <div class="send">more ></div>
-          </button>
-          </button>
-          <button id="name" popovertarget="graphic">
-            <img src="Icons/Graphics_Icon.svg" alt="Brand Designing">
-            <div class="det">BRANDING</div>
-            <div class="send">more ></div>
-          </button>
-        </div>
-      
+        </button>
+        <button id="name" popovertarget="graphic">
+          <img src="Icons/Graphics_Icon.svg" alt="Brand Designing">
+          <div class="det">BRANDING</div>
+          <div class="send">more ></div>
+        </button>
+        <button id="name" popovertarget="cad">
+          <img src="Icons/CAD_icon.svg" alt="3D CAD">
+          <div class="det">3D CAD</div>
+          <div class="send">more ></div>
+        </button>
         <div id="mech" class="pops" popover>
           <button id="x-btn" popovertarget="mech" popovertargetaction="hide">X</button>
           <div class="header">MECHATRONICS</div>
           <div class="detail mech">
-            <p>Full Projects</p>
-            <p>IOT Projects</p>
-            <p>BT|LORA Projects</p>
-            <p>Home Automation</p>
-            <p>Power|Energy Projects</p>
+              <li>Custom PCB Design & Prototyping</li>
+              <li>Embedded Systems & Firmware Development</li>
+              <li>IoT Device Development</li>
+              <li>Robotics & Automation Solutions</li>
           </div>
-          <div class="slide"></div>
+          <div class="slide">
+            <li class="serv-info sf1">
+              <h3>COMPLETED</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <p>5+ Projects</p>
+            </li>
+            <li class="serv-info sf2">
+              <h3>AVG DURATION</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <p>1 Month per project</p>
+            </li>
+            <li class="serv-info sf3">
+              <h3>EXPERIENCE</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12l-10-5L2 12l10 5 10-5z" />
+                <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
+                <path d="M12 17v5" />
+              </svg>
+              <p>4+ Years</p>
+            </li>
+            <li class="serv-info sf4">
+              <h3>SOFTWARE</h3>
+              <ul class="softs">
+                <li>KiCAD</li>
+                <li>Proteus</li>
+                <li>EasyEDA</li>
+                <li>Altium Designer</li>
+              </ul>
+              <a href="#skills">skills <p class="skl-link">></p></a>
+            </li>
+          </div>
           <div class="links">
-            <a class="link" href="#contacts">INQUIRE</a>
+            <a class="link" href="#contacts" >INQUIRE</a>
             <a class="link" href="#projects">PROJECTS</a>
           </div>
         </div>
-        <div id="elec" class="pops"  popover>
-          <button id="x-btn" popovertarget="elec" popovertargetaction="hide">X</button>
-          <div class="header">Electronic Engineering</div>
-          <div class="detail graphic">
-            <p>PCB Design</p>
-            <p>Firmware Development</p>
-            <p>Reverse Engineering</p>
-            <p>Circuit Design & Simulation</p>
-          </div>
-          <div class="slide"></div>
-          <div class="links">
-            <a class="link" href="#contacts">INQUIRE</a>
-            <a class="link" href="#projects">PROJECTS</a>
-          </div>
-        </div>
-        
         <div class="pops" id="cad" popover>
           <button id="x-btn" popovertarget="cad" popovertargetaction="hide">X</button>
           <div class="header">3D CAD|CAM</div>
           <div class="detail 3d">
-            <p>Full Projects</p>
-            <p>3D Parts & Assemblies</p>
-            <p>Production Drawings</p>
-            <p>Sheet Metal Works</p>
-            <p>Simulation & Animations</p>
-            <p>STEP, STL & Mesh Conversion</p>
+            <li>3D CAD Modeling & Visualization</li>
+            <li>Product Design & Industrial Concepts</li>
+            <li>Technical Drafting & Engineering Drawings</li>
+            <li>Sheet Metal Works</li>
+            <li>Simulation & Animations</li>
+            <li>STEP, STL & Mesh Conversion</li>
           </div>
-          <div class="slide"></div>
+          <div class="slide">
+            <li class="serv-info sf1">
+              <h3>COMPLETED</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <p>3+ Projects</p>
+            </li>
+            <li class="serv-info sf2">
+              <h3>AVG DURATION</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <p>2 Month per project</p>
+            </li>
+            <li class="serv-info sf3">
+              <h3>EXPERIENCE</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12l-10-5L2 12l10 5 10-5z" />
+                <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
+                <path d="M12 17v5" />
+              </svg>
+              <p>3+ Years</p>
+            </li>
+            <li class="serv-info sf4">
+              <h3>SOFTWARE</h3>
+              <ul class="softs">
+                <li>SolidWorks</li>
+                <li>Fusion 360</li>
+                <li>FreeCAD</li>
+                <li>TinkerCAD</li>
+              </ul>
+              <a href="#skills">skills <p class="skl-link">></p></a>
+            </li>
+          </div>
           <div class="links">
             <a class="link" href="#contacts">INQUIRE</a>
             <a class="link" href="#projects">PROJECTS</a>
@@ -295,14 +332,47 @@
           <button id="x-btn" popovertarget="graphic" popovertargetaction="hide">X</button>
           <div class="header">BRANDING</div>
           <div class="detail 3d">
-            <p>Full Projects</p>
-            <p>Banners</p>
-            <p>Logos</p>
-            <p>Ads</p>
-            <p>Signage</p>
-            <p>Wedding, Gift Cards etc</p>
+            <li>Logo Design</li>
+            <li>Social Media Kits</li>
+            <li>Marketing Graphics</li>
+            <li>Brand Identity Design</li>
+            <li>UI Design & Style Guides</li>
           </div>
-          <div class="slide"></div>
+          <div class="slide">
+            <li class="serv-info sf1">
+              <h3>COMPLETED</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <p>6+ Projects</p>
+            </li>
+            <li class="serv-info sf2">
+              <h3>AVG DURATION</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <p>2 Weeks per project</p>
+            </li>
+            <li class="serv-info sf3">
+              <h3>EXPERIENCE</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12l-10-5L2 12l10 5 10-5z" />
+                <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
+                <path d="M12 17v5" />
+              </svg>
+              <p>1+ Years</p>
+            </li>
+            <li class="serv-info sf4">
+              <h3>SOFTWARE</h3>
+              <ul class="softs">
+                <li>GIMP</li>
+                <li>Pixcap</li>
+                <li>Inkscape</li>
+                <li>Fusion 360</li>
+              </ul>
+              <a href="#skills">skills <p class="skl-link">></p></a>
+            </li>
+          </div>
           <div class="links">
             <a class="link" href="#contacts">INQUIRE</a>
             <a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
@@ -312,12 +382,46 @@
           <button id="x-btn" popovertarget="web" popovertargetaction="hide">X</button>
           <div class="header">FRONT-END DEVELOPMENT</div>
           <div class="detail FED">
-            <p>Landing Page</p>
-            <p>SEO</p>
-            <P>Domain & Hosting</P>
-            <p>Portfolio Website</p>
+            <li>Responsive Website Development</li>
+            <li>Landing Page Design</li>
+            <li>SEO & Indexing</li>
+            <li>Domain & Hosting Assistance</li>
           </div>
-          <div class="slide"></div>
+          <div class="slide">
+            <li class="serv-info sf1">
+              <h3>COMPLETED</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <p>4+ Projects</p>
+            </li>
+            <li class="serv-info sf2">
+              <h3>AVG DURATION</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <p>1 Month per project</p>
+            </li>
+            <li class="serv-info sf3">
+              <h3>EXPERIENCE</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12l-10-5L2 12l10 5 10-5z" />
+                <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
+                <path d="M12 17v5" />
+              </svg>
+              <p>2+ Years</p>
+            </li>
+            <li class="serv-info sf4">
+              <h3>SOFTWARE</h3>
+              <ul class="softs">
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Spline.ai</li>
+                <li>GoDaddy.com</li>
+              </ul>
+              <a href="#skills">skills <p class="skl-link">></p></a>
+            </li>
+          </div>
           <div class="links">
             <a class="link" href="#contacts">INQUIRE</a>
             <a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
@@ -326,18 +430,174 @@
       </div>
     </section>
      
-    <section class="skills" id="skills">
-      
-      <div class="skill">
-        <h2 class="chart-heading">SKILLS LAYOUT</h2>
-        <div class="programming-stats">
-          <div class="chart-container">
-            <canvas id="my-chart"></canvas>
-          </div>
-          <div class="details">
-            <ul></ul>
+    <section class="skills" id="skills"> 
+      <div class="skill-cat skill-cat1">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">PCB Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat2">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">FRONT-END WEB Dev</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat3">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">LOGO Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat4">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">3D CAD Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat5">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">BRAND Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat6">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">FIRMWARE Development</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat7">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">MOCKUP Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat8">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">MERCH Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat9">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">REVERSE Engineering</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+      <div class="skill-cat skill-cat9">
+        <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
+        <h4 class="skill-title">PROJECT Design</h4>
+        <button id="skill-more" popovertarget="skill-pcb">></button>
+        <div class="skl-graphics">
+          <span class="g1"></span>
+          <span class="g2"></span>
+          <span class="g3"></span>
+          <span class="g4"></span>
+          <span class="g5"></span>
+          <span class="g6"></span>
+          <span class="g7"></span>
+          <span class="g8"></span>
+        </div>
+      </div>
+<!--      <div id="skill-pcb" class="skill-pop" popover>
+        <button id="x-btn" popovertarget="skill-pcb" popovertargetaction="hide">X</button>
+        <h1 class="header">PCB DESIGN</h1>
+        <div class="pop-data">
+          <div class="skl-box skl-box1">
+            <img src="images/kicad.png" alt="KiCAD">
           </div>
         </div>
+      </div>-->
+
+      <div class="skill-bg">
+        <ul class="tiles">
+          <li class="tile tile1"></li>
+          <li class="tile tile2"></li>
+          <li class="tile tile3"></li>
+        </ul>
       </div>
     </section>
     <div class="gap"></div>

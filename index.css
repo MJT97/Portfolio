@@ -379,15 +379,15 @@ html
 }
 body
 {
-    margin: 0px;
     background: linear-gradient(to right,black, var(--dark-blue), black);
-    font-size: large;
-    color: white;
     font-family: var(--font-1);
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    font-size: large;
+    color: white;
+    display: flex;
+    margin: 0px;
 }
 /*---ANIMATIONS---*/
 @keyframes  pulse/*Makes the object change size in a pulsating motion*/
@@ -479,8 +479,12 @@ body
 }
 @keyframes opening
 {
-    0%{z-index: 300;}
-    75%{
+    0%
+    {
+        z-index: 300;
+    }
+    75%
+    {
         z-index:300;
         transform: translateY(0);
     }
@@ -500,152 +504,13 @@ body
     60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
     70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
 }*/
-@keyframes kicad 
-{
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
-    90% {background: conic-gradient(blue 270deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes proteus 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes altium 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-}
-@keyframes arduino 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes mplab
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes fcad 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes solidworks
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes f360
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes vsc
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-}
-@keyframes html
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
-    90% {background: conic-gradient(blue 270deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes css 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}
-    80% {background: conic-gradient(blue 240deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes inkscape 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-    60% {background: conic-gradient(blue 180deg, rgba(255, 255, 255, 0.1) 0deg);}
-    70% {background: conic-gradient(blue 210deg, rgba(255, 255, 255, 0.1) 0deg);}    
-}
-@keyframes gimp 
-{
-    0% {background: conic-gradient(blue 0deg, rgba(255, 255, 255, 0.1) 0deg);}
-    10% {background: conic-gradient(blue 30deg, rgba(255, 255, 255, 0.1) 0deg);}
-    20% {background: conic-gradient(blue 60deg, rgba(255, 255, 255, 0.1) 0deg);}
-    30% {background: conic-gradient(blue 90deg, rgba(255, 255, 255, 0.1) 0deg);}
-    40% {background: conic-gradient(blue 120deg, rgba(255, 255, 255, 0.1) 0deg);}
-    50% {background: conic-gradient(blue 150deg, rgba(255, 255, 255, 0.1) 0deg);}
-}
 #borders
 {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100dvw;
     height: 100dvh;
+    position: fixed;
 }
 .part
 {
@@ -657,31 +522,31 @@ body
 }
 .left
 {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 10%;
+    width: 0%;
     height: 100%;
     display: flex;
+    position: fixed;
 }
 .l-first
 {
     background: white;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
     height: 100%;
+    width: 10px;
+    left: 0;
+    top: 0;
 }
 .l-second
 {
+    transform: skewY(135deg);
     background: white;
     position: absolute;
-    top: 45%;
-    left: 0;
     width: 30px;
     height: 20%;
-    transform: skewY(135deg);
+    top: 45%;
+    left: 0;
 }
 .l-third
 {
@@ -714,15 +579,15 @@ body
     transform: skewY(45deg);
 }
 
-
 .right
 {
     top: 0;
+    width: 0;
     right: 0px;
-    width: 10%;
     height: 100%;
     position: fixed;
 }
+
 .r-first
 {
     background: white;
@@ -732,6 +597,7 @@ body
     right: 0;
     top: 0;
 }
+
 .r-second
 {
     top: 45%;
@@ -742,6 +608,7 @@ body
     background: white;
     transform: skewY(45deg);
 }
+
 .r-third
 {
     top: 35%;
@@ -752,6 +619,7 @@ body
     background: white;
     transform: skewY(135deg);
 }
+
 .r-forth
 {
     top: 15%;
@@ -762,6 +630,7 @@ body
     background: white;
     transform: skewY(135deg);
 }
+
 .r-forth
 {
     top: 15%;
@@ -772,6 +641,7 @@ body
     background: white;
     transform: skewY(135deg);
 }
+
 .r-fifth
 {
     top: 70%;
@@ -782,7 +652,6 @@ body
     background: white;
     transform: skewY(45deg);
 }
-
 
 .top
 {
@@ -1120,7 +989,6 @@ img:hover
     align-items: center;
     justify-content: center;
     /*border: dashed 10px white;*/
-    animation: revolution 20s infinite linear;
 }
 .pic
 {
@@ -1254,8 +1122,8 @@ img:hover
 {
     right: 50%;
     width: 950px;
-    border: solid red;
 }
+
 .more
 {
     height: 40px;
@@ -1290,11 +1158,523 @@ body section, footer
     scroll-snap-align: start;
     scroll-padding-top: 100px;
 }
+#services span
+{
+    z-index: 100;
+    position: relative;
+    backdrop-filter: blur(50px);
+    border: rgba(255, 255, 255, 0.73) solid 2px;
+}
+.serv-bg
+{
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100dvw;
+    display: flex;
+    height: 85dvh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.serv-bg .serv-tile
+{
+    border: solid var(--light-blue);
+    width: 300px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    list-style-type: none;
+    transform: rotate(45deg);
+    box-shadow: 0 0 500px 20px rgba(0, 0, 255, 0.5), 
+                0 0 100px 30px rgba(52, 52, 255);
+    background: linear-gradient(to right, var(--light-blue), rgba(0, 0, 255, 0.2), var(--light-blue));
+}
+.serv-tile:hover
+{
+    transition: 0.5s;
+    transform: rotateZ(0deg);
+}
+.serv-bg .st1
+{
+    left: 10%;
+}
+.serv-bg .st3
+{
+    right: 10%;
+}
+
+#services .icons
+{
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#name
+{
+    z-index: 10;
+    height: 60%;
+    width: 200px;
+    border: none;
+    display: flex;
+    background: none;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    justify-content: space-around;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+#name img
+{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 25);
+}
+#name .send
+{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: solid black;
+    justify-content: center;
+}
+.pops .slide
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.slide .serv-info
+{
+    width: 190px;
+    display: flex;
+    list-style: none;
+    aspect-ratio: 1/1;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    justify-content: space-evenly;
+}
+.serv-info svg
+{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 2px;
+}
+.slide svg
+{
+    border: solid blue;
+}
+.slide a
+{
+    width: 92.5%;
+    height: 30px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: end;
+}
+.slide a .skl-link
+{
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    margin-left: 5px;
+    align-items: top;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-weight: bolder;
+    justify-content: center;
+    color: var(--dark-blue);
+    background: var(--deg45-gold-gradient);
+}
 .skill, .project
 {
     scroll-snap-align: start;
     scroll-padding-left: 10px;
 }
+
+#skills
+{
+    gap: 30px;
+    display: flex;
+    padding-top: 7%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-cat
+{
+    width: 250px;
+    display: flex;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    animation: rotate 1s linear infinite;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+.skill-cat::before
+{
+    width: 70%;
+    z-index: -3;
+    content: " ";
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0);
+}
+.skill-cat::before
+{
+    --skill-value: 90%;
+    background: conic-gradient(from 0deg, var(--gold) 0deg 275deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+
+.skill-cat::after
+{
+    width: 65%;
+    z-index: -2;
+    content: " ";
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(0, 0, 40);
+    box-shadow: 0 0 10px 2px inset rgba(0, 0, 0);
+}
+.skill-icon
+{
+    top: 4%;
+    left: 4%;
+    width: 22%;
+    height: 22%;
+    z-index: -1;
+    padding: 2px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 255);
+}
+.skill-cat h4
+{
+    z-index: -1;
+    display: flex;
+    color: white;
+    font-size:large;
+    position: absolute;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: center;
+    text-shadow: 0 0 30px white;
+    font-family: 'Agency FB','Banshcrift','Consolas';
+}
+.skill-cat #skill-more
+{
+    right: 5%;
+    width: 15%;
+    bottom: 5%;
+    z-index: 2000;
+    border: none;
+    display: flex;
+    color: blue;
+    font-size: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 12%;
+    position: absolute;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.skill-cat #skill-more:hover
+{
+    transition: 0.5s;
+    transform: rotatez(360deg);
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(2, 2, 156, 0.2);
+}
+.skill-cat:hover
+{
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 20px rgba(0, 0, 255, 0.5);
+    
+    .skl-graphics span
+    {
+        border-width: 3px;
+        transition: 0.5s;
+    }
+    .g5
+    {
+        border-width: 2px;
+        height: 50%;
+        transition: 0.5s;
+    }
+    .g6
+    {
+        border-width: 2px;
+        height: 50%;
+        transition: 0.5s;
+    }
+    .g7
+    {
+        border-width: 2px;
+        width: 50%;
+        transition: 0.5s;
+    }
+    .g8
+    {
+        border-width: 2px;
+        width: 50%;
+        transition: 0.5s;
+    }
+}
+.skill-cat .skl-graphics
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.skl-graphics span
+{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    border: solid blue 4px;
+}
+.skl-graphics .g1
+{
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+}
+.skl-graphics .g2
+{
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+    border-top-right-radius: 15px;
+}
+.skl-graphics .g3
+{
+    left: 0;
+    bottom: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom-left-radius: 15px;
+}
+.skl-graphics .g4
+{
+    right: 0;
+    bottom: 0;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 15px;
+}
+.skl-graphics .g5
+{
+    left: 0;
+    top: 50%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    transform: translateY(-50%);
+}
+.skl-graphics .g6
+{
+    right: 0;
+    top: 50%;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    transform: translateY(-50%);
+}
+.skl-graphics .g7
+{
+    top: 0;
+    left: 50%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%);
+}
+.skl-graphics .g8
+{
+    transform: translateX(-50%);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    left: 50%;
+    bottom: 0;
+}
+
+/*#skills .skill-pop
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%,-100%);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    position: fixed;
+    flex-wrap: wrap;
+    border: none;
+    height: 85%;
+    width: 95%;
+    left: 50%;
+    top: 97%;
+}
+.skill-pop #x-btn
+{
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    position: absolute;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: solid gray 1px;
+    background: conic-gradient(white, gray, white, gray, white);
+}
+.skill-pop .header
+{
+    top: 0;
+    left: 50%;
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 255);
+}
+.skill-pop .pop-data
+{
+    height: calc(100% - 60px);
+    border-radius: 20px;
+    width: stretch;
+    margin: 5px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pop-data .skl-box
+{
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    margin: 0 10px;
+    width: 250px;
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-data .skl-box::before
+{
+    z-index: 0;
+    content: "";
+    width: 190px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 20px;
+    border: solid var(--dark-blue);
+    background: conic-gradient(from 0deg, rgb(255, 255, 255) 0deg 275deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.pop-data .skl-box::after
+{
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 170px;
+    content: "";
+    z-index: 1;
+}
+.pop-data .skl-box img
+{
+    border-radius: 10px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}*/
+
+.tiles
+{
+    top: 50%;
+    left: 50%;
+    z-index: -10;
+    width: 80dvw;
+    height: 80dvh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+
+.tile
+{
+    width: 200px;
+    z-index: -10;
+    height: 200px;
+    display: flex;
+    border-radius: 5%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(45deg);
+}
+.tile:hover
+{
+    transform: none;
+    transition: 0.5s;
+}
+.tile1
+{
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 100);
+    box-shadow: 0 0 150px 20px rgb(0, 0, 100);
+}
+.tile2
+{
+    z-index: -3;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 0, 150);
+    box-shadow: 0 0 100px 10px rgb(0, 0, 150);
+}
+.tile3
+{
+    z-index: -5;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 255);
+    box-shadow: 0 0 200px 20px rgb(0, 0, 255);
+}
+
 .tiktok
 {
     width: 30px;
@@ -1309,7 +1689,7 @@ section
 {
     animation: zoomfade linear;
     animation-timeline: view();
-    animation-range: entry cover 40%;
+    animation-range: entry cover 20%;
 }
 
 .header
@@ -1365,7 +1745,7 @@ section
     border: solid white;
     color: blue;
 }
-.detail p
+.detail li
 {
     width: 100%;
     height: 40px;
@@ -1381,7 +1761,17 @@ section
     background-color: rgba(255, 255, 255, 0.232);
 }
 
-
+.counter
+{
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-4-A);
+}
 
 
 #footer
@@ -1421,21 +1811,7 @@ section
 
 @media screen and (min-width: 1000px)
 {   
-    .ring
-    {
-        top: 50%;
-        left: 50%;
-        width: 80%;
-        z-index: 0;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        position: absolute;
-        --ring-color: blue;
-        transform: translate(-50%,-50%);
-        border: solid rgb(9, 9, 248) 7px;
-        box-shadow: 0 0 70px 30px var(--ring-color),
-        0 0 70px 30px var(--ring-color) inset;
-    }
+    
     .serv-ring
     {
         top: 50%;
@@ -1831,8 +2207,8 @@ section
     
     .products
     {
-        right: 35px;
         width: 30%;
+        right: 35px;
         height: 90%;
         display: flex;
         position: absolute;
@@ -1918,25 +2294,7 @@ section
         align-items: center;
         justify-content: space-evenly;
     }
-    .row button
-    {
-        width: 20%;
-        height: 80%;
-        display: flex;
-        color: white;
-        transition: 0.5s;
-        border-radius: 20px;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        backdrop-filter: blur(20px);
-        background-color: rgba(0, 0, 255, 0.089);
-    }
-    #services button img
-    {
-        height: 50%;
-        width: auto;
-    }
+
     #services .det
     {
         color: white;
@@ -1960,13 +2318,15 @@ section
     }
     #services .send:hover
     {
-        box-shadow: 0 0 50px 1px var(--light-blue),
-        0 0 20px 1px blue,0 0 40px 1px blue;
+        box-shadow: 
+        0 0 20px 1px blue,
+        0 0 50px 1px var(--light-blue),
+        0 0 40px 1px rgb(1, 1, 52);
     }
     #mech,#elec,#cad,#web,#graphic,#brand
     {
-        height: 73%;
         width: 80%;
+        height: 73%;
         border: none;
         color: white;
         transition: 0.4s;
@@ -2013,8 +2373,9 @@ section
         aspect-ratio: 1/1;
         border-radius: 50%;
         font-size: xx-large;
+        border: solid white;
         color: var(--dark-blue);
-        background: var(--deg45-gold-gradient);
+        background: conic-gradient(white,grey, white,grey, white);
     }
     
     #services .detail
@@ -2023,6 +2384,7 @@ section
         width: 60%;
         height: 70%;
         display: flex;
+        transform: none;
         overflow: hidden;
         margin-left: 50px;
         position: absolute;
@@ -2055,14 +2417,15 @@ section
         height: 80%;
         background-color: rgba(1, 1, 78, 0.5);
     }
-    #services .detail p
+    #services .detail li
     {
         width: 80%;
+        transform: none;
+        transition: 0.3s;
         border-radius: 5px;
         border: solid var(--light-blue);
         background: var(--deg45-blue-gradient);
         box-shadow: 0 0 10px 1px var(--light-blue);
-        transition: 0.3s;
     }
     #services .detail p:hover
     {
@@ -2538,35 +2901,8 @@ section
     {
         display: none;
     }
-    .ring
-    {
-        left: 50%;
-        width: 100%;
-        bottom: 10%;
-        z-index: -10;
-        height: auto;
-        position: absolute;
-        border-radius: 50%;
-        --ring-color: blue;
-        transform: translateX(-50%);
-        border: solid rgb(9, 9, 248) 7px;
-        box-shadow: 0 0 50px 5px var(--ring-color),
-        0 0 70px 10px var(--ring-color) inset;
-    }
-    .serv-ring
-    {
-        top: 30%;
-        left: 50%;
-        z-index: 0;
-        width: 110%;
-        display: flex;
-        overflow: hidden;
-        position: absolute;
-        align-items: center;
-        height: fit-content;
-        justify-content: center;
-        transform: translate(-50%,-50%);
-    }
+    
+    
     .serv-ring img
     {
         border-radius: 50%;
@@ -2854,7 +3190,7 @@ section
         padding: 0;
         width: 90%;
         margin: 10px;
-        height: 90vh;
+        height: 97vh;
         display: flex;
         align-items: center;
         border-radius: 20px;
@@ -2873,35 +3209,19 @@ section
     #services .icons
     {
         width: 100%;
-        height: 80%;
+        height: 90%;
         display: flex;
+        flex-wrap: wrap;
         transition: 0.5s;
         align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #services .row
+    #services button
     {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .row button
-    {
+        width: 300px;
         height: 30%;
-        display: flex;
-        color: white;
-        transition: 0.5s;
-        aspect-ratio: 1/1;
-        border-radius: 20px;
-        align-items: center;
-        flex-direction: column;
-        backdrop-filter: blur(20px);
-        justify-content: space-around;
-        background-color: rgba(0, 0, 255, 0.089);
+        gap: 10px;
     }
     #services span
     {
@@ -2919,15 +3239,22 @@ section
         backdrop-filter: blur(20px);
         font-family: var(--font-2-I);
         background-color: rgba(255, 255, 255, 0.13);
-    }       
+    }      
+    #services .serv-bg
+    {
+        transform: translateX(-50%);
+        flex-direction: column;
+        left: 50%;
+    } 
+    #services .st1
+    {
+        top: 20%;
+        left: 10%;
+    }
+
     #services button:hover
     {
         box-shadow: 0 0 50px 5px var(--light-blue);
-    }
-    #services button img
-    {
-        height: 50%;
-        width: auto;
     }
     #services .det
     {
@@ -2963,13 +3290,14 @@ section
     #web,#mech,#elec,#cad,#graphic
     {
         width: 80%;
-        height: 60%;
+        height: 80%;
         border: none;
         color: white;
+        margin-top: 20%;
         transition: 0.4s;
         background: none;
         margin-left: 10%;
-        margin-top: 150px;
+        overflow: visible;
         border-radius: 20px;
         align-items: center;
         justify-content: center;
@@ -2978,29 +3306,31 @@ section
     }
     .pops #x-btn
     {
+        width: 70px;
         height: 70px;
-        aspect-ratio: 1/1;
+        font-weight: 900;
         border-radius: 50%;
         font-size: xx-large;
-        font-weight: 900;
+        border: solid white;
         color: var(--dark-blue);
-        background: var(--deg45-gold-gradient);
+        background: conic-gradient(white,grey, white,grey, white);
     }
     #services .header
     {
-        width: 300px;
+        width: 50%;
         height: 70px;
+        font-size: larger;
         color: var(--gold);
-        border-radius: 20px;
+        border-radius: 0 20px;
         text-shadow: 1px 2px 0 black;
         background: var(--deg45-blue-gradient);
     }
     #services .links
     {
         margin: 0;
-        top: 80px;
         padding: 0;
         width: 98%;
+        bottom: 72%;
         height: 10%;
     }
     #services .links .link
@@ -3012,7 +3342,7 @@ section
     #services .detail
     {
         left: 0;
-        top: 130px;
+        bottom: 0;
         width: 99%;
         height: 70%;
         display: flex;
@@ -3023,14 +3353,20 @@ section
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .detail p
+
+    .detail li
     {
         width: 80%;
         height: 10%;
-        color: blue;
+        color: white;
         font-size: x-large;
         border: solid blue;
+        list-style-type: square;
         background-color: var(--dark-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: none;
     }
     .detail p:hover
     {
