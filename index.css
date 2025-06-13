@@ -1336,12 +1336,46 @@ body section, footer
     border-radius: 50%;
     box-shadow: 0 0 30px 2px rgba(0, 0, 0);
 }
-.skill-cat::before
+.skill-cat1::before
 {
-    --skill-value: 90%;
     background: conic-gradient(from 0deg, var(--gold) 0deg 275deg, rgba(5, 2, 155, 0.1) 90deg);
 }
-
+.skill-cat2::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 315deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat3::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 235deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat4::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 235deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat5::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 215deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat6::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 235deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat7::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 215deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat8::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 270deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat9::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 180deg, rgba(5, 2, 155, 0.1) 90deg);
+}
+.skill-cat10::before
+{
+    background: conic-gradient(from 0deg, var(--gold) 0deg 300deg, rgba(5, 2, 155, 0.1) 90deg);
+}
 .skill-cat::after
 {
     width: 65%;
@@ -1384,8 +1418,8 @@ body section, footer
     right: 5%;
     width: 15%;
     bottom: 5%;
-    z-index: 2000;
     border: none;
+    z-index: 2000;
     display: flex;
     color: blue;
     font-size: 20px;
