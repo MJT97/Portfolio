@@ -2788,7 +2788,7 @@ section
         width: 100%;
         height: auto;
     }
-    .pi img
+    .pi
     {
         width: 120px;
         height: 120px;
@@ -2796,6 +2796,10 @@ section
         border-radius: 5px;
         border: solid var(--light-blue);
         background-color: var(--dark-blue);
+    }
+    .pi svg
+    {
+        background-color: white;
     }
     .pi-five
     {
