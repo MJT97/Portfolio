@@ -7,36 +7,21 @@
     <meta name="MJT" content="width=device-width, initial-scale=1.0, Our Services: Mechatronics | Branding | Web development." media="screen">
     <title>JEPHTA MADZIVA - Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen">
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>  
   </head>
 
   <body>
     <header id="intro">
-      <div class="bar">
-        <!--Icons/Round Seal Logo Engraving.svg-->
-        JEPHTA
-      </div>
       <div class="tabs">
         <li class="serv"><a href="#services">SERVICES</a></li>        
         <li class="proj"><a href="#projects">PROJECTS</a></li>
         <li class="cont"><a href="#contacts">CONTACTS</a></li>
       </div>
-      <!--<div class="search">
-        <div class="container">
-          <div class="search">
-            <input type="text" name="" id="find" placeholder="search" onkeyup="search()">
-          </div>
-        </div>
-      </div>-->
-
     </header>
-    <div class="intro-bg">
-      <div class="in-one"></div>
-      <div class="in-two"></div>
-      <div class="in-three"></div>
-      <div class="in-four"></div>
-      <div class="in-five"></div>
-    </div>
+    <audio id="tick-sound" preload="auto">
+      <source src="sounds/mixkit-light-switch-sound-2579.wav" type="audio/wav">
+      Your browser does not support audio.
+    </audio>
 
     <div id="backdrop">
       <img class="icon" src="Logo/MJT_Logo_First-Draft.PNG" alt="">
@@ -196,13 +181,11 @@
 
     <div class="gap"></div>
     
+    <div class="cursor-light" id="cursorLight"></div>
+
     <section id="services">
       <span>WHAT I DO</span>
-      <div class="serv-bg">
-        <li class="serv-tile st1"></li>
-        <li class="serv-tile st2"></li>
-        <li class="serv-tile st3"></li>
-      </div>
+      
       <div class="icons">
         <button id="name" popovertarget="mech">
           <img src="Icons/Mechtronics Neon Icon.svg" alt="Mechatronics">
@@ -848,7 +831,13 @@
       <li class="b-tenth"></li>
     </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="main.js"></script>
+    <script>
+      const cursor = document.getElementById('cursorLight');
+      document.addEventListener('mousemove', e => 
+      {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+    </script>
   </body>
 </html>

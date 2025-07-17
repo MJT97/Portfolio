@@ -1,25 +1,7 @@
-function search()
+
+// Typewriter effect for text elements
+var TxtType = function(el, toRotate, period) 
 {
-    let filter = document.getElementById('find').ariaValueMax.toUpperCase();
-    let item = document.querySelectorAll('.product');
-    let l = document.getElementsByTagName('div');
-    for(var i=0; i<=l.length;i++)
-    {
-        let a=item[i].getElementsByTagName('div')[0];
-        let value=a.innerHTML || a.innerText || a.textContent;
-
-        if(value.toUpperCase().indexOf(filter) > -1)
-        {
-            item[i].style.display="";
-        }
-        else
-        {
-            item[i].style.display="none";
-        }
-    }
-}
-
-var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -29,14 +11,18 @@ var TxtType = function(el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function() 
+{
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    if (this.isDeleting) 
+    {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } 
+    else 
+    {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
@@ -46,26 +32,33 @@ TxtType.prototype.tick = function() {
 
     if (this.isDeleting) { delta /= 2; }
 
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+    if (!this.isDeleting && this.txt === fullTxt) 
+    {
+      delta = this.period;
+      this.isDeleting = true;
+    } 
+    else if (this.isDeleting && this.txt === '') 
+    {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
     }
 
-    setTimeout(function() {
-    that.tick();
+    setTimeout(function() 
+    {
+      that.tick();
     }, delta);
 };
 
-window.onload = function() {
+window.onload = function() 
+{
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
+    for (var i=0; i<elements.length; i++) 
+    {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
+        if (toRotate) 
+        {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
