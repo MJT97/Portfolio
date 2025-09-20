@@ -1,746 +1,744 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<head>
-  <link rel="website icon" type="png" href="images/Gold_Seal.png">
-  <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" media="screen">
-  <title>JEPHTA MADZIVA - Portfolio Website</title>
-  <link rel="stylesheet" type="text/css" href="index.css" media="screen">
-  <script type="text/javascript" src="index.js"></script>  
+
+<html lang="en"><head>
+<!-- Primary essentials -->
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Title & meta -->
+<title>JEPHTA MADZIVA — Mechatronics • Electronics • 3D CAD • Front-End • Brand Design</title>
+<meta content="Jephta Madziva — Mechatronic &amp; Electronic Engineer, 3D CAD designer and front-end developer. Portfolio: embedded systems, PCB design, IoT, web projects and branding. Based in Southern Africa." name="description"/>
+<meta content="Mechatronics, Electronics Engineer, PCB design, IoT, ESP32, Front-end developer, 3D CAD, Fusion360, SolidWorks, Brand designer, Portfolio, Vertical farming" name="keywords"/>
+<meta content="Jephta Madziva" name="author"/>
+<meta content="#0a2540" name="theme-color"/>
+<!-- Canonical -->
+<link href="https://jephtamadziva.netlify.app/" rel="canonical"/>
+<!-- Icons -->
+<link href="images/Gold_Seal.png" rel="icon" type="image/png"/>
+<link href="images/Gold_Seal.png" rel="apple-touch-icon"/>
+<!-- Styles & scripts -->
+<link href="index.css" media="screen" rel="stylesheet"/>
+<script defer="" src="index.js"></script>
+<!-- Robots -->
+<meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
+<meta content="index, follow" name="googlebot"/>
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta content="website" property="og:type"/>
+<meta content="Jephta Madziva — Mechatronics &amp; Front-End Portfolio" property="og:title"/>
+<meta content="Portfolio of Jephta Madziva — Mechatronic &amp; Electronic Engineer, 3D CAD designer, front-end developer and brand designer." property="og:description"/>
+<meta content="https://jephtamadziva.netlify.app/" property="og:url"/>
+<meta content="Jephta Madziva" property="og:site_name"/>
+<meta content="https://jephtamadziva.netlify.app/images/Gold_Seal.png" property="og:image"/>
+<meta content="Jephta Madziva logo / portfolio" property="og:image:alt"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Jephta Madziva — Mechatronics &amp; Front-End Portfolio" name="twitter:title"/>
+<meta content="Jephta Madziva — Mechatronic &amp; Electronic Engineer, 3D CAD designer, front-end developer and brand designer." name="twitter:description"/>
+<meta content="https://jephtamadziva.netlify.app/images/Gold_Seal.png" name="twitter:image"/>
+<!-- Structured data: WebSite + Person (JSON-LD) -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jephtamadziva.netlify.app/#website",
+        "url": "https://jephtamadziva.netlify.app/",
+        "name": "Jephta Madziva — Portfolio",
+        "description": "Portfolio of Jephta Madziva: Mechatronics, Electronics, 3D CAD, Front-end development and Brand design.",
+        "publisher": {
+          "@id": "https://jephtamadziva.netlify.app/#person"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://jephtamadziva.netlify.app/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://jephtamadziva.netlify.app/#person",
+        "name": "Jephta Madziva",
+        "url": "https://jephtamadziva.netlify.app/",
+        "sameAs": [
+          "https://github.com/JEPHTA-Madziva",
+          "https://www.linkedin.com/in/jephta-madziva-873656144",
+          "https://www.behance.net/japhethmadziva",
+          "https://www.upwork.com/freelancers/~01eff7ac555e261f5c0"
+        ],
+        "jobTitle": "Mechatronics & Electronics Engineer, Front-End Developer, 3D CAD Designer, Brand Designer",
+        "description": "Inter-disciplinary engineer and designer specialising in IoT devices, PCB design, firmware and front-end web development."
+      }
+    ]
+  }
+  </script>
+<!-- Structured data: Projects -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "@id": "https://jephtamadziva.netlify.app/#project1",
+        "name": "Smart IoT Electronics",
+        "description": "Design and development of smart IoT devices including home automation systems, smart agriculture sensors, and compact PCB modules.",
+        "url": "https://jephtamadziva.netlify.app/#projects",
+        "creator": { "@id": "https://jephtamadziva.netlify.app/#person" },
+        "keywords": ["IoT", "Smart Agriculture", "Home Automation", "PCB Design", "ESP32"]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://jephtamadziva.netlify.app/#project2",
+        "name": "3D CAD & Product Design",
+        "description": "Professional 3D design with Fusion 360 and SolidWorks, including product prototyping and manufacturing-ready models.",
+        "url": "https://jephtamadziva.netlify.app/#projects",
+        "creator": { "@id": "https://jephtamadziva.netlify.app/#person" },
+        "keywords": ["3D CAD", "Fusion 360", "SolidWorks", "Product Design", "Mechanical Engineering"]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://jephtamadziva.netlify.app/#project3",
+        "name": "Front-End Development",
+        "description": "Modern and responsive websites built with HTML, CSS, JavaScript, GSAP animations, and Three.js 3D interactions.",
+        "url": "https://jephtamadziva.netlify.app/#projects",
+        "creator": { "@id": "https://jephtamadziva.netlify.app/#person" },
+        "keywords": ["Front-End Development", "JavaScript", "GSAP", "Three.js", "Portfolio Websites"]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://jephtamadziva.netlify.app/#project4",
+        "name": "Brand & Graphic Design",
+        "description": "High-end logo, brand identity, and product packaging design for startups and businesses across industries.",
+        "url": "https://jephtamadziva.netlify.app/#projects",
+        "creator": { "@id": "https://jephtamadziva.netlify.app/#person" },
+        "keywords": ["Logo Design", "Brand Identity", "Graphic Design", "Packaging", "Illustration"]
+      }
+    ]
+  }
+  </script>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FZXPTYHX9G"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FZXPTYHX9G', { 'anonymize_ip': true });
+  </script>
+<!-- Sitemap & manifest hints -->
+<link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="https://jephtamadziva.netlify.app/" hreflang="en" rel="alternate"/>
 </head>
 
 <body>
-  <header id="intro">
-    <div class="tabs">
-      <li class="serv"><a href="#services">SERVICES</a></li>        
-      <li class="proj"><a href="#projects">PROJECTS</a></li>
-      <li class="cont"><a href="#contacts">CONTACTS</a></li>
-    </div>
-  </header>
-
-  <figure id="backdrop">
-    <img class="icon" src="Logo/MJT_Logo_First-Draft.PNG" alt="MJT Logo">
-  </figure>
-  <div id="loader"></div>
-
-  <main class="banner"> 
-    <figure class="pic">
-      <img src= "Madziva_Jephta_Photo.png" alt="picture">
-      <svg 
-      id="main-ld"
-      width="190mm"
-      height="190mm"
-      viewBox="0 0 188.51749 188.51469"
-      version="1.1"
-      inkscape:export-filename="Hitech Loader v1.png"
-      inkscape:export-xdpi="96"
-      inkscape:export-ydpi="96"
-      inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-      sodipodi:docname="Hitech Loader v1.svg"
-      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:svg="http://www.w3.org/2000/svg">
-      <sodipodi:namedview
-        id="namedview1"
-        pagecolor="#505050"
-        bordercolor="#eeeeee"
-        borderopacity="1"
-        inkscape:showpageshadow="0"
-        inkscape:pageopacity="0"
-        inkscape:pagecheckerboard="0"
-        inkscape:deskcolor="#505050"
-        inkscape:document-units="mm"
-        inkscape:zoom="1.0922955"
-        inkscape:cx="334.61642"
-        inkscape:cy="355.673"
-        inkscape:window-width="1920"
-        inkscape:window-height="1051"
-        inkscape:window-x="-9"
-        inkscape:window-y="-9"
-        inkscape:window-maximized="1"
-        inkscape:current-layer="layer1" />
-      <defs
-        id="defs1" />
-      <g
-        inkscape:label="Layer 1"
-        inkscape:groupmode="layer"
-        id="layer1"
-        transform="translate(-7.7173614,-54.469957)">
-        <circle
-          style="display:none;fill:none;stroke:#0000ff;stroke-width:1.32292;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:0.541353;paint-order:stroke fill markers"
-          id="path2"
-          cx="179.15863"
-          cy="34.123177"
-          r="83.810501"
-          transform="rotate(45)" />
-        <path
-          style="fill:none;stroke:#0000ff;stroke-width:9.59041;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-          id="path1"
-          sodipodi:type="arc"
-          sodipodi:cx="179.01515"
-          sodipodi:cy="34.795258"
-          sodipodi:rx="80.2985"
-          sodipodi:ry="80.2985"
-          sodipodi:start="3.3044329"
-          sodipodi:end="4.5541742"
-          sodipodi:open="true"
-          sodipodi:arc-type="arc"
-          d="M 99.778937,21.777142 A 80.2985,80.2985 0 0 1 166.36368,-44.500325"
-          transform="rotate(45)" />
-        <path
-          style="fill:none;stroke:#0000ff;stroke-width:4.6488;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-          id="path4"
-          sodipodi:type="arc"
-          sodipodi:cx="179.0153"
-          sodipodi:cy="34.795353"
-          sodipodi:rx="77.846947"
-          sodipodi:ry="77.846947"
-          sodipodi:start="0.11714897"
-          sodipodi:end="1.4167925"
-          sodipodi:open="true"
-          sodipodi:arc-type="arc"
-          d="M 256.32868,43.894197 A 77.846947,77.846947 0 0 1 190.9567,111.72097"
-          transform="rotate(45)" />
-        <path
-          style="fill:none;stroke:#0000ff;stroke-width:4.82368;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:2.41184, 2.41184;stroke-dashoffset:2.89421;stroke-opacity:0.60000002;paint-order:stroke fill markers"
-          id="path17"
-          sodipodi:type="arc"
-          sodipodi:cx="101.98473"
-          sodipodi:cy="151.17967"
-          sodipodi:rx="70.485367"
-          sodipodi:ry="70.485367"
-          sodipodi:start="5.8562392"
-          sodipodi:end="4.89774"
-          sodipodi:open="true"
-          sodipodi:arc-type="arc"
-          d="m 166.14295,121.99218 a 70.485367,70.485367 0 0 1 -20.5775,84.58522 70.485367,70.485367 0 0 1 -87.0522,0.0858 70.485367,70.485367 0 0 1 -20.744118,-84.54452 70.485367,70.485367 0 0 1 77.205458,-40.217035" /></g>
-      </svg>
-    </figure>
-    <div class="ring"></div>
-    <div id="rings">
-      <li class="ring1"><img src="Graphics/Load Ring 1.png" alt=""></li>
-      <li class="ring2"><img src="Graphics/Load Ring 1.png" alt=""></li>
-      <li class="ring3">
-        <div class="counter">
-        <div class="count">00</div>
-      </div></li>
-    </div>
-
-    <article class="bio">
-      <p class="greet">Hi, I'm</p>
-      <p class="name"><img src="Logo/JEPHTA MADZIVA No Glow.PNG" alt=""></p>
-      <p class="job">
-        <a href="" class="typewrite" data-period="1500" data-type='[ "Mechatronic Engineer", "Electronic Engineer", "3D CAD Designer", "Front-End Developer", "Brand Designer" ]'>
-          <span class="wrap"></span> 
-        </a>
-      </p>    
-      <p class="sum">
-        <span class="title">
-          <span class="words">ABOUT ME</span>
-          <span class="bg1"></span>
-          <span class="bg2"></span>
-        </span>
+<header id="intro">
+<div class="tabs">
+<li class="serv"><a href="#services">SERVICES</a></li>
+<li class="proj"><a href="#projects">PROJECTS</a></li>
+<li class="cont"><a href="#contacts">CONTACTS</a></li>
+</div>
+</header>
+<figure id="backdrop">
+<img alt="MJT Logo" class="icon" src="Logo/MJT_Logo_First-Draft.PNG"/>
+</figure>
+<div id="loader"></div>
+<main class="banner">
+<figure class="pic">
+<img alt="picture" src="Madziva_Jephta_Photo.png"/>
+<svg height="190mm" id="main-ld" inkscape:export-filename="Hitech Loader v1.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)" sodipodi:docname="Hitech Loader v1.svg" version="1.1" viewbox="0 0 188.51749 188.51469" width="190mm" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview bordercolor="#eeeeee" borderopacity="1" id="namedview1" inkscape:current-layer="layer1" inkscape:cx="334.61642" inkscape:cy="355.673" inkscape:deskcolor="#505050" inkscape:document-units="mm" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:showpageshadow="0" inkscape:window-height="1051" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:zoom="1.0922955" pagecolor="#505050"></sodipodi:namedview>
+<defs id="defs1"></defs>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1" transform="translate(-7.7173614,-54.469957)">
+<circle cx="179.15863" cy="34.123177" id="path2" r="83.810501" style="display:none;fill:none;stroke:#0000ff;stroke-width:1.32292;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:0.541353;paint-order:stroke fill markers" transform="rotate(45)"></circle>
+<path d="M 99.778937,21.777142 A 80.2985,80.2985 0 0 1 166.36368,-44.500325" id="path1" sodipodi:arc-type="arc" sodipodi:cx="179.01515" sodipodi:cy="34.795258" sodipodi:end="4.5541742" sodipodi:open="true" sodipodi:rx="80.2985" sodipodi:ry="80.2985" sodipodi:start="3.3044329" sodipodi:type="arc" style="fill:none;stroke:#0000ff;stroke-width:9.59041;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(45)"></path>
+<path d="M 256.32868,43.894197 A 77.846947,77.846947 0 0 1 190.9567,111.72097" id="path4" sodipodi:arc-type="arc" sodipodi:cx="179.0153" sodipodi:cy="34.795353" sodipodi:end="1.4167925" sodipodi:open="true" sodipodi:rx="77.846947" sodipodi:ry="77.846947" sodipodi:start="0.11714897" sodipodi:type="arc" style="fill:none;stroke:#0000ff;stroke-width:4.6488;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(45)"></path>
+<path d="m 166.14295,121.99218 a 70.485367,70.485367 0 0 1 -20.5775,84.58522 70.485367,70.485367 0 0 1 -87.0522,0.0858 70.485367,70.485367 0 0 1 -20.744118,-84.54452 70.485367,70.485367 0 0 1 77.205458,-40.217035" id="path17" sodipodi:arc-type="arc" sodipodi:cx="101.98473" sodipodi:cy="151.17967" sodipodi:end="4.89774" sodipodi:open="true" sodipodi:rx="70.485367" sodipodi:ry="70.485367" sodipodi:start="5.8562392" sodipodi:type="arc" style="fill:none;stroke:#0000ff;stroke-width:4.82368;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:2.41184, 2.41184;stroke-dashoffset:2.89421;stroke-opacity:0.60000002;paint-order:stroke fill markers"></path></g>
+</svg>
+</figure>
+<div class="ring"></div>
+<div id="rings">
+<li class="ring1"><img alt="" src="Graphics/Load Ring 1.png"/></li>
+<li class="ring2"><img alt="" src="Graphics/Load Ring 1.png"/></li>
+<li class="ring3">
+<div class="counter">
+<div class="count">00</div>
+</div></li>
+</div>
+<article class="bio">
+<p class="greet">Hi, I'm</p>
+<p class="name"><img alt="" src="Logo/JEPHTA MADZIVA No Glow.PNG"/></p>
+<p class="job">
+<a class="typewrite" data-period="1500" data-type='[ "Mechatronic Engineer", "Electronic Engineer", "3D CAD Designer", "Front-End Developer", "Brand Designer" ]' href="">
+<span class="wrap"></span>
+</a>
+</p>
+<p class="sum">
+<span class="title">
+<span class="words">ABOUT ME</span>
+<span class="bg1"></span>
+<span class="bg2"></span>
+</span>
         I have inter-disciplinary knowledge and skillset 
         that makes me quite effecient in IOT, Mechatronic systems development, Web Development, Brand Identity Designing, etc. 
         <span class="blur blue"></span>
-        <span class="blur gold"></span>
-        <span class="blur white"></span>
-      </p>
-      <ul class="socials docs">
-        <li class="socials-link gh"><a href="https://github.com/JEPHTA-Madziva" target="_blank"><img src="images/github.png" alt="CV"></a><p id="note">Visit GitHub</p></li>
-        <li class="socials-link linkedin"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img src="Icons/LinkedIn.png" alt="LinkedIn"></a><p id="note">View on LinkedIn</p></li>
-        <li class="socials-link wa"><a href="https://wa.me/message/UJYLYBIVTWBWL1" target="_blank"><img src="Icons/WhatsApp_Gold.png" alt="WhatsApp"></a><p id="note">Chat on WhatsApp</p></li>
-      </ul>
-    </article>
-
-    <div class="touch">
-    </div>
-
-    <div class="products">
-      <div class="product">
-        <li class="prod"><img src="images/2-v6-Assy-Sim-unscreen.gif" alt=""></li>
-        <li class="prod"><img src="images/EMPIRIAL-ICO-v2-unscreen.gif" alt="Empirial Org Icon"></li>
-      </div>
-      <div class="product">
-        <li class="prod"><img src="images/Labyrinth_Key.svg" alt=""></li>
-        <li class="prod"><img src="images/HA-m3-Assembly-v17-unscreen.gif" alt="HA m3 v17 Sim"></li>
-      </div>
-      <div class="product">
-        <li class="prod"><img src="images/Assembly-v25-Sim-unscreen.gif" alt="Power Monitor"></li>
-        <li class="prod"><img src="images/Sample-Assemby-v32-Z-rot-Sim-unscreen.gif" alt="Wheelbarrow-Assemby-v31"></li>
-      </div>
-    </div>
-  </main>
-
-  <div class="gap"></div>
-  
-  <figure class="cursor-light" id="cursorLight"></figure>
-
-  <section id="services">
-    <h1 class="serv-title">WHAT I DO</h1>
-    <article class="icons">
-      <button id="name" popovertarget="mech">
-        <figure>
-          <img class="figure-img" src="service_images/Electronics.webp" alt="Mechatronics Icon">
-        </figure>
-        <img class="icon-img" src="Icons/Mechtronics Neon Icon.svg" alt="Mechatronics">
-        <h3 class="det">MECHATRONICS</h3>
-        <h4 class="view">more ></h4>
-      </button>
-      <button id="name" popovertarget="web">
-        <figure></figure>
-        <img class="icon-img" src="Icons/Web_icon.svg" alt="Web Development">
-        <h3 class="det">WEB DEV</h3>
-        <h4 class="view">more ></h4>
-      </button>
-      <button id="name" popovertarget="graphic">
-        <figure>
-          <img class="figure-img" src="service_images/Graphics.webp" alt="Mechatronics Icon">
-        </figure>
-        <img class="icon-img" src="Icons/Graphics_Icon.svg" alt="Brand Designing">
-        <h3 class="det">BRANDING</h3>
-        <h4 class="view">more ></h4>
-      </button>
-      <button id="name" popovertarget="cad">
-        <figure>
-          <img class="figure-img" src="service_images/3DCAD.webp" alt="3D CAD Icon">
-        </figure>
-        <img class="icon-img" src="Icons/CAD_icon.svg" alt="3D CAD">
-        <h3 class="det">3D CAD</h3>
-        <h4 class="view">more ></h4>
-      </button>
-
-      <article id="mech" class="pops" popover>
-        <button id="x-btn" popovertarget="mech" popovertargetaction="hide">X</button>
-        <h1 class="header">MECHATRONICS</h1>
-        <ul class="detail mech">
-            <li>Custom PCB Design & Prototyping</li>
-            <li>Embedded Systems & Firmware Development</li>
-            <li>IoT Device Development</li>
-            <li>Robotics & Automation Solutions</li>
-        </ul>
-        <ul class="slide">
-          <li class="serv-info sf1">
-            <h3>COMPLETED</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p>5+ Projects</p>
-          </li>
-          <li class="serv-info sf2">
-            <h3>AVG DURATION</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <p>1 Month per project</p>
-          </li>
-          <li class="serv-info sf3">
-            <h3>EXPERIENCE</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12l-10-5L2 12l10 5 10-5z" />
-              <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
-              <path d="M12 17v5" />
-            </svg>
-            <p>4+ Years</p>
-          </li>
-          <li class="serv-info sf4">
-            <h3>SOFTWARE</h3>
-            <ul class="softs">
-              <li>KiCAD</li>
-              <li>Proteus</li>
-              <li>EasyEDA</li>
-              <li>Altium Designer</li>
-            </ul>
-            <a href="#skills">skills <p class="skl-link">></p></a>
-          </li>
-        </ul>
-        <ul class="links">
-          <a class="link" href="#contacts" >INQUIRE</a>
-          <a class="link" href="#projects">PROJECTS</a>
-        </ul>
-      </article>
-      <article class="pops" id="cad" popover>
-        <button id="x-btn" popovertarget="cad" popovertargetaction="hide">X</button>
-        <h1 class="header">3D CAD|CAM</h1>
-        <ul class="detail 3d">
-          <li>3D CAD Modeling & Visualization</li>
-          <li>Product Design & Industrial Concepts</li>
-          <li>Technical Drafting & Engineering Drawings</li>
-          <li>Sheet Metal Works</li>
-          <li>Simulation & Animations</li>
-          <li>STEP, STL & Mesh Conversion</li>
-        </ul>
-        <ul class="slide">
-          <li class="serv-info sf1">
-            <h3>COMPLETED</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p>3+ Projects</p>
-          </li>
-          <li class="serv-info sf2">
-            <h3>AVG DURATION</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <p>2 Month per project</p>
-          </li>
-          <li class="serv-info sf3">
-            <h3>EXPERIENCE</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12l-10-5L2 12l10 5 10-5z" />
-              <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
-              <path d="M12 17v5" />
-            </svg>
-            <p>3+ Years</p>
-          </li>
-          <li class="serv-info sf4">
-            <h3>SOFTWARE</h3>
-            <ul class="softs">
-              <li>SolidWorks</li>
-              <li>Fusion 360</li>
-              <li>FreeCAD</li>
-              <li>TinkerCAD</li>
-            </ul>
-            <a href="#skills">skills <p class="skl-link">></p></a>
-          </li>
-        </ul>
-        <ul class="links">
-          <a class="link" href="#contacts">INQUIRE</a>
-          <a class="link" href="#projects">PROJECTS</a>
-        </ul>
-      </article>
-      <article class="pops" id="graphic" popover>
-        <button id="x-btn" popovertarget="graphic" popovertargetaction="hide">X</button>
-        <h1 class="header">BRANDING</h1>
-        <ul class="detail 3d">
-          <li>Logo Design</li>
-          <li>Social Media Kits</li>
-          <li>Marketing Graphics</li>
-          <li>Brand Identity Design</li>
-          <li>UI Design & Style Guides</li>
-        </ul>
-        <ul class="slide">
-          <li class="serv-info sf1">
-            <h3>COMPLETED</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p>6+ Projects</p>
-          </li>
-          <li class="serv-info sf2">
-            <h3>AVG DURATION</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <p>2 Weeks per project</p>
-          </li>
-          <li class="serv-info sf3">
-            <h3>EXPERIENCE</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12l-10-5L2 12l10 5 10-5z" />
-              <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
-              <path d="M12 17v5" />
-            </svg>
-            <p>1+ Years</p>
-          </li>
-          <li class="serv-info sf4">
-            <h3>SOFTWARE</h3>
-            <ul class="softs">
-              <li>GIMP</li>
-              <li>Pixcap</li>
-              <li>Inkscape</li>
-              <li>Fusion 360</li>
-            </ul>
-            <a href="#skills">skills <p class="skl-link">></p></a>
-          </li>
-        </ul>
-        <ul class="links">
-          <a class="link" href="#contacts">INQUIRE</a>
-          <a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
-        </ul>
-      </article>
-      <article class="pops" id="web" popover>
-        <button id="x-btn" popovertarget="web" popovertargetaction="hide">X</button>
-        <h1 class="header">FRONT-END DEVELOPMENT</h1>
-        <ul class="detail FED">
-          <li>Responsive Website Development</li>
-          <li>Landing Page Design</li>
-          <li>SEO & Indexing</li>
-          <li>Domain & Hosting Assistance</li>
-        </ul>
-        <ul class="slide">
-          <li class="serv-info sf1">
-            <h3>COMPLETED</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <p>4+ Projects</p>
-          </li>
-          <li class="serv-info sf2">
-            <h3>AVG DURATION</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <p>1 Month per project</p>
-          </li>
-          <li class="serv-info sf3">
-            <h3>EXPERIENCE</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 12l-10-5L2 12l10 5 10-5z" />
-              <path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2" />
-              <path d="M12 17v5" />
-            </svg>
-            <p>2+ Years</p>
-          </li>
-          <li class="serv-info sf4">
-            <h3>SOFTWARE</h3>
-            <ul class="softs">
-              <li>GitHub</li>
-              <li>VS Code</li>
-              <li>Spline.ai</li>
-              <li>GoDaddy.com</li>
-            </ul>
-            <a href="#skills">skills <p class="skl-link">></p></a>
-          </li>
-        </ul>
-        <ul class="links">
-          <a class="link" href="#contacts">INQUIRE</a>
-          <a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
-        </ul>
-      </article> 
-    </article>
-  </section>
-  
-  <div class="gap"></div> 
-
-  <section class="skills" id="skills"> 
-    <article class="skill-cat skill-cat1">
-      <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">PCB Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <ol class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </ol>
-    </article>
-    <article class="skill-cat skill-cat2">
-      <img class="skill-icon" src="Icons/Web_icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">FRONT-END WEB Dev</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </article>
-    <div class="skill-cat skill-cat3">
-      <img class="skill-icon" src="Icons/Graphics_Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">LOGO Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat4">
-      <img class="skill-icon" src="Icons/CAD_icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">3D CAD Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat5">
-      <img class="skill-icon" src="Icons/Graphics_Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">BRAND Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat6">
-      <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">FIRMWARE Development</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat7">
-      <img class="skill-icon" src="Icons/CAD_icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">MOCKUP Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat8">
-      <img class="skill-icon" src="Icons/Graphics_Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">MERCH Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat9">
-      <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">REVERSE Engineering</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-    <div class="skill-cat skill-cat10">
-      <img class="skill-icon" src="Icons/Mechtronics Neon Icon.svg" alt="Skill-icon">
-      <h4 class="skill-title">PROJECT Design</h4>
-      <button id="skill-more" popovertarget="skill-pcb">></button>
-      <div class="skl-graphics">
-        <span class="g1"></span>
-        <span class="g2"></span>
-        <span class="g3"></span>
-        <span class="g4"></span>
-        <span class="g5"></span>
-        <span class="g6"></span>
-        <span class="g7"></span>
-        <span class="g8"></span>
-      </div>
-    </div>
-
-    <div class="skill-bg">
-      <ul class="tiles">
-        <li class="tile tile1"></li>
-        <li class="tile tile2"></li>
-        <li class="tile tile3"></li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="gap"></div>
-
-  <section id="projects">
-    <div class="head"> Previous Work</div>
-    <nav id="project-icons">
-      <!-- Project Categories Buttons -->
-      <button class="pjt-btn" popovertarget="electronic-panel">
+<span class="blur gold"></span>
+<span class="blur white"></span>
+</p>
+<ul class="socials docs">
+<li class="socials-link gh"><a href="https://github.com/JEPHTA-Madziva" target="_blank"><img alt="CV" src="images/github.png"/></a><p id="note">Visit GitHub</p></li>
+<li class="socials-link linkedin"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img alt="LinkedIn" src="Icons/LinkedIn.png"/></a><p id="note">View on LinkedIn</p></li>
+<li class="socials-link wa"><a href="https://wa.me/message/UJYLYBIVTWBWL1" target="_blank"><img alt="WhatsApp" src="Icons/WhatsApp_Gold.png"/></a><p id="note">Chat on WhatsApp</p></li>
+</ul>
+</article>
+<div class="touch">
+</div>
+<div class="products">
+<div class="product">
+<li class="prod"><img alt="" src="images/2-v6-Assy-Sim-unscreen.gif"/></li>
+<li class="prod"><img alt="Empirial Org Icon" src="images/EMPIRIAL-ICO-v2-unscreen.gif"/></li>
+</div>
+<div class="product">
+<li class="prod"><img alt="" src="images/Labyrinth_Key.svg"/></li>
+<li class="prod"><img alt="HA m3 v17 Sim" src="images/HA-m3-Assembly-v17-unscreen.gif"/></li>
+</div>
+<div class="product">
+<li class="prod"><img alt="Power Monitor" src="images/Assembly-v25-Sim-unscreen.gif"/></li>
+<li class="prod"><img alt="Wheelbarrow-Assemby-v31" src="images/Sample-Assemby-v32-Z-rot-Sim-unscreen.gif"/></li>
+</div>
+</div>
+</main>
+<div class="gap"></div>
+<figure class="cursor-light" id="cursorLight"></figure>
+<section id="services">
+<h1 class="serv-title">WHAT I DO</h1>
+<article class="icons">
+<button id="name" popovertarget="mech">
+<figure>
+<img alt="Mechatronics Icon" class="figure-img" src="service_images/Electronics.webp"/>
+</figure>
+<img alt="Mechatronics" class="icon-img" src="Icons/Mechtronics Neon Icon.svg"/>
+<h3 class="det">MECHATRONICS</h3>
+<h4 class="view">more &gt;</h4>
+</button>
+<button id="name" popovertarget="web">
+<figure></figure>
+<img alt="Web Development" class="icon-img" src="Icons/Web_icon.svg"/>
+<h3 class="det">WEB DEV</h3>
+<h4 class="view">more &gt;</h4>
+</button>
+<button id="name" popovertarget="graphic">
+<figure>
+<img alt="Mechatronics Icon" class="figure-img" src="service_images/Graphics.webp"/>
+</figure>
+<img alt="Brand Designing" class="icon-img" src="Icons/Graphics_Icon.svg"/>
+<h3 class="det">BRANDING</h3>
+<h4 class="view">more &gt;</h4>
+</button>
+<button id="name" popovertarget="cad">
+<figure>
+<img alt="3D CAD Icon" class="figure-img" src="service_images/3DCAD.webp"/>
+</figure>
+<img alt="3D CAD" class="icon-img" src="Icons/CAD_icon.svg"/>
+<h3 class="det">3D CAD</h3>
+<h4 class="view">more &gt;</h4>
+</button>
+<article class="pops" id="mech" popover="">
+<button id="x-btn" popovertarget="mech" popovertargetaction="hide">X</button>
+<h1 class="header">MECHATRONICS</h1>
+<ul class="detail mech">
+<li>Custom PCB Design &amp; Prototyping</li>
+<li>Embedded Systems &amp; Firmware Development</li>
+<li>IoT Device Development</li>
+<li>Robotics &amp; Automation Solutions</li>
+</ul>
+<ul class="slide">
+<li class="serv-info sf1">
+<h3>COMPLETED</h3>
+<svg fill="none" height="24" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+<p>5+ Projects</p>
+</li>
+<li class="serv-info sf2">
+<h3>AVG DURATION</h3>
+<svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+<p>1 Month per project</p>
+</li>
+<li class="serv-info sf3">
+<h3>EXPERIENCE</h3>
+<svg fill="none" height="24" stroke="gold" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12l-10-5L2 12l10 5 10-5z"></path>
+<path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2"></path>
+<path d="M12 17v5"></path>
+</svg>
+<p>4+ Years</p>
+</li>
+<li class="serv-info sf4">
+<h3>SOFTWARE</h3>
+<ul class="softs">
+<li>KiCAD</li>
+<li>Proteus</li>
+<li>EasyEDA</li>
+<li>Altium Designer</li>
+</ul>
+<a href="#skills">skills <p class="skl-link">&gt;</p></a>
+</li>
+</ul>
+<ul class="links">
+<a class="link" href="#contacts">INQUIRE</a>
+<a class="link" href="#projects">PROJECTS</a>
+</ul>
+</article>
+<article class="pops" id="cad" popover="">
+<button id="x-btn" popovertarget="cad" popovertargetaction="hide">X</button>
+<h1 class="header">3D CAD|CAM</h1>
+<ul class="detail 3d">
+<li>3D CAD Modeling &amp; Visualization</li>
+<li>Product Design &amp; Industrial Concepts</li>
+<li>Technical Drafting &amp; Engineering Drawings</li>
+<li>Sheet Metal Works</li>
+<li>Simulation &amp; Animations</li>
+<li>STEP, STL &amp; Mesh Conversion</li>
+</ul>
+<ul class="slide">
+<li class="serv-info sf1">
+<h3>COMPLETED</h3>
+<svg fill="none" height="24" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+<p>3+ Projects</p>
+</li>
+<li class="serv-info sf2">
+<h3>AVG DURATION</h3>
+<svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+<p>2 Month per project</p>
+</li>
+<li class="serv-info sf3">
+<h3>EXPERIENCE</h3>
+<svg fill="none" height="24" stroke="gold" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12l-10-5L2 12l10 5 10-5z"></path>
+<path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2"></path>
+<path d="M12 17v5"></path>
+</svg>
+<p>3+ Years</p>
+</li>
+<li class="serv-info sf4">
+<h3>SOFTWARE</h3>
+<ul class="softs">
+<li>SolidWorks</li>
+<li>Fusion 360</li>
+<li>FreeCAD</li>
+<li>TinkerCAD</li>
+</ul>
+<a href="#skills">skills <p class="skl-link">&gt;</p></a>
+</li>
+</ul>
+<ul class="links">
+<a class="link" href="#contacts">INQUIRE</a>
+<a class="link" href="#projects">PROJECTS</a>
+</ul>
+</article>
+<article class="pops" id="graphic" popover="">
+<button id="x-btn" popovertarget="graphic" popovertargetaction="hide">X</button>
+<h1 class="header">BRANDING</h1>
+<ul class="detail 3d">
+<li>Logo Design</li>
+<li>Social Media Kits</li>
+<li>Marketing Graphics</li>
+<li>Brand Identity Design</li>
+<li>UI Design &amp; Style Guides</li>
+</ul>
+<ul class="slide">
+<li class="serv-info sf1">
+<h3>COMPLETED</h3>
+<svg fill="none" height="24" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+<p>6+ Projects</p>
+</li>
+<li class="serv-info sf2">
+<h3>AVG DURATION</h3>
+<svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+<p>2 Weeks per project</p>
+</li>
+<li class="serv-info sf3">
+<h3>EXPERIENCE</h3>
+<svg fill="none" height="24" stroke="gold" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12l-10-5L2 12l10 5 10-5z"></path>
+<path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2"></path>
+<path d="M12 17v5"></path>
+</svg>
+<p>1+ Years</p>
+</li>
+<li class="serv-info sf4">
+<h3>SOFTWARE</h3>
+<ul class="softs">
+<li>GIMP</li>
+<li>Pixcap</li>
+<li>Inkscape</li>
+<li>Fusion 360</li>
+</ul>
+<a href="#skills">skills <p class="skl-link">&gt;</p></a>
+</li>
+</ul>
+<ul class="links">
+<a class="link" href="#contacts">INQUIRE</a>
+<a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
+</ul>
+</article>
+<article class="pops" id="web" popover="">
+<button id="x-btn" popovertarget="web" popovertargetaction="hide">X</button>
+<h1 class="header">FRONT-END DEVELOPMENT</h1>
+<ul class="detail FED">
+<li>Responsive Website Development</li>
+<li>Landing Page Design</li>
+<li>SEO &amp; Indexing</li>
+<li>Domain &amp; Hosting Assistance</li>
+</ul>
+<ul class="slide">
+<li class="serv-info sf1">
+<h3>COMPLETED</h3>
+<svg fill="none" height="24" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="20 6 9 17 4 12"></polyline>
+</svg>
+<p>4+ Projects</p>
+</li>
+<li class="serv-info sf2">
+<h3>AVG DURATION</h3>
+<svg fill="none" height="24" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+<p>1 Month per project</p>
+</li>
+<li class="serv-info sf3">
+<h3>EXPERIENCE</h3>
+<svg fill="none" height="24" stroke="gold" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12l-10-5L2 12l10 5 10-5z"></path>
+<path d="M6 16v2c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-2"></path>
+<path d="M12 17v5"></path>
+</svg>
+<p>2+ Years</p>
+</li>
+<li class="serv-info sf4">
+<h3>SOFTWARE</h3>
+<ul class="softs">
+<li>GitHub</li>
+<li>VS Code</li>
+<li>Spline.ai</li>
+<li>GoDaddy.com</li>
+</ul>
+<a href="#skills">skills <p class="skl-link">&gt;</p></a>
+</li>
+</ul>
+<ul class="links">
+<a class="link" href="#contacts">INQUIRE</a>
+<a class="link" href="https://www.behance.net/japhethmadziva">PROJECTS</a>
+</ul>
+</article>
+</article>
+</section>
+<div class="gap"></div>
+<section class="skills" id="skills">
+<article class="skill-cat skill-cat1">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Mechtronics Neon Icon.svg"/>
+<h4 class="skill-title">PCB Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<ol class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</ol>
+</article>
+<article class="skill-cat skill-cat2">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Web_icon.svg"/>
+<h4 class="skill-title">FRONT-END WEB Dev</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</article>
+<div class="skill-cat skill-cat3">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Graphics_Icon.svg"/>
+<h4 class="skill-title">LOGO Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat4">
+<img alt="Skill-icon" class="skill-icon" src="Icons/CAD_icon.svg"/>
+<h4 class="skill-title">3D CAD Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat5">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Graphics_Icon.svg"/>
+<h4 class="skill-title">BRAND Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat6">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Mechtronics Neon Icon.svg"/>
+<h4 class="skill-title">FIRMWARE Development</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat7">
+<img alt="Skill-icon" class="skill-icon" src="Icons/CAD_icon.svg"/>
+<h4 class="skill-title">MOCKUP Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat8">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Graphics_Icon.svg"/>
+<h4 class="skill-title">MERCH Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat9">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Mechtronics Neon Icon.svg"/>
+<h4 class="skill-title">REVERSE Engineering</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-cat skill-cat10">
+<img alt="Skill-icon" class="skill-icon" src="Icons/Mechtronics Neon Icon.svg"/>
+<h4 class="skill-title">PROJECT Design</h4>
+<button id="skill-more" popovertarget="skill-pcb">&gt;</button>
+<div class="skl-graphics">
+<span class="g1"></span>
+<span class="g2"></span>
+<span class="g3"></span>
+<span class="g4"></span>
+<span class="g5"></span>
+<span class="g6"></span>
+<span class="g7"></span>
+<span class="g8"></span>
+</div>
+</div>
+<div class="skill-bg">
+<ul class="tiles">
+<li class="tile tile1"></li>
+<li class="tile tile2"></li>
+<li class="tile tile3"></li>
+</ul>
+</div>
+</section>
+<div class="gap"></div>
+<section id="projects">
+<div class="head"> Previous Work</div>
+<nav id="project-icons">
+<!-- Project Categories Buttons -->
+<button class="pjt-btn" popovertarget="electronic-panel">
         ELECTRONICS
       </button>
-      <button class="pjt-btn" popovertarget="webdev-panel">
+<button class="pjt-btn" popovertarget="webdev-panel">
         WEBSITES
       </button>
-      <button class="pjt-btn" popovertarget="brand-panel">
+<button class="pjt-btn" popovertarget="brand-panel">
         BRANDING
       </button>
-    </nav>
-    
-    <!-- Mechatronic Projects -->
-    <article id="electronic-panel" class="pop-panel" popover>
-      <button id="close-btn" popovertarget="electronic-panel" popovertargetaction="hide">
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-        stroke="white" stroke-width="1.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <!-- door/jamb -->
-        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-        <!-- arrow -->
-        <path d="M14 8l6 4-6 4" />
-        <path d="M20 12H9" />
-      </svg>
-      </button>
-      <article class="projects">
-        <button class="project" popovertarget="12V_PSU"
-          style="
+</nav>
+<!-- Mechatronic Projects -->
+<article class="pop-panel" id="electronic-panel" popover="">
+<button id="close-btn" popovertarget="electronic-panel" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<article class="projects">
+<button class="project" popovertarget="12V_PSU" style="
                 background-image: url('images/1295V_DC_ISO-removebg-preview.png'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-          >
-          <div class="pop-data">view>></div>
-          <div class="pjt-name">12V PSU</div>
-          <div class="pjt-stt pro"></div>
-        </button>
-        <button class="project" popovertarget="AMon_v1"
-          style="
+                background-repeat: no-repeat;">
+<div class="pop-data">view&gt;&gt;</div>
+<div class="pjt-name">12V PSU</div>
+<div class="pjt-stt pro"></div>
+</button>
+<button class="project" popovertarget="AMon_v1" style="
                 background-image: url('images/AMon_v1.2.1b_ISO2R-removebg-preview.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-          >
-          <div class="pop-data">view>></div>
-          <div class="pjt-name">AMon v1.2</div>
-          <div class="pjt-stt hob"></div>
-        </button>
-        <button class="project" popovertarget="PicMOD1"
-          style="
+                background-repeat: no-repeat;">
+<div class="pop-data">view&gt;&gt;</div>
+<div class="pjt-name">AMon v1.2</div>
+<div class="pjt-stt hob"></div>
+</button>
+<button class="project" popovertarget="PicMOD1" style="
                 background-image: url('images/PICMod_1.2_PCB\ v22_ISO.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-          >
-          <div class="pop-data">view>></div>
-          <div class="pjt-name">PICMOD1</div>
-          <div class="pjt-stt hob"></div>
-        </button>
-        <button class="project" popovertarget="PDB"
-          style="
+                background-repeat: no-repeat;">
+<div class="pop-data">view&gt;&gt;</div>
+<div class="pjt-name">PICMOD1</div>
+<div class="pjt-stt hob"></div>
+</button>
+<button class="project" popovertarget="PDB" style="
                 background-image: url('images/PIC\ Dev\ 1.0\ v6_iso_render.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-          >
-          <div class="pop-data">view>></div>
-          <div class="pjt-name">PDB</div>
-          <div class="pjt-stt hob"></div>
-        </button>
-      </article>
-    </article>
-
-    <!-- WEB DEV Projects -->
-    <article id="webdev-panel" class="pop-panel" popover>
-      <button id="close-btn" popovertarget="webdev-panel" popovertargetaction="hide">
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-        stroke="white" stroke-width="1.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <!-- door/jamb -->
-        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-        <!-- arrow -->
-        <path d="M14 8l6 4-6 4" />
-        <path d="M20 12H9" />
-      </svg>
-      </button>
-      <article class="projects">
-        <button class="project" popovertarget="CFS"
-          style="
+                background-repeat: no-repeat;">
+<div class="pop-data">view&gt;&gt;</div>
+<div class="pjt-name">PDB</div>
+<div class="pjt-stt hob"></div>
+</button>
+</article>
+</article>
+<!-- WEB DEV Projects -->
+<article class="pop-panel" id="webdev-panel" popover="">
+<button id="close-btn" popovertarget="webdev-panel" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<article class="projects">
+<button class="project" popovertarget="CFS" style="
                 background-image: url('images/Lettermark_Labyrinth_Grad.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-              >
-          <a class="pop-data" href="https://crestlinefinancialservices.co.za/" target="_blank" rel="noopener noreferrer">view>></a>
-          <div class="pjt-name">CRESTLINE</div>
-          <div class="pjt-stt pro"></div>
-        </button>
-        <button class="project" popovertarget="ERNLO"
-          style="
+                background-repeat: no-repeat;">
+<a class="pop-data" href="https://crestlinefinancialservices.co.za/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+<div class="pjt-name">CRESTLINE</div>
+<div class="pjt-stt pro"></div>
+</button>
+<button class="project" popovertarget="ERNLO" style="
                 background-image: url('images/ERNLO_Word_Red_Path.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-              >
-          <a class="pop-data" href="https://jephta-madziva.github.io/ERNLO/" target="_blank" rel="noopener noreferrer">view>></a>
-          <div class="pjt-name">ERNLO</div>
-          <div class="pjt-stt pro"></div>
-        </button>
-        <button class="project" popovertarget="SEG"
-          style="
+                background-repeat: no-repeat;">
+<a class="pop-data" href="https://jephta-madziva.github.io/ERNLO/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+<div class="pjt-name">ERNLO</div>
+<div class="pjt-stt pro"></div>
+</button>
+<button class="project" popovertarget="SEG" style="
                 background-image: url('images/SELogo_Bag_Impact.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-              >
-              <a class="pop-data" href="https://jephta-madziva.github.io/SEG/" target="_blank" rel="noopener noreferrer">view>></a>
-          <div class="pjt-name">SEG</div>
-          <div class="pjt-stt pro"></div>
-        </button>
-        <button class="project" popovertarget="GARDEN"
-          style="
+                background-repeat: no-repeat;">
+<a class="pop-data" href="https://jephta-madziva.github.io/SEG/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+<div class="pjt-name">SEG</div>
+<div class="pjt-stt pro"></div>
+</button>
+<button class="project" popovertarget="GARDEN" style="
                 background-image: url('images/Garden_Logo_v2.svg'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-            >
-            <a class="pop-data" href="https://jephta-madziva.github.io/the-GARDEN/" target="_blank" rel="noopener noreferrer">view>></a>
-          <div class="pjt-name">GARDEN</div>
-          <div class="pjt-stt hob"></div>
-        </button>
-        <button class="project" popovertarget="TAILOR"
-          style="
+                background-repeat: no-repeat;">
+<a class="pop-data" href="https://jephta-madziva.github.io/the-GARDEN/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+<div class="pjt-name">GARDEN</div>
+<div class="pjt-stt hob"></div>
+</button>
+<button class="project" popovertarget="TAILOR" style="
                 background-image: url('images/Tailor_Logo_v1.webp'); 
                 background-size: contain; 
                 background-position: center;
-                background-repeat: no-repeat;"
-            >
-            <a class="pop-data" href="https://jephta-madziva.github.io/Tailoring_v1/" target="_blank" rel="noopener noreferrer">view>></a>
-          <div class="pjt-name">TAILOR</div>
-          <div class="pjt-stt hob"></div>
-        </button>
-      </article>
-    </article>
-
-    <!-- Branding Projects -->
-    <article id="brand-panel" class="pop-panel" popover>
-      <button id="close-btn" popovertarget="brand-panel" popovertargetaction="hide">
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-        stroke="white" stroke-width="1.5"
-        stroke-linecap="round" stroke-linejoin="round">
-        <!-- door/jamb -->
-        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-        <!-- arrow -->
-        <path d="M14 8l6 4-6 4" />
-        <path d="M20 12H9" />
-      </svg>
-      </button>
-      <!--
+                background-repeat: no-repeat;">
+<a class="pop-data" href="https://jephta-madziva.github.io/Tailoring_v1/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+<div class="pjt-name">TAILOR</div>
+<div class="pjt-stt hob"></div>
+</button>
+</article>
+</article>
+<!-- Branding Projects -->
+<article class="pop-panel" id="brand-panel" popover="">
+<button id="close-btn" popovertarget="brand-panel" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<!--
         <article class="projects">
         <button class="project" popovertarget="CFS"
           style="
@@ -777,59 +775,55 @@
         </button>
       </article>
       -->
-      <div class="head" style="color: rgb(0, 0, 91); display: flex; flex-direction: column;"> Coming Soon! <br> <small>Under Construction</small></div>
-    </article>
-
-
+<div class="head" style="color: rgb(0, 0, 91); display: flex; flex-direction: column;"> Coming Soon! <br/> <small>Under Construction</small></div>
+</article>
 <!--ELECTRONICS DATA DASHBOARDS-->
-    <!-- [5,9]12V PSU Data Dashboard Popups -->
-    <article id="12V_PSU"  class="project-ui" popover>
-      <button id="close-btn" popovertarget="12V_PSU" popovertargetaction="hide"> 
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-          stroke="white" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <!-- door/jamb -->
-          <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-          <!-- arrow -->
-          <path d="M14 8l6 4-6 4" />
-          <path d="M20 12H9" />
-        </svg>
-      </button>
-      <figure id="dp-grp"></figure>
-      <!-- UI Data Boxes -->
-      <div class="data-panel" >   
-        <div id="dash-panel" class="pjt-ui0">
-          <h1>NAME: <span class="pjt-nm pl-dt">12V PSU</span></h1>
-          <hr>
-          <p class="full-name">5V, 9V, 12V DC Power Supply Unit</p>
-          <hr>
-          <small class="pjt-cat"><h1>CATEGORY:</h1>CLIENT</small>
-        </div> <!-- This is the first panel, for project name and category -->
-        <div id="dash-panel" class="pjt-ui1" style="background-image: url(images/1295V_DC-removebg-preview.webp); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-        <ul id="dash-panel" class="pjt-ui2">
-          <li class="pjt-spec">12v | 9v | 5v</li>
-          <hr>
-          <li class="pjt-spec">>12v DC Input</li>
-          <hr>
-          <li class="pjt-spec">Full Project Design</li>
-          <hr>
-          <li class="pjt-spec">No ICs</li>
-          <hr>
-          <li class="pjt-spec">Power Supply</li>
-        </ul> <!-- This is the third panel, for project description and details -->
-        <ul id="dash-panel" class="pjt-ui3">
-        </ul> <!-- This is the fourth panel, for project links and actions -->
-        <ul id="dash-panel" class="pjt-ui4"> <!-- This is the fifth panel, for project icons and images -->
-          <li class="pjt-img"><img src="images/1295V_DC-removebg-preview.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/1295V_DC_Schem.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/1295V_DC_PCBD.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/1295V_DC_ISO-removebg-preview.webp" alt="project image"></li>
-        </ul> 
-        <ul id="dash-panel" class="pjt-ui5"> <!-- This is the sixth panel, for project footer and additional information -->
-          <img src="images/kicad.png" alt="kicad icon" class="sft-icon">
-          <img src="images/proteus.png" alt="proteus icon" class="sft-icon">
-        </ul>  
-        <!--
+<!-- [5,9]12V PSU Data Dashboard Popups -->
+<article class="project-ui" id="12V_PSU" popover="">
+<button id="close-btn" popovertarget="12V_PSU" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<figure id="dp-grp"></figure>
+<!-- UI Data Boxes -->
+<div class="data-panel">
+<div class="pjt-ui0" id="dash-panel">
+<h1>NAME: <span class="pjt-nm pl-dt">12V PSU</span></h1>
+<hr/>
+<p class="full-name">5V, 9V, 12V DC Power Supply Unit</p>
+<hr/>
+<small class="pjt-cat"><h1>CATEGORY:</h1>CLIENT</small>
+</div> <!-- This is the first panel, for project name and category -->
+<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/1295V_DC-removebg-preview.webp); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+<ul class="pjt-ui2" id="dash-panel">
+<li class="pjt-spec">12v | 9v | 5v</li>
+<hr/>
+<li class="pjt-spec">&gt;12v DC Input</li>
+<hr/>
+<li class="pjt-spec">Full Project Design</li>
+<hr/>
+<li class="pjt-spec">No ICs</li>
+<hr/>
+<li class="pjt-spec">Power Supply</li>
+</ul> <!-- This is the third panel, for project description and details -->
+<ul class="pjt-ui3" id="dash-panel">
+</ul> <!-- This is the fourth panel, for project links and actions -->
+<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+<li class="pjt-img"><img alt="project image" src="images/1295V_DC-removebg-preview.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/1295V_DC_Schem.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/1295V_DC_PCBD.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/1295V_DC_ISO-removebg-preview.webp"/></li>
+</ul>
+<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+</ul>
+<!--
           <div id="dash-panel" class="pjt-ui6" role="img" aria-label="Feedback">
           <style>
             /* Size and color control */
@@ -864,175 +858,160 @@
           </svg>
         </div>
         -->
-      </div>
-    </article>
-    <!-- Amon v1.2 Data Dashboard Popups -->
-    <article id="AMon_v1"  class="project-ui" popover>
-      <button id="close-btn" popovertarget="AMon_v1" popovertargetaction="hide"> 
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-          stroke="white" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <!-- door/jamb -->
-          <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-          <!-- arrow -->
-          <path d="M14 8l6 4-6 4" />
-          <path d="M20 12H9" />
-        </svg>
-      </button>
-      <figure id="dp-grp"></figure>
-      <!-- UI Data Boxes -->
-      <div class="data-panel" >   
-        <div id="dash-panel" class="pjt-ui0">
-          <h1>NAME: <span class="pjt-nm pl-dt">AMon_v1.2</span></h1>
-          <hr>
-          <p class="full-name">AGRICULTURE MONITORING DEVICE</p>
-          <hr>
-          <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-        </div> <!-- This is the first panel, for project name and category -->
-        <div id="dash-panel" class="pjt-ui1" style="background-image: url(images/2-v6-Assy-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-        <ul id="dash-panel" class="pjt-ui2">
-          <li class="pjt-spec">version 1.2</li>
-          <hr>
-          <li class="pjt-spec">WiFi & BT</li>
-          <hr>
-          <li class="pjt-spec">ESP-WROOM-32 CPU</li>
-          <hr>
-          <li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
-          <hr>
-          <li class="pjt-spec">5V Input Compatible</li>
-          <hr>
-          <li class="pjt-spec">3 INPUTS | 3 OUTPUTS</li>
-        </ul> <!-- This is the third panel, for project description and details -->
-        
-        <ul id="dash-panel" class="pjt-ui3">
-          <a href="https://github.com/JEPHTA-Madziva/AMon/tree/ff19bc2383287d234164de56002bb950ee4cd4b3/AMon%20v1" class="pjt-lnk" target="_blank"><img class="icon" src="Icons/link_icon.svg" alt="Github link send"><h1>GitHub</h1></a>
-        </ul> <!-- This is the fourth panel, for project links and actions -->
-        
-        <ul id="dash-panel" class="pjt-ui4"> <!-- This is the fifth panel, for project icons and images -->
-          <li class="pjt-img"><img src="images/2-v7-explo-sim-unscreen.gif" alt="project image"></li>
-          <li class="pjt-img"><img src="images/AMon_v1.2.1b_ISO2R-removebg-preview.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/AMon_v1.2.1b_TOP-removebg-preview.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/AMon_v1.2.1_TOP2-removebg-preview.webp" alt="project image"></li>
-        </ul> 
-        
-        <ul id="dash-panel" class="pjt-ui5"> <!-- This is the sixth panel, for project footer and additional information -->
-          <img src="images/kicad.png" alt="kicad icon" class="sft-icon">
-          <img src="images/proteus.png" alt="proteus icon" class="sft-icon">
-          <img src="images/fusion360.png" alt="fusion360 icon" class="sft-icon">
-        </ul>  
-      </div>
-    </article>
-    <!-- PIC Mod v1 Data Dashboard Popups -->
-    <article id="PicMOD1"  class="project-ui" popover>
-      <button id="close-btn" popovertarget="PicMOD1" popovertargetaction="hide"> 
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-          stroke="white" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <!-- door/jamb -->
-          <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-          <!-- arrow -->
-          <path d="M14 8l6 4-6 4" />
-          <path d="M20 12H9" />
-        </svg>
-      </button>
-      <figure id="dp-grp"></figure>
-      <!-- UI Data Boxes -->
-      <div class="data-panel" >   
-        <div id="dash-panel" class="pjt-ui0">
-          <h1>NAME: <span class="pjt-nm pl-dt">PicMOD1</span></h1>
-          <hr>
-          <p class="full-name">PIC16f877A-Based Module</p>
-          <hr>
-          <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-        </div> <!-- This is the first panel, for project name and category -->
-        <div id="dash-panel" class="pjt-ui1" style="background-image: url(images/2-PCB-v24-Y-Rot-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-        <ul id="dash-panel" class="pjt-ui2">
-          <li class="pjt-spec">version 1.2.0</li>
-          <hr>
-          <li class="pjt-spec">PIC16f877A Microcontroller</li>
-          <hr>
-          <li class="pjt-spec">UI | AUTO | TIMER | ADC | IO</li>
-          <hr>
-          <li class="pjt-spec">5V DC PSU Included</li>
-          <hr>
-          <li class="pjt-spec">Crucial Peripherals Included</li>
-          <hr>
-          <li class="pjt-spec">SMT Configuration</li>
-        </ul> <!-- This is the third panel, for project description and details -->
-        
-        <ul id="dash-panel" class="pjt-ui3">
-          <a href="https://github.com/JEPHTA-Madziva/Pic-Mod.git" class="pjt-lnk" target="_blank"><img class="icon" src="Icons/link_icon.svg" alt="Github link send"><h1>GitHub</h1></a>
-        </ul> <!-- This is the fourth panel, for project links and actions -->
-        
-        <ul id="dash-panel" class="pjt-ui4"> <!-- This is the fifth panel, for project icons and images -->
-          <li class="pjt-img"><img src="images/2-PCB-v23-PCB-SIM-unscreen.gif" alt="project image"></li>
-          <li class="pjt-img"><img src="images/PICMod_1.2_PCB v22_top.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/2-PCB-v23-SIM-unscreen.gif" alt="project image"></li>
-          <li class="pjt-img"><img src="images/PicMOD1.2_TOP_Black-removebg-preview.webp" alt="project image"></li>
-        </ul> 
-        
-        <ul id="dash-panel" class="pjt-ui5"> <!-- This is the sixth panel, for project footer and additional information -->
-          <img src="images/kicad.png" alt="kicad icon" class="sft-icon">
-          <img src="images/proteus.png" alt="proteus icon" class="sft-icon">
-          <img src="images/fusion360.png" alt="fusion360 icon" class="sft-icon">
-        </ul>  
-      </div>
-    </article>   
-    <!-- PIC Dev Board Data Dashboard Popups -->
-    <article id="PDB"  class="project-ui" popover>
-      <button id="close-btn" popovertarget="PDB" popovertargetaction="hide"> 
-        <svg class="exit-icon" viewBox="0 0 24 24" fill="none"
-          stroke="white" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round">
-          <!-- door/jamb -->
-          <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4" />
-          <!-- arrow -->
-          <path d="M14 8l6 4-6 4" />
-          <path d="M20 12H9" />
-        </svg>
-      </button>
-      <figure id="dp-grp"></figure>
-      <!-- UI Data Boxes -->
-      <div class="data-panel" >   
-        <div id="dash-panel" class="pjt-ui0">
-          <h1>NAME: <span class="pjt-nm pl-dt">PIC Dev Board</span></h1>
-          <hr>
-          <p class="full-name">PIC16f877A-Based Development Board</p>
-          <hr>
-          <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-        </div> <!-- This is the first panel, for project name and category -->
-        <div id="dash-panel" class="pjt-ui1" style="background-image: url(images/0-v5-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-        <ul id="dash-panel" class="pjt-ui2">
-          <li class="pjt-spec">12v | 9v | 5v</li>
-          <hr>
-          <li class="pjt-spec">PIC16F877A MicroController [IC]</li>
-          <hr>
-          <li class="pjt-spec">5V DC PSU Included</li>
-          <hr>
-          <li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
-          <hr>
-          <li class="pjt-spec">Crucial Peripherals Included</li>
-          <hr>
-          <li class="pjt-spec">No Bootloader Circuit</li>
-        </ul> <!-- This is the third panel, for project description and details -->
-        
-        <ul id="dash-panel" class="pjt-ui3">
-          <a href="https://github.com/JEPHTA-Madziva/Pic-Dev-Board.git" class="pjt-lnk" target="_blank"><img class="icon" src="Icons/link_icon.svg" alt="Github link send"><h1>GitHub</h1></a>
-        </ul> <!-- This is the fourth panel, for project links and actions -->
-        
-        <ul id="dash-panel" class="pjt-ui4"> <!-- This is the fifth panel, for project icons and images -->
-          <li class="pjt-img"><img src="images/PIC Dev 1.0 v6_iso_render.webp" alt="project image"></li>
-          <li class="pjt-img"><img src="images/0-v6-z-exp-unscreen.gif" alt="project image"></li>
-          <li class="pjt-img"><img src="images/0-v6-z-rot-sim-unscreen.gif" alt="project image"></li>
-          <li class="pjt-img"><img src="images/PIC Dev 1.0 v6_top_render.webp" alt="project image"></li>
-        </ul> 
-        
-        <ul id="dash-panel" class="pjt-ui5"> <!-- This is the sixth panel, for project footer and additional information -->
-          <img src="images/kicad.png" alt="kicad icon" class="sft-icon">
-          <img src="images/proteus.png" alt="proteus icon" class="sft-icon">
-          <img src="images/fusion360.png" alt="fusion360 icon" class="sft-icon">
-        </ul>  
-        <!--
+</div>
+</article>
+<!-- Amon v1.2 Data Dashboard Popups -->
+<article class="project-ui" id="AMon_v1" popover="">
+<button id="close-btn" popovertarget="AMon_v1" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<figure id="dp-grp"></figure>
+<!-- UI Data Boxes -->
+<div class="data-panel">
+<div class="pjt-ui0" id="dash-panel">
+<h1>NAME: <span class="pjt-nm pl-dt">AMon_v1.2</span></h1>
+<hr/>
+<p class="full-name">AGRICULTURE MONITORING DEVICE</p>
+<hr/>
+<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+</div> <!-- This is the first panel, for project name and category -->
+<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-v6-Assy-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+<ul class="pjt-ui2" id="dash-panel">
+<li class="pjt-spec">version 1.2</li>
+<hr/>
+<li class="pjt-spec">WiFi &amp; BT</li>
+<hr/>
+<li class="pjt-spec">ESP-WROOM-32 CPU</li>
+<hr/>
+<li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
+<hr/>
+<li class="pjt-spec">5V Input Compatible</li>
+<hr/>
+<li class="pjt-spec">3 INPUTS | 3 OUTPUTS</li>
+</ul> <!-- This is the third panel, for project description and details -->
+<ul class="pjt-ui3" id="dash-panel">
+<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/AMon/tree/ff19bc2383287d234164de56002bb950ee4cd4b3/AMon%20v1" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+</ul> <!-- This is the fourth panel, for project links and actions -->
+<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+<li class="pjt-img"><img alt="project image" src="images/2-v7-explo-sim-unscreen.gif"/></li>
+<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1b_ISO2R-removebg-preview.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1b_TOP-removebg-preview.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1_TOP2-removebg-preview.webp"/></li>
+</ul>
+<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+<img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
+</ul>
+</div>
+</article>
+<!-- PIC Mod v1 Data Dashboard Popups -->
+<article class="project-ui" id="PicMOD1" popover="">
+<button id="close-btn" popovertarget="PicMOD1" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<figure id="dp-grp"></figure>
+<!-- UI Data Boxes -->
+<div class="data-panel">
+<div class="pjt-ui0" id="dash-panel">
+<h1>NAME: <span class="pjt-nm pl-dt">PicMOD1</span></h1>
+<hr/>
+<p class="full-name">PIC16f877A-Based Module</p>
+<hr/>
+<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+</div> <!-- This is the first panel, for project name and category -->
+<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-PCB-v24-Y-Rot-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+<ul class="pjt-ui2" id="dash-panel">
+<li class="pjt-spec">version 1.2.0</li>
+<hr/>
+<li class="pjt-spec">PIC16f877A Microcontroller</li>
+<hr/>
+<li class="pjt-spec">UI | AUTO | TIMER | ADC | IO</li>
+<hr/>
+<li class="pjt-spec">5V DC PSU Included</li>
+<hr/>
+<li class="pjt-spec">Crucial Peripherals Included</li>
+<hr/>
+<li class="pjt-spec">SMT Configuration</li>
+</ul> <!-- This is the third panel, for project description and details -->
+<ul class="pjt-ui3" id="dash-panel">
+<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Mod.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+</ul> <!-- This is the fourth panel, for project links and actions -->
+<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+<li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-PCB-SIM-unscreen.gif"/></li>
+<li class="pjt-img"><img alt="project image" src="images/PICMod_1.2_PCB v22_top.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-SIM-unscreen.gif"/></li>
+<li class="pjt-img"><img alt="project image" src="images/PicMOD1.2_TOP_Black-removebg-preview.webp"/></li>
+</ul>
+<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+<img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
+</ul>
+</div>
+</article>
+<!-- PIC Dev Board Data Dashboard Popups -->
+<article class="project-ui" id="PDB" popover="">
+<button id="close-btn" popovertarget="PDB" popovertargetaction="hide">
+<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<!-- door/jamb -->
+<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+<!-- arrow -->
+<path d="M14 8l6 4-6 4"></path>
+<path d="M20 12H9"></path>
+</svg>
+</button>
+<figure id="dp-grp"></figure>
+<!-- UI Data Boxes -->
+<div class="data-panel">
+<div class="pjt-ui0" id="dash-panel">
+<h1>NAME: <span class="pjt-nm pl-dt">PIC Dev Board</span></h1>
+<hr/>
+<p class="full-name">PIC16f877A-Based Development Board</p>
+<hr/>
+<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+</div> <!-- This is the first panel, for project name and category -->
+<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/0-v5-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+<ul class="pjt-ui2" id="dash-panel">
+<li class="pjt-spec">12v | 9v | 5v</li>
+<hr/>
+<li class="pjt-spec">PIC16F877A MicroController [IC]</li>
+<hr/>
+<li class="pjt-spec">5V DC PSU Included</li>
+<hr/>
+<li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
+<hr/>
+<li class="pjt-spec">Crucial Peripherals Included</li>
+<hr/>
+<li class="pjt-spec">No Bootloader Circuit</li>
+</ul> <!-- This is the third panel, for project description and details -->
+<ul class="pjt-ui3" id="dash-panel">
+<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Dev-Board.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+</ul> <!-- This is the fourth panel, for project links and actions -->
+<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+<li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_iso_render.webp"/></li>
+<li class="pjt-img"><img alt="project image" src="images/0-v6-z-exp-unscreen.gif"/></li>
+<li class="pjt-img"><img alt="project image" src="images/0-v6-z-rot-sim-unscreen.gif"/></li>
+<li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_top_render.webp"/></li>
+</ul>
+<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+<img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
+</ul>
+<!--
           <div id="dash-panel" class="pjt-ui6" role="img" aria-label="Feedback">
           <style>
             /* Size and color control */
@@ -1067,235 +1046,227 @@
           </svg>
         </div>
         -->
-      </div>
-    </article>
-
-
+</div>
+</article>
 <!--WEB DEV DATA DASHBOARDS-->
-    <!-- GARDEN Data Dashboard Popups -->
-    <article  id="GARDEN"  class="project-ui" popover>
-      <button id="close-btn" popovertarget="GARDEN" popovertargetaction="hide">X</button>
-      <h3 class="tag">HOBBY</h3>
-      <figure><img src="project-images/the-GARDEN.png" alt="the-GARDEN"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <h2 class="heading">GARDEN</h2>
-        <p>Front-End Website</p>
-        <p>Landing Page</p>
-        <p>Vertical Farming</p>
-        <p>Eco-Friendly Farming</p>
-        <p>Zero Carbon Footprint</p>
-        <a class="more" href="https://jephta-madziva.github.io/the-GARDEN/"target="_blank">WEBSITE</a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one"><svg viewBox="0 0 200 200"><path class="icon" d="M100,120 C100,90 115,70 130,70 C130,85 120,100 100,110 C80,100 70,85 70,70 C85,70 100,90 100,120 Z" /></svg></div>
-        <div class="pi pi-two"><img src="project-images/the-GARDEN.png" alt=""></div>
-        <div class="pi pi-three"><img src="project-images/products.png" alt=""></div>
-        <div class="pi pi-four"><img src="project-images/services.png" alt=""></div>
-      </div>
-      <div class="pi pi-five"></div>
-    </article>  
-    <article class="project-ui" popover>
-      <div class="tag">CLIENT</div>
-      <figure><img src="images/Labyrinth_Key.svg" alt="HomeAuto"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <span class="heading">ACCOUNTANCY WEBSITE[CFS]</span>
-        <p>CRESTLINE FINANCIAL SERVICES</p>
-        <p>ACCOUNTANCY WEBSITE</p>
-        <p>LOGOs</p>
-        <p>FLYERS & BANNERS</p>
-        <a class="more" href="https://crestlinefinancialservices.co.za/ "target="_blank">WEBSITE<img class="icon" src="Icons/link_icon.svg" alt=""></a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one lm"><img src="images/Lettermark_Labyrinth_Grad.png" alt=""></div>
-        <div class="pi pi-two"><img src="images/Full_Logo_Icon_Top.png" alt=""></div>
-        <div class="pi pi-three lf"><img src="images/Labyrinth_Lettermark_Sky Blue.png" alt=""></div>
-        <div class="pi pi-four"></div>
-      </div>
-      <div class="pi pi-five p5"><img src="images/Labyrinth_Full Logo.png" alt=""></div>
-    </article>
-    <article class="project-ui" popover>
-      <div class="tag">HOBBY</div>
-      <figure><img src="images/2-v6-Assy-Sim-unscreen.gif" alt="Agriculture Monitore v1.2.1"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <span class="heading">AGRICULTURE MONITOR
+<!-- GARDEN Data Dashboard Popups -->
+<article class="project-ui" id="GARDEN" popover="">
+<button id="close-btn" popovertarget="GARDEN" popovertargetaction="hide">X</button>
+<h3 class="tag">HOBBY</h3>
+<figure><img alt="the-GARDEN" src="project-images/the-GARDEN.png"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<h2 class="heading">GARDEN</h2>
+<p>Front-End Website</p>
+<p>Landing Page</p>
+<p>Vertical Farming</p>
+<p>Eco-Friendly Farming</p>
+<p>Zero Carbon Footprint</p>
+<a class="more" href="https://jephta-madziva.github.io/the-GARDEN/" target="_blank">WEBSITE</a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one"><svg viewbox="0 0 200 200"><path class="icon" d="M100,120 C100,90 115,70 130,70 C130,85 120,100 100,110 C80,100 70,85 70,70 C85,70 100,90 100,120 Z"></path></svg></div>
+<div class="pi pi-two"><img alt="" src="project-images/the-GARDEN.png"/></div>
+<div class="pi pi-three"><img alt="" src="project-images/products.png"/></div>
+<div class="pi pi-four"><img alt="" src="project-images/services.png"/></div>
+</div>
+<div class="pi pi-five"></div>
+</article>
+<article class="project-ui" popover="">
+<div class="tag">CLIENT</div>
+<figure><img alt="HomeAuto" src="images/Labyrinth_Key.svg"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<span class="heading">ACCOUNTANCY WEBSITE[CFS]</span>
+<p>CRESTLINE FINANCIAL SERVICES</p>
+<p>ACCOUNTANCY WEBSITE</p>
+<p>LOGOs</p>
+<p>FLYERS &amp; BANNERS</p>
+<a class="more" href="https://crestlinefinancialservices.co.za/ " target="_blank">WEBSITE<img alt="" class="icon" src="Icons/link_icon.svg"/></a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one lm"><img alt="" src="images/Lettermark_Labyrinth_Grad.png"/></div>
+<div class="pi pi-two"><img alt="" src="images/Full_Logo_Icon_Top.png"/></div>
+<div class="pi pi-three lf"><img alt="" src="images/Labyrinth_Lettermark_Sky Blue.png"/></div>
+<div class="pi pi-four"></div>
+</div>
+<div class="pi pi-five p5"><img alt="" src="images/Labyrinth_Full Logo.png"/></div>
+</article>
+<article class="project-ui" popover="">
+<div class="tag">HOBBY</div>
+<figure><img alt="Agriculture Monitore v1.2.1" src="images/2-v6-Assy-Sim-unscreen.gif"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<span class="heading">AGRICULTURE MONITOR
         </span>
-        <p>version 1.2.1</p>
-        <p>ESP-WROOM-32 CPU</p>
-        <p>UI Addon Included</p>
-        <p>Crucial Peripherals Included</p>
-        <p>3 INPUTS | 3 OUTPUTS</p>
-        <a class="more" href="ZIPS/AMon_v1.2.rar">DOWNLOAD<img class="icon" src="Icons/download_icon.svg" alt=""></a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one"><img src="images/AMon_v1.2 v5_ISO.png" alt=""></div>
-        <div class="pi pi-two"><img src="images/AMon_v1.2.1_TOP2-removebg-preview.png" alt=""></div>
-        <div class="pi pi-three"><img src="images/AMon_v1.2.1b_TOP-removebg-preview.png" alt=""></div>
-        <div class="pi pi-four"><img src="images/AMon_v1.2.1b_TOP2-removebg-preview.png" alt=""></div>
-      </div>
-      <div class="pi pi-five pax"><img src="images/2-v7-explo-sim-unscreen.gif" alt=""></div>
-    </article>
-    <article class="project-ui" popover>
-      <div class="tag">HOBBY</div>
-      <figure><img src="images/2-PCB-v24-Y-Rot-unscreen.gif" alt="HomeAuto"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <span class="heading">PICMOD1
+<p>version 1.2.1</p>
+<p>ESP-WROOM-32 CPU</p>
+<p>UI Addon Included</p>
+<p>Crucial Peripherals Included</p>
+<p>3 INPUTS | 3 OUTPUTS</p>
+<a class="more" href="ZIPS/AMon_v1.2.rar">DOWNLOAD<img alt="" class="icon" src="Icons/download_icon.svg"/></a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one"><img alt="" src="images/AMon_v1.2 v5_ISO.png"/></div>
+<div class="pi pi-two"><img alt="" src="images/AMon_v1.2.1_TOP2-removebg-preview.png"/></div>
+<div class="pi pi-three"><img alt="" src="images/AMon_v1.2.1b_TOP-removebg-preview.png"/></div>
+<div class="pi pi-four"><img alt="" src="images/AMon_v1.2.1b_TOP2-removebg-preview.png"/></div>
+</div>
+<div class="pi pi-five pax"><img alt="" src="images/2-v7-explo-sim-unscreen.gif"/></div>
+</article>
+<article class="project-ui" popover="">
+<div class="tag">HOBBY</div>
+<figure><img alt="HomeAuto" src="images/2-PCB-v24-Y-Rot-unscreen.gif"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<span class="heading">PICMOD1
         </span>
-        <p>version 1.2.0</p>
-        <p> PIC16f877A Microcontroller </p>
-        <p>UI | AUTO | TIMER | ADC | IO</p>
-        <p>5V DC PSU Included</p>
-        <p>Crucial Peripherals Included</p>
-        <p>2 INPUTS | 2 OUTPUTS</p>
-        <a class="more" href="ZIPS/PicMOD1.2.rar">DOWNLOAD<img class="icon" src="Icons/download_icon.svg" alt=""></a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one"><img src="images/PICMod_1.2_PCB v22_ISO.png" alt=""></div>
-        <div class="pi pi-two"><img src="images/PICMod_1.2_PCB v22_PCB_ISO.png" alt=""></div>
-        <div class="pi pi-three"><img src="images/2-PCB-v23-PCB-SIM-unscreen.gif" alt=""></div>
-        <div class="pi pi-four"><img src="images/PICMod_1.2_PCB v22_top.png" alt=""></div>
-      </div>
-      <div class="pi pi-five"></div>
-    </article>
-    <article class="project-ui" popover>
-      <div class="tag">HOBBY</div>
-      <figure><img src="images/HA-m3-Assembly-v19-X-rot-Sim-unscreen.gif" alt="HomeAuto"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <span class="heading">HOME AUTOMATION BOX
+<p>version 1.2.0</p>
+<p> PIC16f877A Microcontroller </p>
+<p>UI | AUTO | TIMER | ADC | IO</p>
+<p>5V DC PSU Included</p>
+<p>Crucial Peripherals Included</p>
+<p>2 INPUTS | 2 OUTPUTS</p>
+<a class="more" href="ZIPS/PicMOD1.2.rar">DOWNLOAD<img alt="" class="icon" src="Icons/download_icon.svg"/></a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one"><img alt="" src="images/PICMod_1.2_PCB v22_ISO.png"/></div>
+<div class="pi pi-two"><img alt="" src="images/PICMod_1.2_PCB v22_PCB_ISO.png"/></div>
+<div class="pi pi-three"><img alt="" src="images/2-PCB-v23-PCB-SIM-unscreen.gif"/></div>
+<div class="pi pi-four"><img alt="" src="images/PICMod_1.2_PCB v22_top.png"/></div>
+</div>
+<div class="pi pi-five"></div>
+</article>
+<article class="project-ui" popover="">
+<div class="tag">HOBBY</div>
+<figure><img alt="HomeAuto" src="images/HA-m3-Assembly-v19-X-rot-Sim-unscreen.gif"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<span class="heading">HOME AUTOMATION BOX
         </span>
-        <p> PIC16f877A Microcontroller </p>
-        <p>UI | AUTO | TIMER | ADC | IO</p>
-        <p>5V DC PSU Included</p>
-        <p>Crucial Peripherals Included</p>
-        <p>2 INPUTS | 2 OUTPUTS</p>
-        <a class="more" href="ZIPS/">DOWNLOAD<img class="icon" src="Icons/download_icon.svg" alt=""></a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one"><img src="images/HomeAuto_iso.png" alt=""></div>
-        <div class="pi pi-two"><img src="images/HA-m3-Assembly-v17-unscreen.gif" alt=""></div>
-        <div class="pi pi-three"><img src="images/2-PCB-v2-x-rot-sim-unscreen.gif" alt=""></div>
-        <div class="pi pi-four"><img src="images/2-v2-PCB-z-rot-sim-unscreen.gif" alt=""></div>
-      </div>
-      <div class="pi pi-five ham"></div>
-    </article>
-    <article class="project-ui last" popover>
-      <div class="tag">HOBBY</div>
-      <figure><img src="images/0-v5-Sim-unscreen.gif" alt="PICDEV Module"></figure>
-      <div class="pj-gap"></div>
-      <div class="p">
-        <span class="heading">PIC16 DEV BOARD
+<p> PIC16f877A Microcontroller </p>
+<p>UI | AUTO | TIMER | ADC | IO</p>
+<p>5V DC PSU Included</p>
+<p>Crucial Peripherals Included</p>
+<p>2 INPUTS | 2 OUTPUTS</p>
+<a class="more" href="ZIPS/">DOWNLOAD<img alt="" class="icon" src="Icons/download_icon.svg"/></a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one"><img alt="" src="images/HomeAuto_iso.png"/></div>
+<div class="pi pi-two"><img alt="" src="images/HA-m3-Assembly-v17-unscreen.gif"/></div>
+<div class="pi pi-three"><img alt="" src="images/2-PCB-v2-x-rot-sim-unscreen.gif"/></div>
+<div class="pi pi-four"><img alt="" src="images/2-v2-PCB-z-rot-sim-unscreen.gif"/></div>
+</div>
+<div class="pi pi-five ham"></div>
+</article>
+<article class="project-ui last" popover="">
+<div class="tag">HOBBY</div>
+<figure><img alt="PICDEV Module" src="images/0-v5-Sim-unscreen.gif"/></figure>
+<div class="pj-gap"></div>
+<div class="p">
+<span class="heading">PIC16 DEV BOARD
         </span>
-        <p>PIC16F877A MicroController</p>
-        <p>UART | I2C | DAC | ADC | IO</p>
-        <p>5V DC PSU Included</p>
-        <p>Crucial Peripherals Included</p>
-        <p>No Bootloader Circuit</p>
-        <a class="more" href="projects.html">DOWNLOAD<img class="icon" src="Icons/download_icon.svg" alt=""></a>
-      </div>
-      <div class="pi-box">
-        <div class="pi pi-one"><img src="images/0-v6-z-rot-sim-unscreen.gif" alt=""></div>
-        <div class="pi pi-two"><img src="images/PIC Dev 1.0 v6_iso_render.png" alt=""></div>
-        <div class="pi pi-three"><img src="images/PIC Dev 1.0 v6_top_render.png" alt=""></div>
-        <div class="pi pi-four"><img src="images/0-v6-z-exp-unscreen.gif" alt=""></div>
-      </div>
-      <div class="pi pi-five"></div>
-    </article>
-
-  </section>
-  
-  <section id="contacts">
-    <h2 class="contact-title">Get In Touch</h2>
-    <article class="contacts">
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <div class="con-bg-graphic"></div>
-        <input class="form-input" type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-        <input class="form-input" type="text" placeholder="Your Full Name" name="name" required>
-        <input class="form-input" type="email" placeholder="Your Email" name="email" required>
-        <textarea class="form-input" placeholder="Your Message" name="message" required></textarea>
-        <button class="form-output" type="submit">Submit Form</button>
-        <hr>
-      </form>
-      
-      <ul class="contact-list" id="radial">
-        <div class="con-bg-graphic"></div>
-        <li class="c-link WhatsApp"><a href="https://wa.me/263772123456" target="_blank" ><img src="Icons/WhatsApp_Gold.svg" alt="WhatsApp"></a></li>
-        <li class="c-link Facebook"><a href="https://www.facebook.com/Empirial.org/" target="_blank" ><img src="Icons/Facebook_icon.png" alt="Facebook"></a></li>
-        <li class="c-link Gmail"><a href="https://www.madzivajephta@gmail.com" target="_blank" ><img src="Icons/Gmail_icon.png" alt=""></a></li>
-        <li class="c-link LinkedIn"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img src="Icons/LinkedIn.png" alt="LinkedIn"></a></li>
-        <li class="c-link Fiverr"><a href="http://www.fiverr.com/s2/9970162673" target="_blank" ><img src="Icons/Fiverr_icon.png" alt="Fiverr"></a></li>
-        <li class="c-link Behance"><a href="https://www.behance.net/japhethmadziva" target="_blank" ><img src="Icons/Behance_icon.svg" alt=""></a></li>
-        <li class="c-link Upwork"><a href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c0" target="_blank" ><img src="Icons/Upwork_icon.png" alt=""></a></li>
-      </ul>
-    </article>
-  </section>
-
-  <footer id="footer">
-    <nav>
-      <ol class="tabs">
-        <li class="serv"><a href="#services">SERVICES</a></li>
-        <li class="proj"><a href="#projects">PROJECTS</a></li>
-        <li class="skil"><a href="#skills">SKILLS</a></li>
-      </ol>
-    </nav>
-    <small class="summary">
-      Jephtamadziva &copy; 2025
+<p>PIC16F877A MicroController</p>
+<p>UART | I2C | DAC | ADC | IO</p>
+<p>5V DC PSU Included</p>
+<p>Crucial Peripherals Included</p>
+<p>No Bootloader Circuit</p>
+<a class="more" href="projects.html">DOWNLOAD<img alt="" class="icon" src="Icons/download_icon.svg"/></a>
+</div>
+<div class="pi-box">
+<div class="pi pi-one"><img alt="" src="images/0-v6-z-rot-sim-unscreen.gif"/></div>
+<div class="pi pi-two"><img alt="" src="images/PIC Dev 1.0 v6_iso_render.png"/></div>
+<div class="pi pi-three"><img alt="" src="images/PIC Dev 1.0 v6_top_render.png"/></div>
+<div class="pi pi-four"><img alt="" src="images/0-v6-z-exp-unscreen.gif"/></div>
+</div>
+<div class="pi pi-five"></div>
+</article>
+</section>
+<section id="contacts">
+<h2 class="contact-title">Get In Touch</h2>
+<article class="contacts">
+<form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
+<div class="con-bg-graphic"></div>
+<input class="form-input" name="access_key" type="hidden" value="YOUR_ACCESS_KEY_HERE"/>
+<input class="form-input" name="name" placeholder="Your Full Name" required="" type="text"/>
+<input class="form-input" name="email" placeholder="Your Email" required="" type="email"/>
+<textarea class="form-input" name="message" placeholder="Your Message" required=""></textarea>
+<button class="form-output" type="submit">Submit Form</button>
+<hr/>
+</form>
+<ul class="contact-list" id="radial">
+<div class="con-bg-graphic"></div>
+<li class="c-link WhatsApp"><a href="https://wa.me/263772123456" target="_blank"><img alt="WhatsApp" src="Icons/WhatsApp_Gold.svg"/></a></li>
+<li class="c-link Facebook"><a href="https://www.facebook.com/Empirial.org/" target="_blank"><img alt="Facebook" src="Icons/Facebook_icon.png"/></a></li>
+<li class="c-link Gmail"><a href="https://www.madzivajephta@gmail.com" target="_blank"><img alt="" src="Icons/Gmail_icon.png"/></a></li>
+<li class="c-link LinkedIn"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img alt="LinkedIn" src="Icons/LinkedIn.png"/></a></li>
+<li class="c-link Fiverr"><a href="http://www.fiverr.com/s2/9970162673" target="_blank"><img alt="Fiverr" src="Icons/Fiverr_icon.png"/></a></li>
+<li class="c-link Behance"><a href="https://www.behance.net/japhethmadziva" target="_blank"><img alt="" src="Icons/Behance_icon.svg"/></a></li>
+<li class="c-link Upwork"><a href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c0" target="_blank"><img alt="" src="Icons/Upwork_icon.png"/></a></li>
+</ul>
+</article>
+</section>
+<footer id="footer">
+<nav>
+<ol class="tabs">
+<li class="serv"><a href="#services">SERVICES</a></li>
+<li class="proj"><a href="#projects">PROJECTS</a></li>
+<li class="skil"><a href="#skills">SKILLS</a></li>
+</ol>
+</nav>
+<small class="summary">
+      Jephtamadziva © 2025
     </small>
-  </footer>
-
-  <ul class="left part">
-    <li class="l-first"></li>
-    <li class="l-second"></li>
-    <li class="l-third"></li>
-    <li class="l-forth"></li>
-    <li class="l-fifth"></li>
-    <li class="l-sixth"></li>
-    <li class="l-seventh"></li>
-    <li class="l-eighth"></li>
-    <li class="l-nineth"></li>
-    <li class="l-tenth"></li>
-  </ul>
-  <ul class="right part">
-    <li class="r-first"></li>
-    <li class="r-second"></li>
-    <li class="r-third"></li>
-    <li class="r-forth"></li>
-    <li class="r-fifth"></li>
-    <li class="r-sixth"></li>
-    <li class="r-seventh"></li>
-    <li class="r-eighth"></li>
-    <li class="r-nineth"></li>
-    <li class="r-tenth"></li>
-  </ul>
-  <ul class="top part">
-    <li class="t-first"></li>
-    <li class="t-second"></li>
-    <li class="t-third"></li>
-    <li class="t-forth"></li>
-    <li class="t-fifth"></li>
-    <li class="t-sixth"></li>
-    <li class="t-seventh"></li>
-    <li class="t-eighth"></li>
-    <li class="t-nineth"></li>
-    <li class="t-tenth"></li>
-  </ul>
-  <ul class="bottom part">
-    <li class="b-first"></li>
-    <li class="b-second"></li>
-    <li class="b-third"></li>
-    <li class="b-forth"></li>
-    <li class="b-fifth"></li>
-    <li class="b-sixth"></li>
-    <li class="b-seventh"></li>
-    <li class="b-eighth"></li>
-    <li class="b-nineth"></li>
-    <li class="b-tenth"></li>
-  </ul>
-
-  <script> //Cursor JS Code
+</footer>
+<ul class="left part">
+<li class="l-first"></li>
+<li class="l-second"></li>
+<li class="l-third"></li>
+<li class="l-forth"></li>
+<li class="l-fifth"></li>
+<li class="l-sixth"></li>
+<li class="l-seventh"></li>
+<li class="l-eighth"></li>
+<li class="l-nineth"></li>
+<li class="l-tenth"></li>
+</ul>
+<ul class="right part">
+<li class="r-first"></li>
+<li class="r-second"></li>
+<li class="r-third"></li>
+<li class="r-forth"></li>
+<li class="r-fifth"></li>
+<li class="r-sixth"></li>
+<li class="r-seventh"></li>
+<li class="r-eighth"></li>
+<li class="r-nineth"></li>
+<li class="r-tenth"></li>
+</ul>
+<ul class="top part">
+<li class="t-first"></li>
+<li class="t-second"></li>
+<li class="t-third"></li>
+<li class="t-forth"></li>
+<li class="t-fifth"></li>
+<li class="t-sixth"></li>
+<li class="t-seventh"></li>
+<li class="t-eighth"></li>
+<li class="t-nineth"></li>
+<li class="t-tenth"></li>
+</ul>
+<ul class="bottom part">
+<li class="b-first"></li>
+<li class="b-second"></li>
+<li class="b-third"></li>
+<li class="b-forth"></li>
+<li class="b-fifth"></li>
+<li class="b-sixth"></li>
+<li class="b-seventh"></li>
+<li class="b-eighth"></li>
+<li class="b-nineth"></li>
+<li class="b-tenth"></li>
+</ul>
+<script> //Cursor JS Code
     const cursor = document.getElementById('cursorLight');
     document.addEventListener('mousemove', e => 
     {
