@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="209.90477mm"
+   height="209.90477mm"
+   viewBox="0 0 209.90477 209.90477"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.6116409,-64.272537)">
+    <circle
+       style="fill:none;stroke:#ffffff;stroke-width:5;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path1"
+       cx="107.56402"
+       cy="169.22491"
+       r="102.45238" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 35.160451,173.47573 142.66133,111.4101"
+       id="path3" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 35.160473,164.97405 142.66131,227.03978"
+       id="path4" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:15.4792;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path5"
+       cx="41.969753"
+       cy="169.23027"
+       r="24.027363" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:14.1156;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle5"
+       cx="141.28445"
+       cy="113.10367"
+       r="21.910696" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:15.3087;stroke-linecap:square;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle6"
+       cx="141.09737"
+       cy="226.10522"
+       r="23.762779" />
+  </g>
+</svg>
