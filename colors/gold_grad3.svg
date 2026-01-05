@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="202.45328mm"
+   height="68.854683mm"
+   viewBox="0 0 202.45328 68.854683"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient11"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ae8625;stop-opacity:1;"
+         offset="0"
+         id="stop8" />
+      <stop
+         style="stop-color:#f7ef8a;stop-opacity:1;"
+         offset="0.34502923"
+         id="stop9" />
+      <stop
+         style="stop-color:#d2ac47;stop-opacity:1;"
+         offset="0.74658871"
+         id="stop10" />
+      <stop
+         style="stop-color:#edc967;stop-opacity:1;"
+         offset="1"
+         id="stop11" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11"
+       id="linearGradient7"
+       gradientUnits="userSpaceOnUse"
+       x1="3.0830431"
+       y1="131.0294"
+       x2="205.19376"
+       y2="199.19896"
+       gradientTransform="translate(0,20.10834)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.4256037,-150.62361)">
+    <rect
+       style="fill:url(#linearGradient7);fill-rule:evenodd;stroke-width:0.543055;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:3.77953;paint-order:stroke fill markers"
+       id="rect7"
+       width="202.45328"
+       height="68.854668"
+       x="3.4256036"
+       y="150.62361" />
+  </g>
+</svg>
