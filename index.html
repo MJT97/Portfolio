@@ -166,34 +166,33 @@
   </p>
 
   <ul class="socials docs">
-    <li class="socials-link gh"><a href="https://github.com/JEPHTA-Madziva" target="_blank"><img alt="CV" src="images/github.png"/></a><p id="note">Visit GitHub</p></li>
+    <li class="socials-link gh"><a href="https://github.com/JEPHTA-Madziva" target="_blank"><img alt="CV" src="Icons/Github.png"/></a><p id="note">Visit GitHub</p></li>
     <li class="socials-link linkedin"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img alt="LinkedIn" src="Icons/LinkedIn.png"/></a><p id="note">View on LinkedIn</p></li>
     <li class="socials-link wa"><a href="https://wa.me/message/UJYLYBIVTWBWL1" target="_blank"><img alt="WhatsApp" src="Icons/WhatsApp_Gold.png"/></a><p id="note">Chat on WhatsApp</p></li>
   </ul>
 
   <nav class="cta">
-    <button class="cta-btn" onclick="getElementById('hiring').scrollIntoView({behavior: 'smooth'});">HIRE ME &nearrow;</button>
+    <button class="cta-btn" onclick="getElementById('contacts').scrollIntoView({behavior: 'smooth'});">HIRE ME &nearrow;</button>
     <button class="cta-btn" onclick="getElementById('projects').scrollIntoView({behavior: 'smooth'});">MY PROJECTS &searr;</button>
   </nav>
   
   <div class="touch"></div>
   
-  <article class="products">
-    <div class="product">
+  <button class="products" onclick="getElementById('projects').scrollIntoView({behavior: 'smooth'});">
+    <figure class="product">
       <li class="prod"><img alt="" src="images/2-v6-Assy-Sim-unscreen.gif"/></li>
       <li class="prod"><img alt="Empirial Org Icon" src="images/EMPIRIAL-ICO-v2-unscreen.gif"/></li>
-    </div>
-    <div class="product">
+    </figure>
+    <figure class="product">
       <li class="prod"><img alt="" src="images/Labyrinth_Key.svg"/></li>
       <li class="prod"><img alt="HA m3 v17 Sim" src="images/HA-m3-Assembly-v17-unscreen.gif"/></li>
-    </div>
-    <div class="product">
+    </figure>
+    <figure class="product">
       <li class="prod"><img alt="Power Monitor" src="images/Assembly-v25-Sim-unscreen.gif"/></li>
       <li class="prod"><img alt="Wheelbarrow-Assemby-v31" src="images/Sample-Assemby-v32-Z-rot-Sim-unscreen.gif"/></li>
-    </div>
-  </article>
+    </figure>
+  </button>
 </main>
-
 <div class="gap"></div>
 
 <section id="bio">
@@ -662,342 +661,373 @@
 <div class="gap"></div>
 
 <section id="projects">
-<div class="head"> Previous Work</div>
-<nav id="project-icons">
-<!-- Project Categories Buttons -->
-<button class="pjt-btn" popovertarget="electronic-panel">
-        ELECTRONICS
+  <h2 class="head"> Previous Work</h2>
+  
+  <nav id="project-icons">
+    <!-- Project Categories Buttons -->
+    <button class="pjt-btn" popovertarget="electronic-panel">
+      ELECTRONICS
+    </button>
+    <button class="pjt-btn" popovertarget="webdev-panel">
+      WEBSITES
+    </button>
+    <button class="pjt-btn" popovertarget="brand-panel">
+      BRANDING
+    </button>
+  </nav>
+  
+  <!-- Mechatronic Projects -->
+  <article class="pop-panel" id="electronic-panel" popover="">
+    <button id="close-btn" popovertarget="electronic-panel" popovertargetaction="hide">
+      <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+        <!-- door/jamb -->
+        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+        <!-- arrow -->
+        <path d="M14 8l6 4-6 4"></path>
+        <path d="M20 12H9"></path>
+      </svg>
+    </button>
+    <article class="projects">
+      <button class="project" popovertarget="12V_PSU" style="
+                      background-image: url('images/1295V_DC_ISO-removebg-preview.png'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+        <div class="pop-data">view&gt;&gt;</div>
+        <div class="pjt-name">12V PSU</div>
+        <div class="pjt-stt pro"></div>
       </button>
-<button class="pjt-btn" popovertarget="webdev-panel">
-        WEBSITES
+      <button class="project" popovertarget="AMon_v1" style="
+                      background-image: url('images/AMon_v1.2.1b_ISO2R-removebg-preview.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+        <div class="pop-data">view&gt;&gt;</div>
+        <div class="pjt-name">AMon v1.2</div>
+        <div class="pjt-stt hob"></div>
       </button>
-<button class="pjt-btn" popovertarget="brand-panel">
-        BRANDING
+      <button class="project" popovertarget="PicMOD1" style="
+                      background-image: url('images/PICMod_1.2_PCB\ v22_ISO.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+        <div class="pop-data">view&gt;&gt;</div>
+        <div class="pjt-name">PICMOD1</div>
+        <div class="pjt-stt hob"></div>
       </button>
-</nav>
-<!-- Mechatronic Projects -->
-<article class="pop-panel" id="electronic-panel" popover="">
-<button id="close-btn" popovertarget="electronic-panel" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<article class="projects">
-<button class="project" popovertarget="12V_PSU" style="
-                background-image: url('images/1295V_DC_ISO-removebg-preview.png'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<div class="pop-data">view&gt;&gt;</div>
-<div class="pjt-name">12V PSU</div>
-<div class="pjt-stt pro"></div>
-</button>
-<button class="project" popovertarget="AMon_v1" style="
-                background-image: url('images/AMon_v1.2.1b_ISO2R-removebg-preview.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<div class="pop-data">view&gt;&gt;</div>
-<div class="pjt-name">AMon v1.2</div>
-<div class="pjt-stt hob"></div>
-</button>
-<button class="project" popovertarget="PicMOD1" style="
-                background-image: url('images/PICMod_1.2_PCB\ v22_ISO.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<div class="pop-data">view&gt;&gt;</div>
-<div class="pjt-name">PICMOD1</div>
-<div class="pjt-stt hob"></div>
-</button>
-<button class="project" popovertarget="PDB" style="
-                background-image: url('images/PIC\ Dev\ 1.0\ v6_iso_render.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<div class="pop-data">view&gt;&gt;</div>
-<div class="pjt-name">PDB</div>
-<div class="pjt-stt hob"></div>
-</button>
-</article>
-</article>
-<!-- WEB DEV Projects -->
-<article class="pop-panel" id="webdev-panel" popover="">
-<button id="close-btn" popovertarget="webdev-panel" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<article class="projects">
-<button class="project" popovertarget="CFS" style="
-                background-image: url('images/Lettermark_Labyrinth_Grad.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<a class="pop-data" href="https://crestlinefinancialservices.co.za/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
-<div class="pjt-name">CRESTLINE</div>
-<div class="pjt-stt pro"></div>
-</button>
-<button class="project" popovertarget="ERNLO" style="
-                background-image: url('images/ERNLO_Word_Red_Path.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<a class="pop-data" href="https://jephta-madziva.github.io/ERNLO/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
-<div class="pjt-name">ERNLO</div>
-<div class="pjt-stt pro"></div>
-</button>
-<button class="project" popovertarget="SEG" style="
-                background-image: url('images/SELogo_Bag_Impact.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<a class="pop-data" href="https://jephta-madziva.github.io/SEG/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
-<div class="pjt-name">SEG</div>
-<div class="pjt-stt pro"></div>
-</button>
-<button class="project" popovertarget="GARDEN" style="
-                background-image: url('images/Garden_Logo_v2.svg'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<a class="pop-data" href="https://jephta-madziva.github.io/the-GARDEN/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
-<div class="pjt-name">GARDEN</div>
-<div class="pjt-stt hob"></div>
-</button>
-<button class="project" popovertarget="TAILOR" style="
-                background-image: url('images/Tailor_Logo_v1.webp'); 
-                background-size: contain; 
-                background-position: center;
-                background-repeat: no-repeat;">
-<a class="pop-data" href="https://jephta-madziva.github.io/Tailoring_v1/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
-<div class="pjt-name">TAILOR</div>
-<div class="pjt-stt hob"></div>
-</button>
-</article>
-</article>
-<!-- Branding Projects -->
-<article class="pop-panel" id="brand-panel" popover="">
-<button id="close-btn" popovertarget="brand-panel" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
+      <button class="project" popovertarget="PDB" style="
+                      background-image: url('images/PIC\ Dev\ 1.0\ v6_iso_render.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+        <div class="pop-data">view&gt;&gt;</div>
+        <div class="pjt-name">PDB</div>
+        <div class="pjt-stt hob"></div>
+      </button>
+    </article>
+  </article>
+  
+  <!-- WEB DEV Projects -->
+  <article class="pop-panel" id="webdev-panel" popover="">
+    <button id="close-btn" popovertarget="webdev-panel" popovertargetaction="hide">
+    <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+    <!-- door/jamb -->
+    <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+    <!-- arrow -->
+    <path d="M14 8l6 4-6 4"></path>
+    <path d="M20 12H9"></path>
+    </svg>
+    </button>
+    <article class="projects">
+      <button class="project" popovertarget="CFS" style="
+                      background-image: url('images/Lettermark_Labyrinth_Grad.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+      <a class="pop-data" href="https://crestlinefinancialservices.co.za/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+      <div class="pjt-name">CRESTLINE</div>
+      <div class="pjt-stt pro"></div>
+      </button>
 
-<div class="head" style="color: rgb(0, 0, 91); display: flex; flex-direction: column;"> Coming Soon! <br/> <small>Under Construction</small></div>
-</article>
-<!--ELECTRONICS DATA DASHBOARDS-->
-<!-- [5,9]12V PSU Data Dashboard Popups -->
-<article class="project-ui" id="12V_PSU" popover="">
-<button id="close-btn" popovertarget="12V_PSU" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<figure id="dp-grp"></figure>
-<!-- UI Data Boxes -->
-<div class="data-panel">
-<div class="pjt-ui0" id="dash-panel">
-<h1>NAME: <span class="pjt-nm pl-dt">12V PSU</span></h1>
-<hr/>
-<p class="full-name">5V, 9V, 12V DC Power Supply Unit</p>
-<hr/>
-<small class="pjt-cat"><h1>CATEGORY:</h1>CLIENT</small>
-</div> <!-- This is the first panel, for project name and category -->
-<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/1295V_DC-removebg-preview.webp); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-<ul class="pjt-ui2" id="dash-panel">
-<li class="pjt-spec">12v | 9v | 5v</li>
-<hr/>
-<li class="pjt-spec">&gt;12v DC Input</li>
-<hr/>
-<li class="pjt-spec">Full Project Design</li>
-<hr/>
-<li class="pjt-spec">No ICs</li>
-<hr/>
-<li class="pjt-spec">Power Supply</li>
-</ul> <!-- This is the third panel, for project description and details -->
-<ul class="pjt-ui3" id="dash-panel">
-</ul> <!-- This is the fourth panel, for project links and actions -->
-<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
-<li class="pjt-img"><img alt="project image" src="images/1295V_DC-removebg-preview.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/1295V_DC_Schem.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/1295V_DC_PCBD.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/1295V_DC_ISO-removebg-preview.webp"/></li>
-</ul>
-<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
-<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
-<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
-</ul>
+      <button class="project" popovertarget="ERNLO" style="
+                      background-image: url('images/ERNLO_Word_Red_Path.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+      <a class="pop-data" href="https://jephta-madziva.github.io/ERNLO/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+      <div class="pjt-name">ERNLO</div>
+      <div class="pjt-stt pro"></div>
+      </button>
 
-</div>
-</article>
-<!-- Amon v1.2 Data Dashboard Popups -->
-<article class="project-ui" id="AMon_v1" popover="">
-<button id="close-btn" popovertarget="AMon_v1" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<figure id="dp-grp"></figure>
-<!-- UI Data Boxes -->
-<div class="data-panel">
-<div class="pjt-ui0" id="dash-panel">
-<h1>NAME: <span class="pjt-nm pl-dt">AMon_v1.2</span></h1>
-<hr/>
-<p class="full-name">AGRICULTURE MONITORING DEVICE</p>
-<hr/>
-<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-</div> <!-- This is the first panel, for project name and category -->
-<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-v6-Assy-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-<ul class="pjt-ui2" id="dash-panel">
-<li class="pjt-spec">version 1.2</li>
-<hr/>
-<li class="pjt-spec">WiFi &amp; BT</li>
-<hr/>
-<li class="pjt-spec">ESP-WROOM-32 CPU</li>
-<hr/>
-<li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
-<hr/>
-<li class="pjt-spec">5V Input Compatible</li>
-<hr/>
-<li class="pjt-spec">3 INPUTS | 3 OUTPUTS</li>
-</ul> <!-- This is the third panel, for project description and details -->
-<ul class="pjt-ui3" id="dash-panel">
-<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/AMon/tree/ff19bc2383287d234164de56002bb950ee4cd4b3/AMon%20v1" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
-</ul> <!-- This is the fourth panel, for project links and actions -->
-<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
-<li class="pjt-img"><img alt="project image" src="images/2-v7-explo-sim-unscreen.gif"/></li>
-<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1b_ISO2R-removebg-preview.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1b_TOP-removebg-preview.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/AMon_v1.2.1_TOP2-removebg-preview.webp"/></li>
-</ul>
-<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
-<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
-<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
-<img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
-</ul>
-</div>
-</article>
-<!-- PIC Mod v1 Data Dashboard Popups -->
-<article class="project-ui" id="PicMOD1" popover="">
-<button id="close-btn" popovertarget="PicMOD1" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<figure id="dp-grp"></figure>
-<!-- UI Data Boxes -->
-<div class="data-panel">
-<div class="pjt-ui0" id="dash-panel">
-<h1>NAME: <span class="pjt-nm pl-dt">PicMOD1</span></h1>
-<hr/>
-<p class="full-name">PIC16f877A-Based Module</p>
-<hr/>
-<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-</div> <!-- This is the first panel, for project name and category -->
-<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-PCB-v24-Y-Rot-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-<ul class="pjt-ui2" id="dash-panel">
-<li class="pjt-spec">version 1.2.0</li>
-<hr/>
-<li class="pjt-spec">PIC16f877A Microcontroller</li>
-<hr/>
-<li class="pjt-spec">UI | AUTO | TIMER | ADC | IO</li>
-<hr/>
-<li class="pjt-spec">5V DC PSU Included</li>
-<hr/>
-<li class="pjt-spec">Crucial Peripherals Included</li>
-<hr/>
-<li class="pjt-spec">SMT Configuration</li>
-</ul> <!-- This is the third panel, for project description and details -->
-<ul class="pjt-ui3" id="dash-panel">
-<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Mod.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
-</ul> <!-- This is the fourth panel, for project links and actions -->
-<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
-<li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-PCB-SIM-unscreen.gif"/></li>
-<li class="pjt-img"><img alt="project image" src="images/PICMod_1.2_PCB v22_top.webp"/></li>
-<li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-SIM-unscreen.gif"/></li>
-<li class="pjt-img"><img alt="project image" src="images/PicMOD1.2_TOP_Black-removebg-preview.webp"/></li>
-</ul>
-<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
-<img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
-<img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
-<img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
-</ul>
-</div>
-</article>
-<!-- PIC Dev Board Data Dashboard Popups -->
-<article class="project-ui" id="PDB" popover="">
-<button id="close-btn" popovertarget="PDB" popovertargetaction="hide">
-<svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
-<!-- door/jamb -->
-<path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
-<!-- arrow -->
-<path d="M14 8l6 4-6 4"></path>
-<path d="M20 12H9"></path>
-</svg>
-</button>
-<figure id="dp-grp"></figure>
-<!-- UI Data Boxes -->
-<div class="data-panel">
-<div class="pjt-ui0" id="dash-panel">
-<h1>NAME: <span class="pjt-nm pl-dt">PIC Dev Board</span></h1>
-<hr/>
-<p class="full-name">PIC16f877A-Based Development Board</p>
-<hr/>
-<small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
-</div> <!-- This is the first panel, for project name and category -->
-<div class="pjt-ui1" id="dash-panel" style="background-image: url(images/0-v5-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
-<ul class="pjt-ui2" id="dash-panel">
-<li class="pjt-spec">12v | 9v | 5v</li>
-<hr/>
-<li class="pjt-spec">PIC16F877A MicroController [IC]</li>
-<hr/>
-<li class="pjt-spec">5V DC PSU Included</li>
-<hr/>
-<li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
-<hr/>
-<li class="pjt-spec">Crucial Peripherals Included</li>
-<hr/>
-<li class="pjt-spec">No Bootloader Circuit</li>
-</ul> <!-- This is the third panel, for project description and details -->
-<ul class="pjt-ui3" id="dash-panel">
-<a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Dev-Board.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
-</ul> <!-- This is the fourth panel, for project links and actions -->
-<ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
-  <li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_iso_render.webp"/></li>
-  <li class="pjt-img"><img alt="project image" src="images/0-v6-z-exp-unscreen.gif"/></li>
-  <li class="pjt-img"><img alt="project image" src="images/0-v6-z-rot-sim-unscreen.gif"/></li>
-  <li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_top_render.webp"/></li>
-</ul>
-<ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+      <button class="project" popovertarget="SEG" style="
+                      background-image: url('images/SELogo_Bag_Impact.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+      <a class="pop-data" href="https://jephta-madziva.github.io/SEG/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+      <div class="pjt-name">SEG</div>
+      <div class="pjt-stt pro"></div>
+      </button>
+
+      <button class="project" popovertarget="GARDEN" style="
+                      background-image: url('images/Garden_Logo_v2.svg'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+      <a class="pop-data" href="https://jephta-madziva.github.io/the-GARDEN/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+      <div class="pjt-name">GARDEN</div>
+      <div class="pjt-stt hob"></div>
+      </button>
+
+      <button class="project" popovertarget="TAILOR" style="
+                      background-image: url('images/Tailor_Logo_v1.webp'); 
+                      background-size: contain; 
+                      background-position: center;
+                      background-repeat: no-repeat;">
+      <a class="pop-data" href="https://jephta-madziva.github.io/Tailoring_v1/" rel="noopener noreferrer" target="_blank">view&gt;&gt;</a>
+      <div class="pjt-name">TAILOR</div>
+      <div class="pjt-stt hob"></div>
+      </button>
+    </article>
+  </article>
+  
+  <!-- Branding Projects -->
+  <article class="pop-panel" id="brand-panel" popover="">
+    <button id="close-btn" popovertarget="brand-panel" popovertargetaction="hide">
+    <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+    <!-- door/jamb -->
+    <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+    <!-- arrow -->
+    <path d="M14 8l6 4-6 4"></path>
+    <path d="M20 12H9"></path>
+    </svg>
+    </button>
+
+    <h2 class="note"> 
+      Coming Soon! <br/> <small>Under Construction</small>
+    </h2>
+  </article>
+
+  <!--ELECTRONICS DATA DASHBOARDS-->
+  <!-- [5,9]12V PSU Data Dashboard Popups -->
+  <article class="project-ui" id="12V_PSU" popover="">
+    <button id="close-btn" popovertarget="12V_PSU" popovertargetaction="hide">
+      <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+        <!-- door/jamb -->
+        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+        <!-- arrow -->
+        <path d="M14 8l6 4-6 4"></path>
+        <path d="M20 12H9"></path>
+      </svg>
+    </button>
+
+    <figure id="dp-grp"></figure>
+    <!-- UI Data Boxes -->
+    <div class="data-panel">
+    <div class="pjt-ui0" id="dash-panel">
+    <h1>NAME: <span class="pjt-nm pl-dt">12V PSU</span></h1>
+    <hr/>
+    <p class="full-name">5V, 9V, 12V DC Power Supply Unit</p>
+    <hr/>
+    <small class="pjt-cat"><h1>CATEGORY:</h1>CLIENT</small>
+    </div> 
+    <!-- This is the first panel, for project name and category -->
+    <div class="pjt-ui1" id="dash-panel" style="background-image: url(images/1295V_DC-removebg-preview.webp); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+    <ul class="pjt-ui2" id="dash-panel">
+    <li class="pjt-spec">12v | 9v | 5v</li>
+    <hr/>
+    <li class="pjt-spec">&gt;12v DC Input</li>
+    <hr/>
+    <li class="pjt-spec">Full Project Design</li>
+    <hr/>
+    <li class="pjt-spec">No ICs</li>
+    <hr/>
+    <li class="pjt-spec">Power Supply</li>
+    </ul> <!-- This is the third panel, for project description and details -->
+    <ul class="pjt-ui3" id="dash-panel">
+    </ul> <!-- This is the fourth panel, for project links and actions -->
+    <ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+    <li class="pjt-img"><img alt="project image" src="images/1295V_DC-removebg-preview.webp"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/1295V_DC_Schem.webp"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/1295V_DC_PCBD.webp"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/1295V_DC_ISO-removebg-preview.webp"/></li>
+    </ul>
+    <ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+    <img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+    <img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+    </ul>
+
+    </div>
+  </article>
+  
+  <!-- Amon v1.2 Data Dashboard Popups -->
+  <article class="project-ui" id="AMon_v1" popover="">
+    <button id="close-btn" popovertarget="AMon_v1" popovertargetaction="hide">
+      <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+        <!-- door/jamb -->
+        <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+        <!-- arrow -->
+        <path d="M14 8l6 4-6 4"></path>
+        <path d="M20 12H9"></path>
+      </svg>
+    </button>
+    <figure id="dp-grp"></figure>
+    
+    <!-- UI Data Boxes -->
+    <div class="data-panel">
+      <!-- This is the first panel, for project name and category -->
+      <div class="pjt-ui0" id="dash-panel">
+        <h1>NAME: <span class="pjt-nm pl-dt">AMon_v1.2</span></h1>
+          <hr/>
+        <p class="full-name">
+          AGRICULTURE MONITORING DEVICE
+        </p>
+          <hr/>
+        <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+      </div> 
+      <!-- This is the second panel, for project image or logo -->
+      <div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-v6-Assy-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;">
+      </div>
+
+      <ul class="pjt-ui2" id="dash-panel">
+        <li class="pjt-spec">version 1.2</li>
+          <hr/>
+        <li class="pjt-spec">WiFi &amp; BT</li>
+          <hr/>
+        <li class="pjt-spec">ESP-WROOM-32 CPU</li>
+          <hr/>
+        <li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
+          <hr/>
+        <li class="pjt-spec">5V Input Compatible</li>
+          <hr/>
+        <li class="pjt-spec">3 INPUTS | 3 OUTPUTS</li>
+      </ul> 
+      <!-- This is the third panel, for project description and details -->
+      <ul class="pjt-ui3" id="dash-panel">
+        <a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/AMon/tree/ff19bc2383287d234164de56002bb950ee4cd4b3/AMon%20v1" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+      </ul> 
+      <!-- This is the fourth panel, for project links and actions -->
+      <ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+        <li class="pjt-img">
+          <img alt="project image" src="images/2-v7-explo-sim-unscreen.gif"/>
+        </li>
+        <li class="pjt-img">
+          <img alt="project image" src="images/AMon_v1.2.1b_ISO2R-removebg-preview.webp"/>
+        </li>
+        <li class="pjt-img">
+          <img alt="project image" src="images/AMon_v1.2.1b_TOP-removebg-preview.webp"/>
+        </li>
+        <li class="pjt-img">
+          <img alt="project image" src="images/AMon_v1.2.1_TOP2-removebg-preview.webp"/>
+        </li>
+      </ul>
+      <ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+        <img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+        <img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+        <img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
+      </ul>
+    </div>
+  </article>
+  <!-- PIC Mod v1 Data Dashboard Popups -->
+  <article class="project-ui" id="PicMOD1" popover="">
+  <button id="close-btn" popovertarget="PicMOD1" popovertargetaction="hide">
+  <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+  <!-- door/jamb -->
+  <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+  <!-- arrow -->
+  <path d="M14 8l6 4-6 4"></path>
+  <path d="M20 12H9"></path>
+  </svg>
+  </button>
+  <figure id="dp-grp"></figure>
+  <!-- UI Data Boxes -->
+  <div class="data-panel">
+  <div class="pjt-ui0" id="dash-panel">
+  <h1>NAME: <span class="pjt-nm pl-dt">PicMOD1</span></h1>
+  <hr/>
+  <p class="full-name">PIC16f877A-Based Module</p>
+  <hr/>
+  <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+  </div> <!-- This is the first panel, for project name and category -->
+  <div class="pjt-ui1" id="dash-panel" style="background-image: url(images/2-PCB-v24-Y-Rot-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+  <ul class="pjt-ui2" id="dash-panel">
+  <li class="pjt-spec">version 1.2.0</li>
+  <hr/>
+  <li class="pjt-spec">PIC16f877A Microcontroller</li>
+  <hr/>
+  <li class="pjt-spec">UI | AUTO | TIMER | ADC | IO</li>
+  <hr/>
+  <li class="pjt-spec">5V DC PSU Included</li>
+  <hr/>
+  <li class="pjt-spec">Crucial Peripherals Included</li>
+  <hr/>
+  <li class="pjt-spec">SMT Configuration</li>
+  </ul> <!-- This is the third panel, for project description and details -->
+  <ul class="pjt-ui3" id="dash-panel">
+  <a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Mod.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+  </ul> <!-- This is the fourth panel, for project links and actions -->
+  <ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+  <li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-PCB-SIM-unscreen.gif"/></li>
+  <li class="pjt-img"><img alt="project image" src="images/PICMod_1.2_PCB v22_top.webp"/></li>
+  <li class="pjt-img"><img alt="project image" src="images/2-PCB-v23-SIM-unscreen.gif"/></li>
+  <li class="pjt-img"><img alt="project image" src="images/PicMOD1.2_TOP_Black-removebg-preview.webp"/></li>
+  </ul>
+  <ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
   <img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
   <img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
   <img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
-</ul>
+  </ul>
+  </div>
+  </article>
+  <!-- PIC Dev Board Data Dashboard Popups -->
+  <article class="project-ui" id="PDB" popover="">
+  <button id="close-btn" popovertarget="PDB" popovertargetaction="hide">
+  <svg class="exit-icon" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+  <!-- door/jamb -->
+  <path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path>
+  <!-- arrow -->
+  <path d="M14 8l6 4-6 4"></path>
+  <path d="M20 12H9"></path>
+  </svg>
+  </button>
+  <figure id="dp-grp"></figure>
+  <!-- UI Data Boxes -->
+  <div class="data-panel">
+  <div class="pjt-ui0" id="dash-panel">
+  <h1>NAME: <span class="pjt-nm pl-dt">PIC Dev Board</span></h1>
+  <hr/>
+  <p class="full-name">PIC16f877A-Based Development Board</p>
+  <hr/>
+  <small class="pjt-cat"><h1>CATEGORY:</h1>HOBBY</small>
+  </div> <!-- This is the first panel, for project name and category -->
+  <div class="pjt-ui1" id="dash-panel" style="background-image: url(images/0-v5-Sim-unscreen.gif); background-size: contain; background-position: center; background-repeat: no-repeat;"></div> <!-- This is the second panel, for project image or logo -->
+  <ul class="pjt-ui2" id="dash-panel">
+  <li class="pjt-spec">12v | 9v | 5v</li>
+  <hr/>
+  <li class="pjt-spec">PIC16F877A MicroController [IC]</li>
+  <hr/>
+  <li class="pjt-spec">5V DC PSU Included</li>
+  <hr/>
+  <li class="pjt-spec">UART | I2C | DAC | ADC | IO</li>
+  <hr/>
+  <li class="pjt-spec">Crucial Peripherals Included</li>
+  <hr/>
+  <li class="pjt-spec">No Bootloader Circuit</li>
+  </ul> <!-- This is the third panel, for project description and details -->
+  <ul class="pjt-ui3" id="dash-panel">
+  <a class="pjt-lnk" href="https://github.com/JEPHTA-Madziva/Pic-Dev-Board.git" target="_blank"><img alt="Github link send" class="icon" src="Icons/link_icon.svg"/><h1>GitHub</h1></a>
+  </ul> <!-- This is the fourth panel, for project links and actions -->
+  <ul class="pjt-ui4" id="dash-panel"> <!-- This is the fifth panel, for project icons and images -->
+    <li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_iso_render.webp"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/0-v6-z-exp-unscreen.gif"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/0-v6-z-rot-sim-unscreen.gif"/></li>
+    <li class="pjt-img"><img alt="project image" src="images/PIC Dev 1.0 v6_top_render.webp"/></li>
+  </ul>
+  <ul class="pjt-ui5" id="dash-panel"> <!-- This is the sixth panel, for project footer and additional information -->
+    <img alt="kicad icon" class="sft-icon" src="images/kicad.png"/>
+    <img alt="proteus icon" class="sft-icon" src="images/proteus.png"/>
+    <img alt="fusion360 icon" class="sft-icon" src="images/fusion360.png"/>
+  </ul>
 
   <article class="project-ui" id="GARDEN" popover="">
     <button id="close-btn" popovertarget="GARDEN" popovertargetaction="hide">X</button>
@@ -1046,8 +1076,7 @@
     <figure><img alt="Agriculture Monitore v1.2.1" src="images/2-v6-Assy-Sim-unscreen.gif"/></figure>
     <div class="pj-gap"></div>
     <div class="p">
-    <span class="heading">AGRICULTURE MONITOR
-            </span>
+    <span class="heading">AGRICULTURE MONITOR</span>
     <p>version 1.2.1</p>
     <p>ESP-WROOM-32 CPU</p>
     <p>UI Addon Included</p>
@@ -1134,13 +1163,9 @@
 
 <section id="contacts">
   <article class="contacts">
-    <form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
-      <input class="form-input" name="access_key" type="hidden" value="YOUR_ACCESS_KEY_HERE"/>
-      <input class="form-input" name="name" placeholder="Your Full Name" required="" type="text"/>
-      <input class="form-input" name="email" placeholder="Your Email" required="" type="email"/>
-      <textarea name="message" placeholder="Your Message" required=""></textarea>
-      <button class="form-output" type="submit">Submit Form</button>
-    </form>
+    <figure class="contact-form">
+      <img src="Logo/Logo.gif" alt="">
+    </figure>
     
     <ul class="contact-list" id="radial">
       <div class="con-bg-graphic"></div>
@@ -1148,7 +1173,7 @@
       <li class="c-link Facebook"><a href="https://www.facebook.com/Empirial.org/" target="_blank"><img alt="Facebook" src="Icons/Facebook_icon.png"/></a></li>
       <li class="c-link Gmail"><a href="https://www.madzivajephta@gmail.com" target="_blank"><img alt="" src="Icons/Gmail_icon.png"/></a></li>
       <li class="c-link LinkedIn"><a href="https://www.linkedin.com/in/jephta-madziva-873656144" target="_blank"><img alt="LinkedIn" src="Icons/LinkedIn.png"/></a></li>
-      <li class="c-link Fiverr"><a href="http://www.fiverr.com/s2/9970162673" target="_blank"><img alt="Fiverr" src="Icons/Fiverr_icon.png"/></a></li>
+      <li class="c-link Github"><a href="https://github.com/JEPHTA-Madziva" target="_blank"><img alt="Github" src="Icons/Github.png"/></a></li>
       <li class="c-link Behance"><a href="https://www.behance.net/japhethmadziva" target="_blank"><img alt="" src="Icons/Behance_icon.svg"/></a></li>
       <li class="c-link Upwork"><a href="https://www.upwork.com/freelancers/~01eff7ac555e261f5c0" target="_blank"><img alt="" src="Icons/Upwork_icon.png"/></a></li>
     </ul>
@@ -1162,7 +1187,7 @@
     <p class="footer-summary">Interdisciplinary Engineer & Designer based in Southern Africa. Specializing in the intersection of hardware and digital interfaces.</p>
   </article>
 
-  <div class="footer-links">
+  <article class="footer-links">
     <h4 class="footer-title">Navigation</h4>
     <ul>
       <li><a href="#intro">Top</a></li>
@@ -1170,7 +1195,7 @@
       <li><a href="#projects">Portfolio</a></li>
       <li><a href="#skills">Capabilities</a></li>
     </ul>
-  </div>
+  </article>
 
   <ul class="footer-cta">
     <h4 class="footer-title">Get In Touch</h4>

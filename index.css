@@ -58,9 +58,9 @@ body
     
     .cursor-light 
     {
-        z-index: 0;
         width: 30px;
         display: flex;
+        z-index: -1000;
         position: fixed;
         aspect-ratio: 1/1;
         border-radius: 50%;
@@ -197,7 +197,6 @@ body
             transform: translateX(-50%);
         }
     }
-    
     a,li
     {
         color: inherit;
@@ -208,15 +207,12 @@ body
     {
         width: 50px;
     }
-
     section
     {
         width: 100dvw;
         height: 100dvh;
         padding: 10px 40px;
-        animation: zoomfade linear;
-        animation-timeline: view();
-        animation-range: entry cover 40%;
+
 
         h1
         {
@@ -229,13 +225,14 @@ body
             height: fit-content;
             justify-content: center;
             border: solid blue 1px;
+            /*            
             animation: zoomfade linear;
             animation-timeline: view();
             animation-range: entry cover 40%;
+            */
         }
     }
 }
-
 
 /*---General Settings---*/
 body section, main
@@ -264,8 +261,8 @@ header
         background-position: left center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 100%;
         margin-left: 10px;
+        height: 100%;
         width: 20%;
     }
     
@@ -321,14 +318,13 @@ header
         }
     }
 }
-
-video
+/*video
 {
     width: 100dvw;
     height: auto;
     z-index: -2;
     position: fixed;
-}
+}*/
 /*---- MAIN/HERO Section ----*/
 main
 {
@@ -342,21 +338,6 @@ main
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
-    .logoGIF
-    {
-        border: solid red;
-        position: absolute;
-        width: 500px;
-        aspect-ratio: 1/1;
-
-        img
-        {
-            width: 100%;
-            height: auto;
-            border: solid yellow;
-        }
-    }
 
     .pic
     {
@@ -445,7 +426,6 @@ main
             margin: 0;
         }
     }
-
     .hero-bio
     {
         width: 500px;
@@ -469,7 +449,6 @@ main
         border: solid rgba(255, 255, 255, 0.01) 1px;
         font-family: 'Agency FB','Banshcrift','Consolas';
     }
-
     .socials
     {
         top: 37%;
@@ -491,6 +470,15 @@ main
             img
             {
                 width: 30px;
+                transition: 0.3s;
+                &:hover
+                {
+                    transform: scale(1.2);
+                }
+                &:active
+                {
+                    transform: scale(0.9);
+                }
             }
         }
         #note
@@ -501,6 +489,7 @@ main
     .products
     {
         border: solid rgba(255, 255, 255, 0.01) 1px;
+        background-color: transparent;
         backdrop-filter: blur(10px);
         border-radius: 40px;
         position: absolute;
@@ -511,9 +500,13 @@ main
         img
         {
             width: 40px;
+            
+            &:hover
+            {
+                transform: scale(0.8);
+            }
         }
     }
-    
     .cta
     {
         z-index: 100;
@@ -561,15 +554,16 @@ main
     .touch
     {
         width: 100px;
-        --backlight-color: rgba(0, 0, 255, 0.564); 
         aspect-ratio: 1/1;
         border-radius: 50%;
+        box-shadow: 
+        0 0 500px 10px var(--backlight-color),
+        0 0 1000px 50px var(--backlight-color); 
         background-color: var(--backlight-color);
-        box-shadow: 0 0 1000px 50px var(--backlight-color), 
-        0 0 500px 10px var(--backlight-color);
+        --backlight-color: rgba(0, 0, 255, 0.564); 
     }
 }
-
+/*---- Bio section ----*/
 #bio
 {
     gap: 10px;
@@ -585,6 +579,7 @@ main
         display: flex;
         align-items: center;
     }
+
     .bio-intro
     {
         width: 350px;
@@ -708,7 +703,6 @@ main
         }
     }
 }
-
 /*----Skills Section----*/
 #skills
 {
@@ -1045,7 +1039,6 @@ main
         }
     }
 }
-
 /*----Projects Section----*/
 #projects
 {
@@ -1068,12 +1061,13 @@ main
         backdrop-filter: blur(10px);
         justify-content: space-evenly;
     }
+
     .pjt-btn
     {
-        width: 200px;
-        height: 50px;
+        width: 120px;
+        height: 40px;
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         transition: 0.5s;
         font-weight: bolder;
         border-radius: 10px;
@@ -1090,15 +1084,34 @@ main
     .pop-panel
     {
         top: 10px;
+        margin: 0;
         left: 30px;
-        cursor: grab;
-        width: 94.5dvw;
+        padding: 0;
+        cursor: auto;
         position: fixed;
-        align-items: left;
+        align-items: center;
         border: transparent;
-        justify-content: end;
+        justify-content: center;
+        width: calc(100% - 60px);
         height: calc(100dvh - 20px);
         background: rgba(0, 0, 30);
+
+        *
+        {
+            cursor: auto;
+        }
+        .note
+        {
+            gap: 10%;
+            width: 90%;
+            height: 100%;
+            display: flex;
+            font-size: 40px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(185, 185, 255);;
+        }
     }
     #close-btn
     {
@@ -1117,26 +1130,28 @@ main
         width: 50px;
         left: 5px;
         top: 5px;
+        
+        &:hover
+        {
+            background-color: var(--light-blue);
+            box-shadow: 0 0 20px 5px white;
+            border: solid white;
+            color: white;
+        }
     }
-    #close-btn:hover
-    {
-        background-color: var(--light-blue);
-        box-shadow: 0 0 20px 5px white;
-        border: solid white;
-        color: white;
-    }
+
     .projects
     {
         gap: 5%;
         width: 100%;
         height: 100%;
+        cursor: grab;
         display: flex;
         overflow: auto;
         flex-wrap: wrap;
         align-items: center;
         flex-direction: row;
         justify-content: center;
-        cursor: grab;
     }
 
     /*---Project Buttons Section---*/
@@ -1150,78 +1165,81 @@ main
         aspect-ratio: 1/1;
         cursor: pointer;
         width: 200px;
-    }
-    .project .pop-data
-    {
-        right: 0;
-        bottom: 0;
-        width: 50%;
-        height: 15%;
-        display: flex;
-        cursor: pointer;
-        font-size: 20px;
-        transition: 0.5s;
-        position: absolute;
-        font-weight: bolder;
-        align-items: center;
-        justify-content: center;
-        color: var(--dark-blue);
-        backdrop-filter: blur(30px);
-        font-family: var(--font-1-B);
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 5px;
-        background-color: rgba(255, 255, 255);
-        border: solid rgba(255, 255, 255, 0.622) 1px;
-    }
-    .project .pop-data:hover
-    {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: var(--dark-blue);
-        border: none;
-    }
-    .project .pjt-name
-    {
-        top: 5%;
-        left: 50%;
-        width: 90%;
-        height: 16%;
-        cursor: text;
-        display: flex;
-        color: white;
-        font-size: 200%;
-        border-left: none;
-        position: absolute;
-        border-radius: 2px;
-        font-weight: bolder;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(-50%);
-        font-family: var(--font-1-B);
-        background-color: rgba(0, 0, 255, 0.175);
-    }
-    .project .pjt-stt
-    {
-        border: solid var(--led-color) ;
-        box-shadow: 
-        0 0 7px 5px var(--led-color),
-        0 0 50px 10px var(--led-color);
-        background-color: var(--led-color);
-        width: 5px;
-        aspect-ratio: 1/1;
-        position: absolute;
-        top: 12%;
-        left: 12%;
-        border-radius: 50%;
-        animation: pulse 2s ease-in-out infinite;
-        transform: translate(-50%,-50%);
-    }
-    .project .pro
-    {
-        --led-color: rgb(255, 217, 0);
-    }
-    .project .hob
-    {
-        --led-color: white;
+        
+        .pop-data
+        {
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            height: 15%;
+            display: flex;
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.5s;
+            position: absolute;
+            font-weight: bolder;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-blue);
+            backdrop-filter: blur(30px);
+            font-family: var(--font-1-B);
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 5px;
+            background-color: rgba(255, 255, 255);
+            border: solid rgba(255, 255, 255, 0.622) 1px;
+            
+            &:hover
+            {
+                background-color: rgba(255, 255, 255, 0.7);
+                color: var(--dark-blue);
+                border: none;
+            }
+        }
+        
+        .pjt-name
+        {
+            top: 5%;
+            left: 50%;
+            width: 90%;
+            height: 16%;
+            cursor: text;
+            display: flex;
+            color: white;
+            font-size: 200%;
+            border-left: none;
+            position: absolute;
+            border-radius: 2px;
+            font-weight: bolder;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+            font-family: var(--font-1-B);
+            background-color: rgba(0, 0, 255, 0.175);
+        }
+        .pjt-stt
+        {
+            top: 12%;
+            left: 12%;
+            width: 5px;
+            aspect-ratio: 1/1;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 
+            0 0 7px 5px var(--led-color),
+            0 0 50px 10px var(--led-color);
+            border: solid var(--led-color) ;
+            transform: translate(-50%,-50%);
+            background-color: var(--led-color);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .pro
+        {
+            --led-color: rgb(255, 217, 0);
+        }
+        .hob
+        {
+            --led-color: white;
+        }
     }
 
 
@@ -1234,20 +1252,21 @@ main
         flex-wrap: wrap;
         height: 100%;
         width: 100%;
-    }
-    .data-panel
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        column-gap: 3%;
-        margin: 0 auto;
-        overflow: auto;
-        flex-wrap: wrap;
-        cursor: crosshair;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(0, 0, 15);
+        
+        .data-panel
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            column-gap: 3%;
+            margin: 0 auto;
+            overflow: auto;
+            flex-wrap: wrap;
+            cursor: crosshair;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 15);
+        }
     }
 
     #dtp-bg::before
@@ -1281,21 +1300,22 @@ main
                     0 0 500px 50px var(--grp-color),
                     0 0 1000px 50px var(--grp-color), 
                     0 0 100px 10px var(--grp-color) inset;
-    }
-    #dp-grp::after
-    {
-        content: " ";
-        width: 300px;
-        aspect-ratio: 1/1;
-        border-radius: 40px;
-        transform: rotate(45deg);
-        border: solid var(--grp-color) 2px;
-        background-color: var(--grp-color);
-        box-shadow: 
-                    0 0 100px 10px var(--grp-color),
-                    0 0 500px 100px var(--grp-color),
-                    0 0 2000px 50px var(--grp-color), 
-                    0 0 100px 10px var(--grp-color) inset;
+                    
+        &:after
+        {
+            content: " ";
+            width: 300px;
+            aspect-ratio: 1/1;
+            border-radius: 40px;
+            transform: rotate(45deg);
+            border: solid var(--grp-color) 2px;
+            background-color: var(--grp-color);
+            box-shadow: 
+                        0 0 100px 10px var(--grp-color),
+                        0 0 500px 100px var(--grp-color),
+                        0 0 2000px 50px var(--grp-color), 
+                        0 0 100px 10px var(--grp-color) inset;
+        }
     }
     #dash-panel
     {
@@ -1420,37 +1440,49 @@ main
     {
         right: 5%;
         bottom: 5%;
-        width: 30%;
         z-index: 1;
-        height: 10%;
+        padding: 5px 10px;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px;
         backdrop-filter: blur(20px);
         background-color: var(--dp-bg);
-        border: solid var(--dp-panel) 1px; 
+        border: solid var(--dark-gold) 2px; 
+        
         .pjt-lnk
         {
-            width: 90%;
-            height: 100%;
+            gap: 10px;
             cursor: grab;
             display: flex;
+            width: fit-content;
+            height: fit-content;
             align-items: center;
             flex-direction: row-reverse;
             justify-content: space-evenly;
             
-            a{cursor: grab;}
-            h1{cursor: text;}
+            a
+            {
+                cursor: grab;
+            }
+            h1
+            {
+                cursor: grab;
+                border: none;
+                font-size: 30px;
+            }
             
             img
             {
-                cursor: grab;
                 width: auto;
-                height: 50%;
+                cursor: grab;
+                height: 30px;
             }
         }
     }
     .pjt-ui4 /* Project Images*/
     {
-        left: 3.5%;
         gap: 10px;
+        left: 3.5%;
         z-index: 1;
         width: 30%;
         bottom: 5%;
@@ -1459,13 +1491,13 @@ main
         height: fit-content;
         .pjt-img
         {
-            height: 150px;
+            width: 50px;
+            height: 50px;
             overflow: hidden;
-            aspect-ratio: 1/1;
             object-fit: cover;
-            border-radius: 20px;
+            border-radius: 10px;
             list-style-type: none;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(30px);
             background-color: var(--dp-bg);
             border: solid var(--dp-panel) 1px;
         }
@@ -1475,17 +1507,19 @@ main
         top: 70%;
         right: 5%;
         z-index: 1;
-        height: 10%;
+        height: 7%;
         display: flex;
+        padding: 0 10px;
         width: fit-content;
         align-items: center;
         backdrop-filter: blur(20px);
         justify-content: space-evenly;
         background-color: var(--dp-bg);
         border: solid var(--dp-panel) 1px; 
+
         .sft-icon
         {
-            height: 90%;
+            height: 70%;
             width: auto;
         }
     }
@@ -1502,7 +1536,7 @@ main
         }
     }
 }
-
+/*---- Contacts section ----*/
 #contacts
 {
     display: flex;
@@ -1534,49 +1568,18 @@ main
         }
         .contact-form
         {
-            width: 500px;
-            height: 500px;
+            width: 350px;
+            height: 350px;
             display: flex;
             flex-wrap: wrap;
+            overflow: hidden;
             align-items: center;
             justify-content: center;
 
-            .form-input
+            img
             {
-                background-color: rgba(0, 0, 255, 0.012);
-                border: solid rgba(0, 0, 255, 0.316) 1px;
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                height: fit-content;
-                font-weight: bold;
-                color: white;
-                padding: 10px;
-                width: 400px;
-                cursor: text;
-            }
-            textarea
-            {
-                background-color: rgba(0, 0, 255, 0.2);
-                border: solid var(--light-blue) 1px;
-                backdrop-filter: blur(2px);
-                border-radius: 10px;
-                font-weight: bold;
-                color: white;
-                padding: 10px;
-                height: 200px;
-                width: 400px;
-                cursor: text;
-            }
-            .form-output
-            {
-                width: 200px;
-                height: 30px;
-                cursor: pointer;
-                font-size: 15px;
-                border-radius: 10px;
-                color: var(--dark-blue);
-                background-color: white;
-                font-family: var(--font-1-B);
+                width: auto;
+                height: 70%;
             }
         }
 
@@ -1614,8 +1617,14 @@ main
                     img
                     {
                         width: 100%;
+                        transition: 0.3s;
+                        &:hover
+                        {
+                            transform: scale(1.1);
+                        }
                     }
                 }
+                
             }
         }
 
@@ -1633,11 +1642,12 @@ main
         }
     }
 }
-
+/*---- Footer section ----*/
 footer 
 {
-    width: 100%;
+    gap: 20px;
     z-index: 0;
+    width: 100%;
     cursor: auto;
     padding: 50px;
     display: flex;
@@ -1654,6 +1664,7 @@ footer
     *
     {
         cursor: auto;
+        gap: 10px;
     }
     
     .footer-brand 
@@ -1730,7 +1741,7 @@ footer
                 
                 &:hover 
                 { 
-                    color: #fff; 
+                    color: var(--dark-blue); 
                 }
             }
         }
@@ -1754,11 +1765,21 @@ footer
             padding: 10px 20px;
             width: fit-content;
             font-weight: bold;
+            transition: 0.3s;
             cursor: pointer;
+
+            &:hover
+            {
+                transform: scale(1.1);
+                color: var(--dark-blue);
+                background-color: var(--light-blue);
+                box-shadow: 0 0 50px 4px var(--light-blue);
+            }
         }
         .wa-btn 
         {
             cursor: pointer;
+            transition: 0.3s;
             font-weight: bold;
             width: fit-content;
             padding: 10px 20px;
@@ -1768,6 +1789,14 @@ footer
             text-decoration: none;
             color: var(--dark-gold); 
             border: 1px solid var(--dark-gold);
+
+            &:hover
+            {
+                transform: scale(1.1);
+                color: var(--darker-gold);
+                background-color: var(--light-gold);
+                box-shadow: 0 0 50px 4px var(--light-gold);
+            }
         }
     }
     
@@ -1802,7 +1831,7 @@ footer
     
 }
   
-
+/*---- Responsive settings ----*/
 @media screen and (min-width: 720px)
 {   
     main
@@ -1842,7 +1871,6 @@ footer
 
     }
 }
-
 @media screen and (max-width: 720px) 
 {
     header
